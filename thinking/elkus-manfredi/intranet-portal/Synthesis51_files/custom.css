@@ -1,0 +1,186 @@
+/* custom.css */
+
+/* Global font override */
+body, .ms-core-defaultFont, #pageStatusBar, .ms-status-msg, .js-callout-body, .ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar, .ms-core-navigation, .ms-rteStyle-Normal, .ms-rteStyle-Quote, .ms-rteStyle-IntenseQuote, .ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText>a, .ms-list-addnew, a.ms-addnew, .ms-rte-wpbox, .ms-rteThemeFontFace-1, .ms-rteThemeFontFace-2, input, input[type=button], input[type=submit], .ms-standardheader, .ka_font, .ka_SectionTitle {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+
+/* header */
+body {
+    background: #c93627;
+}
+/* adjust padding of logo container to align with nav */
+#suiteBar {
+    padding-left: 15px;
+}
+#ka_suiteBarLogo {
+    width: 183px;
+}
+/* Synthesis nav */
+#RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
+    color: white !important;
+}
+
+/* header item link */
+.ms-core-listMenu-horizontalBox, .ms-core-listMenu-item, .ms-core-listMenu-item:link {
+    color: white;
+}
+
+/* search box */
+#DeltaPlaceHolderSearchArea .ka_searchContainer {
+    background-color: #f4d6d3;
+    border: 0 solid transparent;
+    border-radius: 10px;
+}
+/* placeholder position and color */
+.quickSearchTextBox.ka_search {
+    padding-left: 10px;
+}
+.quickSearchTextBox::-webkit-input-placeholder {
+   color: black;
+}
+
+.quickSearchTextBox:-moz-placeholder { /* Firefox 18- */
+   color: black;  
+}
+
+.quickSearchTextBox::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+}
+
+.quickSearchTextBox:-ms-input-placeholder {  
+   color: black;  
+}
+/* search button */
+#ka_searchIcon {
+    border-left: 0;
+}
+#ka_searchIcon:before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 60px;
+    margin-bottom: -5px;
+    background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22490%22%20height%3D%22490%22%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%2236%22%20stroke-linecap%3D%22round%22%0Ad%3D%22m280%2C278a153%2C153%200%201%2C0-2%2C2l170%2C170m-91-117%20110%2C110-26%2C26-110-110%22/%3E%0A%3C/svg%3E%20);
+    background-position: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+/* All caps for main nav links */
+#DeltaTopNavigation .menu-item {
+    text-transform: uppercase;
+}
+/* bottom of red nav */
+#titleAreaBox {
+    border-bottom: 0;
+}
+
+/* left nav */
+.ms-core-listMenu-verticalBox>ul>li>.ms-core-listMenu-item {
+    color: white;
+}
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover {
+    color: #6a747b;
+}
+
+#sideNavBox {
+    padding-top: 10px;
+    position: fixed;
+}
+
+/* gray nav bg */
+#s4-workspace {
+    background-color: white;
+}
+
+/* align left nav */
+#s4-bodyContainer {
+    background-image: -webkit-linear-gradient(left, #6a747b 240px, white 231px);
+    padding-left: 15px;
+}
+
+/* adjust main content padding */
+#contentRow {
+    padding-top: 0px;
+}
+#contentBox {
+  margin-left: 224px;
+  margin-top: 540px;
+}
+
+/* Carousel */
+.carousel {
+    height: 530px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 980px;
+}
+.carousel-slides-container {
+    overflow: hidden;
+    width: 980px;
+}
+.carousel-slide {
+    background-size: cover;
+    display: block;
+    float: left;
+    height: 530px;
+    position: absolute;
+    width: 980px;
+    z-index: 0;
+}
+.carousel-slide-text {
+    background-color: rgba(255, 255, 255, .8);
+    box-sizing: border-box;
+    float: right;
+    height: 530px;
+    padding: 20px 10px 10px 40px; 
+    width: 340px;
+}
+.carousel-slide-title {
+    color: #c93627;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;;
+}
+.carousel-slide-copy {
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+}
+.carousel-slide-link {
+    background-color: #fff;
+    border-radius: 15px;
+    bottom: 20px;
+    color: #be0909;
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+}
+.carousel-slides-controls {
+    bottom: 10px;
+    left: 0;
+    margin-bottom :10px;
+    padding-left: 20px;
+    position: absolute;
+    z-index: 10;
+}
+.carousel-slide-control {
+    background-color: #fff;
+    display: inline-block;
+    height: 20px;
+    list-style-type: none;
+    width: 25px;
+    transition: background-color 1s;
+}
+.carousel-slide-control.active {
+    background-color: #57585a;
+}
+.carousel-slide-control + .carousel-slide-control {
+    margin-left: 5px;
+}
