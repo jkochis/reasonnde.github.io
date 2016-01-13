@@ -14,6 +14,7 @@ body {
     padding-left: 15px;
 }
 #ka_suiteBarLogo {
+    max-height: 38px;
     width: 183px;
 }
 /* Synthesis nav */
@@ -97,6 +98,7 @@ body {
 /* align left nav */
 #s4-bodyContainer {
     background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
+    background-image: linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
     padding-left: 15px;
 }
 
