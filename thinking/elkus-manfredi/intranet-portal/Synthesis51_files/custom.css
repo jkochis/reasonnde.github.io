@@ -7,7 +7,7 @@ body, .ms-core-defaultFont, #pageStatusBar, .ms-status-msg, .js-callout-body, .m
 
 /* header */
 body {
-    background: #c93627;
+    background: rgb(204, 51, 0);
 }
 /* adjust padding of logo container to align with nav */
 #suiteBar {
@@ -81,7 +81,7 @@ body {
     color: white;
 }
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover {
-    color: #6a747b;
+    color: #474747;
 }
 
 #sideNavBox {
@@ -96,7 +96,7 @@ body {
 
 /* align left nav */
 #s4-bodyContainer {
-    background-image: -webkit-linear-gradient(left, #6a747b 240px, white 231px);
+    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
     padding-left: 15px;
 }
 
