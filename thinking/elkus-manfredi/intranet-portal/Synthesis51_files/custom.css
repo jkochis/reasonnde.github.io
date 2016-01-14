@@ -38,19 +38,20 @@ body {
     padding-left: 10px;
 }
 .quickSearchTextBox::-webkit-input-placeholder {
-   color: black;
+   color: rgb(85, 85, 85);
 }
 
 .quickSearchTextBox:-moz-placeholder { /* Firefox 18- */
-   color: black;  
+   color: rgb(85, 85, 85);
+   opacity: 1;
 }
 
 .quickSearchTextBox::-moz-placeholder {  /* Firefox 19+ */
-   color: black;  
+   color: rgb(85, 85, 85);  
 }
 
 .quickSearchTextBox:-ms-input-placeholder {  
-   color: black;  
+   color: rgb(85, 85, 85);  
 }
 /* search button */
 #ka_searchIcon {
@@ -62,7 +63,7 @@ body {
     height: 20px;
     width: 60px;
     margin-bottom: -5px;
-    background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22490%22%20height%3D%22490%22%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%2236%22%20stroke-linecap%3D%22round%22%0Ad%3D%22m280%2C278a153%2C153%200%201%2C0-2%2C2l170%2C170m-91-117%20110%2C110-26%2C26-110-110%22/%3E%0A%3C/svg%3E%20);
+    background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22490%22%20height%3D%22490%22%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22rgb%2885%2C%2085%2C%2085%29%22%20stroke-width%3D%2236%22%20stroke-linecap%3D%22round%22%0Ad%3D%22m280%2C278a153%2C153%200%201%2C0-2%2C2l170%2C170m-91-117%20110%2C110-26%2C26-110-110%22/%3E%0A%3C/svg%3E%20);
     background-position: 30px;
     background-repeat: no-repeat;
     background-size: contain;
