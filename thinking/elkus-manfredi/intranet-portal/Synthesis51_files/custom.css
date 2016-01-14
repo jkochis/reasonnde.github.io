@@ -23,7 +23,7 @@ body {
 }
 
 /* header item link */
-.ms-core-listMenu-horizontalBox, .ms-core-listMenu-item, .ms-core-listMenu-item:link {
+.ms-core-listMenu-horizontalBox, .ms-core-listMenu-item, .ms-core-listMenu-item {
     color: white;
 }
 
