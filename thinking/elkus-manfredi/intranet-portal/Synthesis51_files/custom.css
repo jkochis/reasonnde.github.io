@@ -23,7 +23,8 @@ body {
 }
 
 /* header item link */
-.ms-core-listMenu-horizontalBox, .ms-core-listMenu-item, .ms-core-listMenu-item {
+#DeltaTopNavigation > li > a,
+.ms-core-listMenu-horizontalBox, .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited {
     color: white;
 }
 
