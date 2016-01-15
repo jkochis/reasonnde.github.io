@@ -1,21 +1,17 @@
 /* custom.css */
 
-/* Global font override */
-body, .ms-core-defaultFont, #pageStatusBar, .ms-status-msg, .js-callout-body, .ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar, .ms-core-navigation, .ms-rteStyle-Normal, .ms-rteStyle-Quote, .ms-rteStyle-IntenseQuote, .ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText>a, .ms-list-addnew, a.ms-addnew, .ms-rte-wpbox, .ms-rteThemeFontFace-1, .ms-rteThemeFontFace-2, input, input[type=button], input[type=submit], .ms-standardheader, .ka_font, .ka_SectionTitle {
-    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
-}
-
 /* header */
 body {
     background: rgb(204, 51, 0);
 }
 /* adjust padding of logo container to align with nav */
 #suiteBar {
-    padding-left: 15px;
+    padding-left: 10px;
+    width: 1250px;
 }
 #ka_suiteBarLogo {
-    max-height: 38px;
-    width: 183px;
+    max-height: 30px;
+    width: 146px;
 }
 /* Synthesis nav */
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
@@ -71,9 +67,18 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* Adjust alignment of nav */
+#titleAreaRow {
+    width: 1250px;
+}
 /* All caps for main nav links */
 #DeltaTopNavigation .menu-item {
     text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* page gear icon padding */
+#Ribbon\.WebPartPage-title {
+    margin-right: 8px;
 }
 /* bottom of red nav */
 #titleAreaBox {
@@ -89,7 +94,7 @@ body {
 }
 
 #sideNavBox {
-    padding-top: 10px;
+    padding-top: 20px;
     position: fixed;
 }
 
@@ -100,11 +105,12 @@ body {
 
 /* align left nav */
 #s4-bodyContainer {
-    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
-    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
-    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
-    background-image: linear-gradient(left, rgb(106, 115, 123) 240px, white 231px);
-    padding-left: 15px;
+    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 240px, white 241px);
+    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 240px, white 241px);
+    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 240px, white 241px);
+    background-image: linear-gradient(left, rgb(106, 115, 123) 240px, white 241px);
+    padding-left: 10px;
+    width: 1250px!important;
 }
 
 /* adjust main content padding */
@@ -122,11 +128,11 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
-    width: 980px;
+    width: 1010px;
 }
 .carousel-slides-container {
     overflow: hidden;
-    width: 980px;
+    width: 1010px;
 }
 .carousel-slide {
     background-size: cover;
@@ -134,7 +140,7 @@ body {
     float: left;
     height: 530px;
     position: absolute;
-    width: 980px;
+    width: 1010px;
     z-index: 0;
 }
 .carousel-slide-text {
@@ -142,7 +148,7 @@ body {
     box-sizing: border-box;
     float: right;
     height: 530px;
-    padding: 20px 10px 10px 40px; 
+    padding: 20px 20px 10px 40px; 
     width: 340px;
 }
 .carousel-slide-title {
