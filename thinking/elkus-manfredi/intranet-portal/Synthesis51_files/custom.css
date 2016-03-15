@@ -129,7 +129,6 @@ body {
     background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
     background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
     background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
-    height: 100%;
     overflow-y: scroll;
     padding-left: 10px;
 }
