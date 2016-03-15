@@ -135,6 +135,7 @@ body {
 
 /* main content area */
 #s4-workspace #contentRow {
+    -webkit-linear-gradient(left, rgb(106, 115, 123) 200px, white 201px)
     padding-top: 0px;
 }
 /* make room for the carousel */
