@@ -97,6 +97,15 @@ body {
 #Ribbon\.WebPartPage-title {
     margin-right: 8px;
 }
+#Ribbon\.LibraryContextualGroup {
+    border-top-color: transparent;
+}
+#Ribbon\.Document-title > a {
+    border-left-color: transparent;
+}
+#Ribbon\.Library-title > a {
+    border-right-color: transparent;
+}
 /* bottom of red nav */
  #titleAreaBox {
     border-bottom: 0 !important;
