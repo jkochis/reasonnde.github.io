@@ -171,8 +171,12 @@ body {
     margin-left: -20px;
 }
 
-.ms-picker-header, ms-picker-monthselected {
+.ms-picker-header, .ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
     background: rgb(204, 51, 0);
+}
+
+.ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
+    border: none;
 }
 
 #s4-workspace .ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenu-item {
