@@ -155,6 +155,10 @@ body {
     background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
 }
 
+iframe #s4-workspace {
+    background-color: white;
+}
+
 /* nav links */
 #s4-workspace #titleAreaBox a, /* top nav links */
 #s4-workspace #sideNavBox * /* left nav links */
@@ -187,7 +191,6 @@ body {
 
 /* align left nav */
 #s4-workspace.ms-core-overlay > #s4-bodyContainer {
-    background-color: white;
     margin: 0;
     padding-left: 10px;
 }
