@@ -124,7 +124,7 @@ body {
     color: white !important;
 }
 
-#s4-workspace #sideNavBox * /* left nav links */
+#s4-workspace #sideNavBox /* left nav links */
 {
     margin: 0 0 0 30px;
     padding-top: 20px;
