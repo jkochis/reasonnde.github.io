@@ -171,6 +171,10 @@ body {
     margin-left: -20px;
 }
 
+.ms-picker-header, ms-picker-monthselected {
+    background: rgb(204, 51, 0);
+}
+
 #s4-workspace .ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenu-item {
     font-size: 16px;
     font-weight: 500;
