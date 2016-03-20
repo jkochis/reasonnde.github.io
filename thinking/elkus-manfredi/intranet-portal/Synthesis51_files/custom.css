@@ -187,6 +187,7 @@ body {
 
 /* align left nav */
 #s4-workspace.ms-core-overlay > #s4-bodyContainer {
+    background-color: white;
     margin: 0;
     padding-left: 10px;
 }
