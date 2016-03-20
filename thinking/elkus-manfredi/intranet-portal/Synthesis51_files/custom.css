@@ -44,6 +44,10 @@ body {
     height: 19px;
     padding-left: 19px;
 }
+#suiteBarButtons .ms-siteactions-imgspan .ms-core-menu-buttonIcon:hover {
+    background: none;
+    padding-left: 0;
+}
 /**/
 /* header item link */
 #DeltaTopNavigation > li > a,
