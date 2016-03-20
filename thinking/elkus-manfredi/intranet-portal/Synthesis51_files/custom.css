@@ -15,8 +15,12 @@ body {
 }
 
 #suiteBar, #s4-ribbonrow {
-    min-width: 1100px;
+    min-width: 1150px;
     width: auto;
+}
+
+.ms-breadcrumb-top {
+    min-width: 960px;
 }
 
 #ka_SuiteBarLogoContainer {
