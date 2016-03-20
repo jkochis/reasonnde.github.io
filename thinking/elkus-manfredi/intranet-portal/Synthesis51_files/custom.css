@@ -32,6 +32,9 @@ body {
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
     color: white !important;
 }
+#RibbonContainer .ms-browseTab.ms-cui-tt-s > .ms-cui-tt-a:hover {
+    background: transparent;
+}
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span:hover {
     color: #474747 !important;
  }
