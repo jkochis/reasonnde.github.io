@@ -35,7 +35,7 @@ body {
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span:hover {
     color: #474747 !important;
  }
-.ms-core-menu-buttonIcon:first-child {
+#suiteBarButtons .ms-siteactions-imgspan .ms-core-menu-buttonIcon {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
