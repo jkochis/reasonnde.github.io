@@ -122,7 +122,7 @@ body {
 #s4-workspace #sideNavBox * /* left nav links */
 {
     color: white !important;
-    /*margin: 0 0 0 30px;*/
+    margin: 0 0 0 30px !important;
     /*padding-top: 20px;*/
     /*position: fixed;*/
 }
