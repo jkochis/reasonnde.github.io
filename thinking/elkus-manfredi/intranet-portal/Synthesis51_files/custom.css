@@ -140,7 +140,9 @@ body {
  #titleAreaBox {
     border-bottom: 0 !important;
 }
-
+.ms-siteactions-hover {
+    background-color: transparent;
+}
 /* gray nav bg */
 #s4-workspace {
     background-color: white;
@@ -173,10 +175,10 @@ body {
 
 /* align left nav */
 #s4-workspace.ms-core-overlay > #s4-bodyContainer {
-    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
-    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
-    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
-    background-image: linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
+    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 230px, white 230px);
+    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 230px, white 230px);
+    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 230px, white 230px);
+    background-image: linear-gradient(left, rgb(106, 115, 123) 230px, white 230px);
     margin: 0;
     padding-left: 10px;
 }
