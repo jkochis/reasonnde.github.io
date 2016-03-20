@@ -37,6 +37,9 @@ body {
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
     color: white !important;
 }
+li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
+    color: rgb(35, 39, 44);
+}
 #RibbonContainer .ms-browseTab.ms-cui-tt-s > .ms-cui-tt-a:hover {
     background: transparent;
 }
