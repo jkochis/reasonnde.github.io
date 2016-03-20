@@ -86,7 +86,8 @@ body {
 }
 /* Adjust alignment of nav */
 #titleAreaRow {
-    width: 1250px;
+    margin: auto;
+    width: auto;
 }
 /* All caps for main nav links */
 #DeltaTopNavigation .menu-item {
