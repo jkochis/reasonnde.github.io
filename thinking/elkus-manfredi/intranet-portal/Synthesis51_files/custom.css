@@ -175,6 +175,12 @@ body {
     background: rgb(204, 51, 0);
 }
 
+#DatePickerDiv .ms-pagearrow-right-icon, #DatePickerDiv .ms-pagearrow-left-icon {
+    -moz-filter: brightness(3);
+    -webkit-filter: brightness(3);
+    filter: brightness(3);
+}
+
 .ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
     border: none;
 }
