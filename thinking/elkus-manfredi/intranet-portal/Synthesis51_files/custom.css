@@ -148,7 +148,7 @@ body {
 }
 
 /* align left nav */
-#s4-workspace  #s4-bodyContainer {
+#s4-workspace.ms-core-overlay > #s4-bodyContainer {
     background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
     background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
     background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
