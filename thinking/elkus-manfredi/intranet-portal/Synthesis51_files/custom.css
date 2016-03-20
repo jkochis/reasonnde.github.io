@@ -122,8 +122,12 @@ body {
 #s4-workspace #sideNavBox * /* left nav links */
 {
     color: white !important;
+}
+
+#s4-workspace #sideNavBox * /* left nav links */
+{
+    margin: 0 0 0 30px;
     padding-top: 20px;
-    /*position: fixed;*/
 }
 
 #s4-workspace #titleAreaBox a:hover
