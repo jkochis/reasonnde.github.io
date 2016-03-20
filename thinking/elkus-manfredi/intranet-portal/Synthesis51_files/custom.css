@@ -143,6 +143,9 @@ body {
 .ms-siteactions-hover {
     background-color: transparent;
 }
+.ms-welcome-hover {
+    border-radius: 15px;
+}
 /* gray nav bg */
 #s4-workspace {
     background-color: white;
