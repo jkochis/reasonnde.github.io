@@ -38,6 +38,8 @@ body {
 #suiteBarButtons .ms-siteactions-imgspan .ms-core-menu-buttonIcon {
     display: block;
     -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAABCRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIgogICAgICAgICAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyI+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDx0aWZmOkNvbXByZXNzaW9uPjU8L3RpZmY6Q29tcHJlc3Npb24+CiAgICAgICAgIDx0aWZmOlhSZXNvbHV0aW9uPjcyPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjE5PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT4xPC9leGlmOkNvbG9yU3BhY2U+CiAgICAgICAgIDxleGlmOlBpeGVsWURpbWVuc2lvbj4xOTwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgICAgIDxkYzpzdWJqZWN0PgogICAgICAgICAgICA8cmRmOlNlcS8+CiAgICAgICAgIDwvZGM6c3ViamVjdD4KICAgICAgICAgPHhtcDpNb2RpZnlEYXRlPjIwMTY6MDM6MTMgMTI6MDM6MDU8L3htcDpNb2RpZnlEYXRlPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPlBpeGVsbWF0b3IgMy40LjI8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cvhh0JUAAAFzSURBVDgRrZNhdcMwDISbISiEQAiEQBiDFEIgmMEgBEIolEEgZAwGIbtPlTzHyct+bHpPlnQ6X2XXaW6/2LZtKShN0+Q8sDK+lUWdS6gXNjg+eF3Tcr0Tgyyf5Z0zesWnT/RUTn2j7zyrwXamJkLYZOu2LYpf8neIRK/BscnW1/Q7LchMNPnGVvkov5csasdb502q55JjuUBGx4x4IFQAPGP/XMmeoSZHGANVztFWObbKH0WPyZeocxTYy5OcO7KjKT68ru8sao4Mn329iXmxKn7IjUhDOViuHbNJbeOL04vDPripYaFZP0jhm7CGXmlneGjEOxsE7CaTwKeww2TgIa6+TaY6HrYdCTDJuYM7ZEWORG2CJ/XxzuJXXGDRpjEwF1gVsVWeJ1U+yo//pgt1amJtiF1FeMY+e2dqzPJ/+wK4N2yy9S/fph8VQSbsvE7KY9pJeXKcK4GX7xD80kRGfJUjSuyvNhweZU1GKLD6YQce8RtzsSF5kVC3xQAAAABJRU5ErkJggg==') no-repeat;
     width: 19px;
@@ -125,6 +127,12 @@ body {
 #Ribbon\.Library-title > a {
     border-right-color: transparent;
 }
+#Ribbon\.Calendar {
+    border-top-color: transparent;
+}
+#Ribbon\.Calendar a {
+    border-color: transparent;
+}
 /* bottom of red nav */
  #titleAreaBox {
     border-bottom: 0 !important;
@@ -162,10 +170,10 @@ body {
 
 /* align left nav */
 #s4-workspace.ms-core-overlay > #s4-bodyContainer {
-    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
-    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
-    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
-    background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 211px);
+    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
+    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
+    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
+    background-image: linear-gradient(left, rgb(106, 115, 123) 230px, white 231px);
     margin: 0;
     overflow-y: scroll;
     padding-left: 10px;
