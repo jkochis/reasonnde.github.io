@@ -148,12 +148,12 @@ body {
     border-radius: 15px;
 }
 /* gray nav bg */
-#s4-workspace {
-    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
-    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
-    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
-    background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
-}
+/*#s4-workspace {*/
+/*    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
+/*    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
+/*    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
+/*    background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
+/*}*/
 
 iframe #s4-workspace {
     background-color: white;
