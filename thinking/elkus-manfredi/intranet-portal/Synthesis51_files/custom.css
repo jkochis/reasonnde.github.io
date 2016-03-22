@@ -81,6 +81,9 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     border: 0 solid transparent;
     border-radius: 10px;
 }
+#DeltaPlaceHolderSearchArea input.ka_search {
+    color: #000;
+}
 /* placeholder position and color */
 .quickSearchTextBox.ka_search {
     padding-left: 10px;
@@ -229,6 +232,11 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     /*margin-left: 224px;*/
     padding-top: 24px;
     /* margin-top: 540px;  /* adjust main content padding */
+}
+
+/* Search Results */
+#ka_SearchScopesPanel, #ka_SearchResultsLeftColumn {
+    margin-left: 120px;
 }
 
 /* Carousel */
