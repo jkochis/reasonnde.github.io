@@ -36,6 +36,9 @@ body {
     width: 146px;
 }
 /* Synthesis nav */
+#RibbonContainer .ms-cui-tt-s > .ms-cui-tt-a {
+    background-color: transparent;
+}
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
     color: white !important;
 }
