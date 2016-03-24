@@ -1,3 +1,4 @@
+/*
 var portalCarousel = {
     sliding : false,
     currentSlide : 0,
@@ -105,11 +106,4 @@ jq18(document).ready(function() {
         $next.click();
     }, 6500);
 });
-
-
-
-
-
-
-
-
+*/
