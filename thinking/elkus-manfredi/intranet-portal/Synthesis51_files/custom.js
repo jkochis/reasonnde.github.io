@@ -1,4 +1,4 @@
-var portalCarousel = {
+/*var portalCarousel = {
     sliding : false,
     currentSlide : 0,
     autoPlay : false,
@@ -113,3 +113,4 @@ jq18(document).ready(function() {
       }, 6500);
     });
 });
+*/
