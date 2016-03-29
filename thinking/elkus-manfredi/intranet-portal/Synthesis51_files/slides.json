@@ -1,26 +1,23 @@
 [  
    {  
       "image":"//reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/EMA25D_02_Gallery_E_p_8503JS.jpg",
-      "title":"EMA CELEBRATES ONE YEAR AT DRYDOCK OFFICES",
-      "copy":"Litatqui aut odis res voluptati doluptatur, quibernam fuga. Nam facessit lanim et amus. Parunti ut poratur epudist occulpa cus. Icit eatempor dolupta tiossed modis iliquam qui sum non sequiat quam fuga. Ut officaecti aut exceprepud arunt il est.",
+      "category":"PROJECT SPOTLIGHT".
+      "title":"NEW BALANCE HEADQUARTERS AT BOSTON LANDING",
+      "copy":"Elkus Manfredi Architects is providing masterplanning and design services for a new phased development on a 14-acre parcel in Boston&rsquo;s Brighton neighborhood that is slated to become the premier health and wellness district in the city.",
       "link":"link1"
    },
    {  
       "image":"//reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/Republic_Square_Ped_2Night.jpg",
-      "title":"LOREM CELEBRATES ONE YEAR AT DRYDOCK OFFICES",
-      "copy":"Litatqui aut odis res voluptati doluptatur, quibernam fuga. Nam facessit lanim et amus. Parunti ut poratur epudist occulpa cus. Icit eatempor dolupta tiossed modis iliquam qui sum non sequiat quam fuga. Ut officaecti aut exceprepud arunt il est.",
-      "link":"link2"
+      "category":"FIRM NEWS".
+      "title":"EMA IS A FINALIST FOR COLLABORATING PROFESSIONAL OF THE YEAR!",
+      "copy":"We are thrilled to be honored as a finalist by the Commercial Brokers Association. Founded in 1991, the CBA represents over 400 members in the commercial brokerage community throughout Massachusetts that comprise over 4,000 companies.",
+      "link":"link1
    },
    {  
       "image":"//reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/LINQ_28_SpaLounge_A_np_8483AB.jpg",
-      "title":"IPSUM CELEBRATES ONE YEAR AT DRYDOCK OFFICES",
-      "copy":"Litatqui aut odis res voluptati doluptatur, quibernam fuga. Nam facessit lanim et amus. Parunti ut poratur epudist occulpa cus. Icit eatempor dolupta tiossed modis iliquam qui sum non sequiat quam fuga. Ut officaecti aut exceprepud arunt il est.",
-      "link":"link3"
-   },
-   {  
-      "image":"//reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/SPRTSQ_VIEW.jpg",
-      "title":"DOLOR CELEBRATES ONE YEAR AT DRYDOCK OFFICES",
-      "copy":"Litatqui aut odis res voluptati doluptatur, quibernam fuga. Nam facessit lanim et amus. Parunti ut poratur epudist occulpa cus. Icit eatempor dolupta tiossed modis iliquam qui sum non sequiat quam fuga. Ut officaecti aut exceprepud arunt il est.",
-      "link":"link4"
+      "category":"PEOPLE NEWS".
+      "title":"MINTY FRESH START VOLUNTEER EVENT A HUGE SUCCESS!",
+      "copy":"Thank you to all EMA donors and volunteers for your generosity and help!<br>We assembled 40 Fresh Start Kits that included dental hygiene supplies and toiletry kits for homeless youth.<br>Click below to see event pics.",
+      "link":"link1"
    }
 ]
