@@ -1,4 +1,4 @@
-if(document.location.search.indexOf('carousel') > -1 && document.forms[0].action.indexOf('emintranet/Default.aspx') > -1) {
+if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action.indexOf("emintranet/Default.aspx") > -1) {
     var portalCarousel = {
         sliding : false,
         currentSlide : 0,
@@ -7,7 +7,7 @@ if(document.location.search.indexOf('carousel') > -1 && document.forms[0].action
         loadSlide : function(slide) {
             if(jq18(slide).index() !== this.currentSlide && this.sliding === false) {
                 portalCarousel.sliding = true;
-                var carousel = jq18("<div class='carousel'>");
+                var carousel = jq18('<div class="carousel">');
                 // move to position
                 jq18(slide).css({
                     'left' : '980px',
@@ -76,7 +76,7 @@ if(document.location.search.indexOf('carousel') > -1 && document.forms[0].action
     jq18(document).ready(function() {
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
-        jq18.get("http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/slides.json", function(response) {
+        jq18.get('http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/slides.json', function(response) {
             html = portalCarousel.init(response);
             carousel.html(html);
         })
