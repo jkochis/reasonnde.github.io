@@ -98,7 +98,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                   autoplay = false;
               }
           });
-          jq18('.carousel-slide-control').on('mouseout', function(){
+          jq18('.carousel').on('mouseout', function(){
               if(!autoplay) {
                 autoplay = setInterval(function() {
                     var $cur = jq18('.carousel-slide-control.active').removeClass('active');
