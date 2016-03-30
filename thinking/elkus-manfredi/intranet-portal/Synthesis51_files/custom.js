@@ -68,7 +68,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 href : data.link,
                 text : 'more >>'
             });
-            slideText.prepend(slideTitle, [slideCopy, slideLink])
+            slideText.prepend(slideCategory, [slideTitle, slideCopy, slideLink])
             slide.prepend(slideText);
             return slide;
         },
