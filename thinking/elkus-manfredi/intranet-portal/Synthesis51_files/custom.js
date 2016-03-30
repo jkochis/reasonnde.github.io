@@ -34,7 +34,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             };
             // create controls to navigate the slides
             var carouselControls = jq18('<ul>', {class: 'carousel-slides-controls'});
-            for (var i = 0; i < 4; i++) {
+            for (var i = 0; i < data.length; i++) {
                 jq18(carouselControls).append('<li class="carousel-slide-control">');
             };
             jq18(carouselContainer).append(carouselControls);
@@ -50,6 +50,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             var slideText = jq18('<div>', {
                 class : 'carousel-slide-text'
+            });
+            var slideCategory = jq18('<div>', {
+                class : 'carousel-slide-category',
+                text : data.title
             });
             var slideTitle = jq18('<div>', {
                 class : 'carousel-slide-title',
