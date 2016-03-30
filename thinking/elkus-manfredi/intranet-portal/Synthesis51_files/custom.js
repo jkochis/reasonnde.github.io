@@ -53,7 +53,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             var slideCategory = jq18('<div>', {
                 class : 'carousel-slide-category',
-                text : data.title
+                text : data.category
             });
             var slideTitle = jq18('<div>', {
                 class : 'carousel-slide-title',
@@ -61,7 +61,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             var slideCopy = jq18('<div>', {
                 class : 'carousel-slide-copy',
-                text : data.copy
+                html : data.copy
             });
             var slideLink = jq18('<a>', {
                 class : 'carousel-slide-link',
