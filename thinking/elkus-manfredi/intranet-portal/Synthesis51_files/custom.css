@@ -293,6 +293,11 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     padding: 20px 20px 10px 40px;
     width: 340px;
 }
+.carousel-slide-category {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
 .carousel-slide-title {
     color: #c93627;
     font-size: 24px;
@@ -329,7 +334,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     z-index: 10;
 }
 .carousel-slide-control {
-    background-color: #fff;
+    background-color: rgb(106, 115, 123;
     display: inline-block;
     height: 20px;
     list-style-type: none;
@@ -337,7 +342,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     transition: background-color 1s;
 }
 .carousel-slide-control.active {
-    background-color: #57585a;
+    background-color: )rgb(204, 51, 0);
 }
 .carousel-slide-control + .carousel-slide-control {
     margin-left: 5px;
