@@ -296,6 +296,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     width: 340px;
 }
 .carousel-slide-category {
+    letter-spacing: 1px;
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 600;
@@ -310,8 +311,9 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 .carousel-slide-copy {
     color: #333;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
 }
 .carousel-slide-copy br {
     line-height: 2;
