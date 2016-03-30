@@ -306,6 +306,9 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     font-size: 18px;
     line-height: 28px;
 }
+.carousel-slide-copy br {
+    line-height: 2;
+}
 .carousel-slide-link {
     background-color: #fff;
     border-radius: 15px;
