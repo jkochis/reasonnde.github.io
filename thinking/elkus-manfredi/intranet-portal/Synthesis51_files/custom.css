@@ -339,12 +339,13 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     z-index: 10;
 }
 .carousel-slide-control {
-    background-color: rgb(106, 115, 123);
+    background-color: rgb(152, 155, 162);
+    cursor: pointer;
     display: inline-block;
-    height: 20px;
+    height: 16px;
     list-style-type: none;
-    width: 25px;
     transition: background-color 1s;
+    width: 16px;
 }
 .carousel-slide-control.active {
     background-color: rgb(204, 51, 0);
