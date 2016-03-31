@@ -63,11 +63,13 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 class : 'carousel-slide-copy',
                 html : data.copy
             });
-            var slideLink = jq18('<a>', {
-                class : 'carousel-slide-link',
-                href : data.link,
-                text : 'more >>'
-            });
+            if(data.link){
+                var slideLink = jq18('<a>', {
+                    class : 'carousel-slide-link',
+                    href : data.link,
+                    text : 'more >>'
+                });
+            }
             slideText.prepend(slideCategory, [slideTitle, slideCopy, slideLink])
             slide.prepend(slideText);
             return slide;
@@ -78,9 +80,11 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
     }
     // setup the carousel
     jq18(document).ready(function() {
+        //determine if we want the preview JSON
+        var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.json' : 'slides.json';
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
-        jq18.get('http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/slides.json', function(response) {
+        jq18.get('http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/' + slideJSON, function(response) {
             html = portalCarousel.init(response);
             carousel.html(html);
         })

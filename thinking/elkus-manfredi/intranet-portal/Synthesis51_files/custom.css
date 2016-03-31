@@ -279,6 +279,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     width: 1010px;
 }
 .carousel-slide {
+    background-color: white;
     background-size: cover;
     display: block;
     float: left;
