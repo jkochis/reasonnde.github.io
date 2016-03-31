@@ -348,7 +348,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     width: 16px;
 }
 .carousel-slide-control:hover {
-    animation-duration: 1s;
+    animation-duration: 300ms;
     animation-fill-mode: both;
     animation-name: pulse;
 }
