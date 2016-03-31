@@ -304,7 +304,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 .carousel-slide-title {
     color: #c93627;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 32px;
     margin-bottom: 10px;
@@ -313,7 +313,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 .carousel-slide-copy {
     color: #333;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 26px;
 }
 .carousel-slide-copy br {
