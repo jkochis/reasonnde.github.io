@@ -347,9 +347,27 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     transition: background-color 1s;
     width: 16px;
 }
+.carousel-slide-control:hover {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: pulse;
+}
 .carousel-slide-control.active {
     background-color: rgb(204, 51, 0);
 }
 .carousel-slide-control + .carousel-slide-control {
     margin-left: 5px;
+}
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
