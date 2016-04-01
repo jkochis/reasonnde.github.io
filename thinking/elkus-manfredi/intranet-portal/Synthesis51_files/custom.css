@@ -245,6 +245,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 /* Search Results */
 #ka_SearchScopesPanel, #ka_SearchResultsLeftColumn {
     margin-left: 120px;
+    width: 540px;
 }
 
 /* Carousel */
