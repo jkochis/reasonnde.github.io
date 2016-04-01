@@ -222,12 +222,14 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 
 /* align left nav */
 #s4-workspace.ms-core-overlay > #s4-bodyContainer {
-    margin: 0;
-    padding-left: 10px;
     background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
     background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
     background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
     background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 10px;
 }
 
 /* main content area */
