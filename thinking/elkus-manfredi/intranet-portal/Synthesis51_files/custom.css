@@ -168,6 +168,14 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     background-image: none;
 }
 
+/* gray nav bg */		
+#s4-workspace {		
+    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
+    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
+    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
+    background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
+}
+
 /* nav links */
 #s4-workspace #titleAreaBox a, /* top nav links */
 #s4-workspace #sideNavBox * /* left nav links */
