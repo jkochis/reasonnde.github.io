@@ -242,6 +242,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 /* make room for the carousel */
 #s4-workspace #contentBox {
     /*margin-left: 224px;*/
+    min-width: unset;
     padding-top: 24px;
     /* margin-top: 540px;  /* adjust main content padding */
 }
