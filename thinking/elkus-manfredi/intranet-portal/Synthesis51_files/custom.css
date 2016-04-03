@@ -183,7 +183,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 
 #DeltaPlaceHolderMain {
-    width: auto;
+    min-width: unset;
 }
 
 #DatePickerDiv, .ms-acal-apanel-outer {
