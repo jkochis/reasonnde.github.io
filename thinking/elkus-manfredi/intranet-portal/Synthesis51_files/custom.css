@@ -6,7 +6,11 @@
  */
 
 body {
-    background: rgb(204, 51, 0);
+    background: white; /* #CC3300 */
+    background-image: -webkit-linear-gradient(270deg, rgb(204, 51, 0) 210px, white 210px);		
+    background-image: -ms-linear-gradient(270deg, rgb(204, 51, 0) 210px, white 210px);		
+    background-image: -moz-linear-gradient(270deg, rgb(204, 51, 0) 210px, white 210px);		
+    background-image: linear-gradient(270deg, rgb(204, 51, 0) 210px, white 210px);	
 }
 /* header */
 /* adjust padding of logo container to align with nav */
@@ -183,6 +187,10 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     color: white !important;
 }
 
+#DeltaPlaceHolderMain {
+    width: auto;
+}
+
 #DatePickerDiv, .ms-acal-apanel-outer {
     margin-left: -20px;
 }
@@ -228,6 +236,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     /*background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
     margin: 0;
     padding-left: 10px;
+    width: auto !important;
 }
 
 /* main content area */
