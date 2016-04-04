@@ -175,7 +175,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 
 /* gray nav bg */		
-#s4-workspace {		
+#s4-workspace {
     background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
     background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
     background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
@@ -232,10 +232,10 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 
 /* align left nav */
 #s4-workspace.ms-core-overlay > #s4-bodyContainer {
-    /*background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
-    /*background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
-    /*background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
-    /*background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);*/
+    background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
+    background-image: -ms-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
+    background-image: -moz-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
+    background-image: linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);
     margin: 0;
     padding-left: 10px;
     width: auto !important;
