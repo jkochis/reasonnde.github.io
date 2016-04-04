@@ -6,10 +6,10 @@
  */
 body {
     background-color: rgb(255, 255, 255);
-    background-image: -webkit-linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px);
-    background-image: -moz-linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px);
-    background-image: -ms-linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px);
-    background-image: linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px);
+    background-image: -webkit-linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px) !important;
+    background-image: -moz-linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px) !important;
+    background-image: -ms-linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px) !important;
+    background-image: linear-gradient(180deg, rgb(204, 51, 0) 210px, white 210px) !important;
 }
 /*body * {*/
 /*    background-color: white;*/
