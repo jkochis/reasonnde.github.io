@@ -168,7 +168,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 
 .ms-dialog #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
-    color: darkgray;
+    color: darkgray !important;
 }
 
 /* gray nav bg */		
