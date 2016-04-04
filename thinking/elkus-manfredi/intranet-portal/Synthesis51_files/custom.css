@@ -167,6 +167,10 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     background-image: none;
 }
 
+.ms-dialog #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span {
+    color: darkgray;
+}
+
 /* gray nav bg */		
 #s4-workspace {		
     background-image: -webkit-linear-gradient(left, rgb(106, 115, 123) 210px, white 210px);		
