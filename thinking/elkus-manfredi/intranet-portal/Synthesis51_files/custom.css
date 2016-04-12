@@ -269,6 +269,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 
 /* Link Override */
 .ms-wikicontent a, .ms-wikicontent a:link {
+    font-weight: bold;
     text-decoration: none;
 }
 
