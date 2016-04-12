@@ -267,6 +267,11 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     width: 540px;
 }
 
+/* Link Override */
+.ms-wikicontent a, .ms-wikicontent a:link {
+    text-decoration: none;
+}
+
 /* Carousel */
 /**
 
