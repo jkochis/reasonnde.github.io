@@ -21,7 +21,7 @@ body {
 }
 
 #suiteBar, #s4-ribbonrow {
-    min-width: 1150px;
+    min-width: 1040px;
     width: auto;
 }
 
@@ -55,7 +55,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 #RibbonContainer .ms-cui-tt-a > .ms-cui-tt-span:hover {
     color: #474747 !important;
- }
+}
 #suiteBarButtons .ms-siteactions-imgspan .ms-core-menu-buttonIcon {
     display: block;
     -moz-box-sizing: border-box;
