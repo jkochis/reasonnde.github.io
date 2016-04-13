@@ -1,4 +1,4 @@
-if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action.indexOf("emintranet/Default.aspx") > -1) {
+if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action.indexOf("emme/Default.aspx") > -1) {
     var portalCarousel = {
         sliding : false,
         currentSlide : 0,
