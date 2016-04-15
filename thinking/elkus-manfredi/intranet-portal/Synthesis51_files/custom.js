@@ -136,6 +136,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                     console.log("left key is pressed");
                     break;
                 }
+          });
         });
     });
 }
