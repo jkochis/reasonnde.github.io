@@ -123,18 +123,18 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
           jq18(document).keyup(function(e) {
               var $cur = jq18('.carousel-slide-control.active').removeClass('active');
               switch (e.which) {
-                  case 39:
-                    // right
-                    var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                    $next.click();
-                    console.log("Right key is pressed");
-                    break;
-                  case 37:
-                    // left
-                    var $prev = $cur.prev().length?$cur.prev():jq18('.carousel-slide-control').last();
-                    $prev.click();
-                    console.log("left key is pressed");
-                    break;
+                    case 39:
+                        // right
+                        var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
+                        $next.trigger('click');
+                        console.log("Right key is pressed");
+                        break;
+                    case 37:
+                        // left
+                        var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
+                        $prev.trigger('click');
+                        console.log("left key is pressed");
+                        break;
                 }
           });
         });
