@@ -100,12 +100,13 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             jq18('.carousel-slide-control').on('click arrowClick', function(e) {
                 jq18('.carousel-slide-control').not(this).removeClass('active');
                 jq18(this).addClass('active');
-                index = jq18('.carousel-slide-control').index(this);
+                var index = jq18('.carousel-slide-control').index(this);
                 portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
                 if (e.type === 'arrowClick' || !e.isTrigger) {
                     clearInterval(autoplay);
                     portalCarousel.autoPlay = false;
-                    setTimeout(function(){
+                    var pauser = setTimeout(function(){
+                        clearTimeout(pauser);
                         var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                         var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                         $next.click();
@@ -131,7 +132,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         break;
                 }
             });
-            autoplay = setInterval(function() {
+            var autoplay = setInterval(function() {
                 var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                 var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                 $next.click();
