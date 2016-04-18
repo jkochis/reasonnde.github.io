@@ -7,6 +7,12 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         getCurrentSlide : function() {
             return jq18('.carousel-slide-control.active');
         },
+        playNext : function() {
+            "use strict";
+            var $cur = this.getCurrentSlide();
+            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+            $next.click();
+        },
         loadSlide : function(slide) {
             if(jq18(slide).index() !== this.currentSlide && this.sliding === false) {
                 portalCarousel.sliding = true;
@@ -92,7 +98,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             "use strict";
             setTimeout(function(){
                 portalCarousel.autoPlay = true;
-                playNext();
+                portalCarousel.playNext();
             }, duration);
         }
         jq18.get('http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/' + slideJSON, function(response) {
