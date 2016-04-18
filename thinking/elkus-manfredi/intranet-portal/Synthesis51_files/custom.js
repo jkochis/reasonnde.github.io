@@ -105,7 +105,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 if (e.type === 'arrowClick' || !e.isTrigger) {
                     clearInterval(autoplay);
                     portalCarousel.autoPlay = false;
-                    var pauser = setTimeout(function(){
+                    pauser = setTimeout(function(){
                         clearTimeout(pauser);
                         var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                         var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
