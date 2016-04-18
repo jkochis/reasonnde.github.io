@@ -127,7 +127,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             }
         });
         autoplay = setInterval(function() {
-            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+            var $cur = jq18('.carousel-slide-control.active')[0].removeClass('active');
             var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
             $next.click();
         }, 6500);
