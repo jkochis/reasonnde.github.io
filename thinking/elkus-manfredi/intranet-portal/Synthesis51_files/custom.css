@@ -200,6 +200,10 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     min-width: unset;
 }
 
+#DeltaPlaceHolderMain > table {
+    max-width: 1040px;
+}
+
 #DatePickerDiv, .ms-acal-apanel-outer {
     margin-left: -20px;
 }
