@@ -256,7 +256,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 /* main content area */
 #s4-workspace #contentRow {
     /*-webkit-linear-gradient(left, rgb(106, 115, 123) 200px, white 201px)*/
-    padding-top: 0px;
+    padding-top: 0;
 }
 /* make room for the carousel */
 #s4-workspace #contentBox {
@@ -338,6 +338,9 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     font-size: 14px;
     font-weight: 600;
 }
+.carousel-slide-category a {
+    text-decoration: none;
+}
 .carousel-slide-title {
     color: #c93627;
     font-size: 22px;
@@ -368,7 +371,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 }
 .carousel-slides-controls {
     bottom: 10px;
-    left: 0;
+    left: 710px;
     margin-bottom :10px;
     padding-left: 20px;
     position: absolute;
@@ -378,10 +381,10 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     background-color: rgb(152, 155, 162);
     cursor: pointer;
     display: inline-block;
-    height: 16px;
+    height: 12px;
     list-style-type: none;
     transition: background-color 1s;
-    width: 16px;
+    width: 12px;
     /* transition */
     backface-visibility: hidden;
     transform: translateZ(0);
@@ -395,5 +398,5 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     background-color: rgb(204, 51, 0);
 }
 .carousel-slide-control + .carousel-slide-control {
-    margin-left: 5px;
+    margin-left: 8px;
 }

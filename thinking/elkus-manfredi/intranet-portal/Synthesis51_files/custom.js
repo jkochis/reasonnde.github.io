@@ -51,7 +51,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             var slideText = jq18('<div>', {
                 class : 'carousel-slide-text'
             });
-            var slideCategory = jq18('<div>', {
+            var slideCategory = jq18('<div><a>', {
                 class : 'carousel-slide-category',
                 text : data.category
             });
@@ -77,7 +77,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         init : function(data) {
             return this.buildCarousel(data);
         }
-    }
+    };
     // setup the carousel
     jq18(document).ready(function() {
         //determine if we want the preview JSON
@@ -97,22 +97,14 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
           jq18('.carousel-slide:eq(0)').css('z-index', 1);
           // handle clicks on carousel controls
           jq18('.carousel-slide-control').on('click', function(e) {
+              console.log(e);
               jq18('.carousel-slide-control').not(this).removeClass('active');
               jq18(this).addClass('active');
               index = jq18('.carousel-slide-control').index(this);
               portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
               if (!e.isTrigger) {
                   clearInterval(autoplay);
-                  autoplay = false;
-              }
-          });
-          jq18('.carousel').on('mouseout', function(){
-              if(!autoplay) {
-                autoplay = setInterval(function() {
-                    var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-                    var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                    $next.click();
-                }, 6500);
+                  portalCarousel.autoPlay = false;
               }
           });
           autoplay = setInterval(function() {
