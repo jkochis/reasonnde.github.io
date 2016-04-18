@@ -51,7 +51,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             var slideText = jq18('<div>', {
                 class : 'carousel-slide-text'
             });
-            var slideCategory = jq18('<div><a>', {
+            var slideCategory = jq18('<a>', {
                 class : 'carousel-slide-category',
                 text : data.category
             });
