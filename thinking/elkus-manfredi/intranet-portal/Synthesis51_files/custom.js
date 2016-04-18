@@ -97,7 +97,8 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
           portalCarousel.autoPlay = true;
           jq18('.carousel-slide:eq(0)').css('z-index', 1);
           // handle clicks on carousel controls
-          jq18('.carousel-slide-control').on('click', function(e) {
+          jq18('.carousel-slide-control').on('click arrowClick', function(e) {
+              console.log(e);
               jq18('.carousel-slide-control').not(this).removeClass('active');
               jq18(this).addClass('active');
               index = jq18('.carousel-slide-control').index(this);
@@ -118,13 +119,13 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                     case 39:
                         // right
                         var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
-                        $next.trigger('click');
+                        $next.trigger('arrowClick');
                         console.log("Right key is pressed");
                         break;
                     case 37:
                         // left
                         var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
-                        $prev.trigger('click');
+                        $prev.trigger('arrowClick');
                         console.log("left key is pressed");
                         break;
                 }
