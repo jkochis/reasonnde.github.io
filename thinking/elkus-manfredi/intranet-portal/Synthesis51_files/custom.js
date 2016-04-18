@@ -103,7 +103,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
               jq18(this).addClass('active');
               index = jq18('.carousel-slide-control').index(this);
               portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
-              if (!e.isTrigger) {
+              if (e.type === 'arrowClick' || !e.isTrigger) {
                   clearInterval(autoplay);
                   portalCarousel.autoPlay = false;
               }
