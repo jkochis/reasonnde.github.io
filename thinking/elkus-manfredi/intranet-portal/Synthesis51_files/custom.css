@@ -42,7 +42,7 @@ body {
     width: 146px;
 }
 /* Synthesis nav */
-#Ribbon > ms-cui-ribbonTopBars {
+#Ribbon > .ms-cui-ribbonTopBars {
     left: 970px;
 }
 
