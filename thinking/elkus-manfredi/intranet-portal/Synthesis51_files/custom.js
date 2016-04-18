@@ -4,14 +4,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         currentSlide : 0,
         autoPlay : false,
         slideData : [],
-        getCurrentSlide : function() {
-            return jq18('.carousel-slide-control.active');
-        },
-        playNext : function() {
-            var $cur = this.getCurrentSlide();
-            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-            $next.click();
-        },
         loadSlide : function(slide) {
             if(jq18(slide).index() !== this.currentSlide && this.sliding === false) {
                 portalCarousel.sliding = true;
@@ -93,12 +85,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.json' : 'slides.json';
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
-        var setDelay = function(duration) {
-            setTimeout(function(){
-                portalCarousel.autoPlay = true;
-                portalCarousel.playNext();
-            }, duration);
-        }
         jq18.get('http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/' + slideJSON, function(response) {
             html = portalCarousel.init(response);
             carousel.html(html);
@@ -123,11 +109,8 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 portalCarousel.autoPlay = false;
             }
         });
-        jq18('.carousel').on('mouseenter mouseleave', function(){
-            setDelay(15000);
-        });
         jq18(document).keyup(function(e) {
-            var $cur = portalCarousel.getCurrentSlide().removeClass('active');
+            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
             switch (e.which) {
                 case 39:
                     // right
@@ -144,8 +127,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             }
         });
         autoplay = setInterval(function() {
-            var $cur = portalCarousel.getCurrentSlide().removeClass('active');
-            console.log($cur);
+            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
             var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
             $next.click();
         }, 6500);
