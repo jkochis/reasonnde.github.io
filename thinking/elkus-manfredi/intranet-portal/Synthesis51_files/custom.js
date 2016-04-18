@@ -4,6 +4,9 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         currentSlide : 0,
         autoPlay : false,
         slideData : [],
+        getCurrentSlide : function() {
+            return jq18('.carousel-slide-control.active');
+        },
         loadSlide : function(slide) {
             if(jq18(slide).index() !== this.currentSlide && this.sliding === false) {
                 portalCarousel.sliding = true;
@@ -85,51 +88,61 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.json' : 'slides.json';
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
+        var setDelay = function(duration) {
+            "use strict";
+            setTimeout(function(){
+                portalCarousel.autoPlay = true;
+                playNext();
+            }, duration);
+        }
         jq18.get('http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/' + slideJSON, function(response) {
             html = portalCarousel.init(response);
             carousel.html(html);
         })
         .done(function(){
-          // plunk it at the top of the content box
-          cb = jq18('#contentBox').prepend(carousel);
-          cb.css('margin-top', '0');
-          jq18('.carousel-slide-control:eq(0)').addClass('active');
-          portalCarousel.autoPlay = true;
-          jq18('.carousel-slide:eq(0)').css('z-index', 1);
-          // handle clicks on carousel controls
-          jq18('.carousel-slide-control').on('click arrowClick', function(e) {
-              console.log(e);
-              jq18('.carousel-slide-control').not(this).removeClass('active');
-              jq18(this).addClass('active');
-              index = jq18('.carousel-slide-control').index(this);
-              portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
-              if (e.type === 'arrowClick' || !e.isTrigger) {
-                  clearInterval(autoplay);
-                  portalCarousel.autoPlay = false;
-              }
-          });
-          autoplay = setInterval(function() {
-              var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-              var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-              $next.click();
-          }, 6500);
-          jq18(document).keyup(function(e) {
-              var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-              switch (e.which) {
-                    case 39:
-                        // right
-                        var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
-                        $next.trigger('arrowClick');
-                        console.log("Right key is pressed");
-                        break;
-                    case 37:
-                        // left
-                        var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
-                        $prev.trigger('arrowClick');
-                        console.log("left key is pressed");
-                        break;
-                }
-          });
+            // plunk it at the top of the content box
+            cb = jq18('#contentBox').prepend(carousel);
+            cb.css('margin-top', '0');
+            jq18('.carousel-slide-control:eq(0)').addClass('active');
+            portalCarousel.autoPlay = true;
+            jq18('.carousel-slide:eq(0)').css('z-index', 1);
         });
+        // handle clicks on carousel controls
+        jq18('.carousel-slide-control').on('click arrowClick', function(e) {
+            console.log(e);
+            jq18('.carousel-slide-control').not(this).removeClass('active');
+            jq18(this).addClass('active');
+            index = jq18('.carousel-slide-control').index(this);
+            portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
+            if (e.type === 'arrowClick' || !e.isTrigger) {
+                clearInterval(autoplay);
+                portalCarousel.autoPlay = false;
+            }
+        });
+        jq18('.carousel').on('mouseenter mouseleave', function(){
+            setDelay(15000);
+        });
+        jq18(document).keyup(function(e) {
+            var $cur = portalCarousel.getCurrentSlide().removeClass('active');
+            switch (e.which) {
+                case 39:
+                    // right
+                    var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
+                    $next.trigger('arrowClick');
+                    console.log("Right key is pressed");
+                    break;
+                case 37:
+                    // left
+                    var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
+                    $prev.trigger('arrowClick');
+                    console.log("left key is pressed");
+                    break;
+            }
+        });
+        autoplay = setInterval(function() {
+            var $cur = portalCarousel.getCurrentSlide().removeClass('active');
+            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+            $next.click();
+        }, 6500);
     });
 }
