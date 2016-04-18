@@ -96,40 +96,40 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             jq18('.carousel-slide-control:eq(0)').addClass('active');
             portalCarousel.autoPlay = true;
             jq18('.carousel-slide:eq(0)').css('z-index', 1);
+            // handle clicks on carousel controls
+            jq18('.carousel-slide-control').on('click arrowClick', function(e) {
+                console.log(e);
+                jq18('.carousel-slide-control').not(this).removeClass('active');
+                jq18(this).addClass('active');
+                index = jq18('.carousel-slide-control').index(this);
+                portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
+                if (e.type === 'arrowClick' || !e.isTrigger) {
+                    clearInterval(autoplay);
+                    portalCarousel.autoPlay = false;
+                }
+            });
+            jq18(document).keyup(function(e) {
+                var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                switch (e.which) {
+                    case 39:
+                        // right
+                        var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
+                        $next.trigger('arrowClick');
+                        console.log("Right key is pressed");
+                        break;
+                    case 37:
+                        // left
+                        var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
+                        $prev.trigger('arrowClick');
+                        console.log("left key is pressed");
+                        break;
+                }
+            });
+            autoplay = setInterval(function() {
+                var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                $next.click();
+            }, 6500);
         });
-        // handle clicks on carousel controls
-        jq18('.carousel-slide-control').on('click arrowClick', function(e) {
-            console.log(e);
-            jq18('.carousel-slide-control').not(this).removeClass('active');
-            jq18(this).addClass('active');
-            index = jq18('.carousel-slide-control').index(this);
-            portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
-            if (e.type === 'arrowClick' || !e.isTrigger) {
-                clearInterval(autoplay);
-                portalCarousel.autoPlay = false;
-            }
-        });
-        jq18(document).keyup(function(e) {
-            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-            switch (e.which) {
-                case 39:
-                    // right
-                    var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
-                    $next.trigger('arrowClick');
-                    console.log("Right key is pressed");
-                    break;
-                case 37:
-                    // left
-                    var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
-                    $prev.trigger('arrowClick');
-                    console.log("left key is pressed");
-                    break;
-            }
-        });
-        autoplay = setInterval(function() {
-            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-            $next.click();
-        }, 6500);
     });
 }
