@@ -18,7 +18,6 @@ body {
 /* adjust padding of logo container to align with nav */
 #suiteBar {
     margin: 10px 0 0 22px;
-    max-width: 1200px;
 }
 
 #suiteBar, #s4-ribbonrow {
@@ -42,10 +41,6 @@ body {
     width: 146px;
 }
 /* Synthesis nav */
-#Ribbon > .ms-cui-ribbonTopBars {
-    left: 1000px;
-}
-
 #RibbonContainer .ms-cui-tt-s > .ms-cui-tt-a {
     background-color: transparent;
 }
