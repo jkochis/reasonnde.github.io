@@ -103,21 +103,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 var index = jq18('.carousel-slide-control').index(this);
                 portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
                 if (e.type === 'arrowClick' || !e.isTrigger) {
-                    clearInterval(window.autoplay);
-                    clearTimeout(window.pauser);
-                    portalCarousel.autoPlay = false;
-                    window.pauser = setTimeout(function(){
-                        var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-                        var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                        $next.click();
-                        portalCarousel.autoPlay = true;
-                        window.autoplay = setInterval(function() {
-                            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-                            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                            $next.click();
-                        }, 6500);
-                    },
-                    15000);
+                    var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                    var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                    $next.click();
+                    delayCarousel();
                 }
             });
             // handle left and right arrows
@@ -143,6 +132,20 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                 $next.click();
             }, 6500);
+            delayCarousle = function () {
+                clearInterval(window.autoplay);
+                clearTimeout(window.pauser);
+                portalCarousel.autoPlay = false;
+                window.pauser = setTimeout(function(){
+                    portalCarousel.autoPlay = true;
+                    window.autoplay = setInterval(function() {
+                        var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                        var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                        $next.click();
+                    }, 6500);
+                },
+                15000);
+            }
         });
     });
 }
