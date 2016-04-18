@@ -8,7 +8,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             return jq18('.carousel-slide-control.active');
         },
         playNext : function() {
-            "use strict";
             var $cur = this.getCurrentSlide();
             var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
             $next.click();
@@ -95,7 +94,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
         var setDelay = function(duration) {
-            "use strict";
             setTimeout(function(){
                 portalCarousel.autoPlay = true;
                 portalCarousel.playNext();
