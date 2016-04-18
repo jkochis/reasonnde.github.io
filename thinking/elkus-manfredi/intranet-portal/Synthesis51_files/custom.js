@@ -53,6 +53,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             var slideCategory = jq18('<a>', {
                 class : 'carousel-slide-category',
+                href : data.link,
                 text : data.category
             });
             var slideTitle = jq18('<div>', {
@@ -97,7 +98,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
           jq18('.carousel-slide:eq(0)').css('z-index', 1);
           // handle clicks on carousel controls
           jq18('.carousel-slide-control').on('click', function(e) {
-              console.log(e);
               jq18('.carousel-slide-control').not(this).removeClass('active');
               jq18(this).addClass('active');
               index = jq18('.carousel-slide-control').index(this);
