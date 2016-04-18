@@ -203,6 +203,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
 
 #DeltaPlaceHolderMain {
     min-width: unset;
+    max-width: 1000px;
 }
 
 #DeltaPlaceHolderMain > table {
