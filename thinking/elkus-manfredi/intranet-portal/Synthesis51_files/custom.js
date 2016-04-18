@@ -103,10 +103,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 var index = jq18('.carousel-slide-control').index(this);
                 portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
                 if (e.type === 'arrowClick' || !e.isTrigger) {
-                    clearInterval(autoplay);
+                    clearInterval(window.autoplay);
                     portalCarousel.autoPlay = false;
-                    pauser = setTimeout(function(){
-                        clearTimeout(pauser);
+                    window.pauser = setTimeout(function(){
+                        clearTimeout(window.pauser);
                         var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                         var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                         $next.click();
@@ -132,7 +132,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         break;
                 }
             });
-            var autoplay = setInterval(function() {
+            window.autoplay = setInterval(function() {
                 var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                 var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                 $next.click();
