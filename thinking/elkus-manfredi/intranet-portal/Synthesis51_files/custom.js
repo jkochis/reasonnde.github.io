@@ -138,6 +138,22 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         break;
                 }
             });
+            jq18('.carousel').on('click mouseenter mouseleave', function () {
+                clearInterval(window.autoplay);
+                clearTimeout(window.pauser);
+                window.pauser = setTimeout(function(){
+                    var $cur = jq18('.carousel-slide-control.active');
+                    var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                    $next.click();
+                    portalCarousel.autoPlay = true;
+                    window.autoplay = setInterval(function() {
+                        var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                        var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                        $next.click();
+                    }, 6500);
+                },
+                15000);
+            });
             window.autoplay = setInterval(function() {
                 var $cur = jq18('.carousel-slide-control.active');
                 var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
