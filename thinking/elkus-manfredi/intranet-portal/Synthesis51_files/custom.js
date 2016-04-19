@@ -132,7 +132,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                 $next.click();
             }, 6500);
-            delayCarousle = function () {
+            delayCarousel = function () {
                 clearInterval(window.autoplay);
                 clearTimeout(window.pauser);
                 portalCarousel.autoPlay = false;
