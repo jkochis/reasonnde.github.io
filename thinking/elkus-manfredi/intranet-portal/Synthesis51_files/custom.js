@@ -138,7 +138,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         break;
                 }
             });
-            jq18('.carousel').on('click mouseenter mouseleave', function () {
+            jq18('.carousel').on('click mouseenter mouseleave', function (e) {
                 console.log(e);
                 clearInterval(window.autoplay);
                 clearTimeout(window.pauser);
