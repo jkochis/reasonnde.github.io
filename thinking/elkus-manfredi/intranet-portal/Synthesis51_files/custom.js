@@ -1,13 +1,11 @@
 if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action.indexOf("emme/Default.aspx") > -1) {
     var portalCarousel = {
-        sliding : false,
         currentSlide : 0,
         autoPlay : false,
         slideData : [],
         loadSlide : function(slide) {
-            if(jq18(slide).index() !== this.currentSlide && this.sliding === false) {
+            if(jq18(slide).index() !== this.currentSlide) {
                 portalCarousel.currentSlide = jq18(slide).index();
-                portalCarousel.sliding = true;
                 var carousel = jq18('<div class="carousel">');
                 // move to position
                 jq18(slide).css({
@@ -18,7 +16,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                     'z-index' : '1'
                 }, {
                     duration : 500, complete : function() {
-                        portalCarousel.sliding = false;
                         jq18('.carousel-slide').not(slide).css('z-index', '0');
                     }
                 });
