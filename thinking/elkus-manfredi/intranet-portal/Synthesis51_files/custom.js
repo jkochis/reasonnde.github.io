@@ -101,9 +101,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 jq18('.carousel-slide-control').not(this).removeClass('active');
                 jq18(this).addClass('active');
                 var index = jq18('.carousel-slide-control').index(this);
-                while(portalCarousel.currentSlide !== index){
-                    portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
-                }
+                portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
                 if (e.type === 'arrowClick' || !e.isTrigger) {
                     clearInterval(window.autoplay);
                     clearTimeout(window.pauser);
