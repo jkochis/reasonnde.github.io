@@ -6,6 +6,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         slideData : [],
         loadSlide : function(slide) {
             if(jq18(slide).index() !== this.currentSlide && this.sliding === false) {
+                portalCarousel.currentSlide = jq18(slide).index();
                 portalCarousel.sliding = true;
                 var carousel = jq18('<div class="carousel">');
                 // move to position
@@ -21,7 +22,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         jq18('.carousel-slide').not(slide).css('z-index', '0');
                     }
                 });
-                portalCarousel.currentSlide = jq18(slide).index();
             }
         },
         buildCarousel : function(data) {
