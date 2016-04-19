@@ -98,10 +98,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             jq18('.carousel-slide:eq(0)').css('z-index', 1);
             // handle clicks on carousel controls
             jq18('.carousel-slide-control').on('click arrowClick', function(e) {
-                jq18('.carousel-slide-control').not(this).removeClass('active');
-                jq18(this).addClass('active');
                 var index = jq18('.carousel-slide-control').index(this);
                 portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
+                jq18('.carousel-slide-control').not(this).removeClass('active');
+                jq18(this).addClass('active');
                 if (e.type === 'arrowClick' || !e.isTrigger) {
                     clearInterval(window.autoplay);
                     clearTimeout(window.pauser);
