@@ -82,14 +82,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.txt' : 'slides.txt';
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
-        // create autoplay
-        var startAutoplay = function() {
-            return setInterval(function() {
-                var $cur = jq18('.carousel-slide-control.active');
-                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                $next.click();
-            }, 6500);
-        }
         // load yaml and run thru yaml-to-json parser
         // initialize carousel and attach to DOM
         jq18.get(yamlLoc + slideJSON, function(response) {
@@ -105,7 +97,11 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             portalCarousel.autoPlay = true;
             // put the first slide on top
             jq18('.carousel-slide:eq(0)').css('z-index', 1);
-            window.autoplay = startAutoplay();
+            window.autoplay = setInterval(function() {
+                var $cur = jq18('.carousel-slide-control.active');
+                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                $next.click();
+            }, 6500);
         });
         // handle clicks on carousel controls and left/right arrow keys
         jq18('.carousel-slide-control').on('click arrowClick', function(e) {
@@ -128,7 +124,11 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         $next.click();
                         // turn on autoplay once pause timer runs out
                         portalCarousel.autoPlay = true;
-                        window.autoplay = startAutoplay();
+                        window.autoplay = setInterval(function() {
+                            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                            $next.click();
+                        }, 6500);
                     },
                     15000);
             }
@@ -141,11 +141,13 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                     // right
                     var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
                     $next.trigger('arrowClick');
+                    console.log("Right key is pressed");
                     break;
                 case 37:
                     // left
                     var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
                     $prev.trigger('arrowClick');
+                    console.log("left key is pressed");
                     break;
             }
         });
