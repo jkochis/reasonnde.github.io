@@ -135,16 +135,15 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         // right
                         var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
                         $next.trigger('arrowClick');
-                        console.log("Right key is pressed");
                         break;
                     case 37:
                         // left
                         var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
                         $prev.trigger('arrowClick');
-                        console.log("left key is pressed");
                         break;
                 }
             });
+            // pause carousel when there's mouse activity over it
             jq18('.carousel').on('click mouseenter mouseleave mousemove', function (e) {
                 clearInterval(window.autoplay);
                 clearTimeout(window.pauser);
@@ -161,6 +160,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 },
                 15000);
             });
+            // start autoplay onload
             window.autoplay = setInterval(function() {
                 var $cur = jq18('.carousel-slide-control.active');
                 var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
