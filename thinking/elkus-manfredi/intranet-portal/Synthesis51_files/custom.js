@@ -6,7 +6,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
         loadSlide : function(slide) {
             if(jq18(slide).index() !== this.currentSlide) {
                 portalCarousel.currentSlide = jq18(slide).index();
-                var carousel = jq18('<div class="carousel">');
                 // move to position
                 jq18(slide).css({
                     'left' : '980px',
@@ -78,11 +77,12 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
     };
     // setup the carousel
     jq18(document).ready(function() {
+        var yamlLoc = 'http://emme/Sandbox/Shared%20Documents/';
         //determine if we want the preview JSON
         var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.txt' : 'slides.txt';
         // create the carousel element and put the slides in
         var carousel = jq18("<div class='carousel'>");
-        jq18.get('http://emme/Sandbox/Shared%20Documents/' + slideJSON, function(response) {
+        jq18.get(yamlLoc + slideJSON, function(response) {
             html = portalCarousel.init(jsyaml.load(response));
             carousel.html(html);
         })
