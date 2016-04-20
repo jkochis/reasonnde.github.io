@@ -97,27 +97,21 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             portalCarousel.autoPlay = true;
             // put the first slide on top
             jq18('.carousel-slide:eq(0)').css('z-index', 1);
-            window.autoplay = setInterval(function() {
-                var $cur = jq18('.carousel-slide-control.active');
-                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                $next.click();
-            }, 6500);
-        });
-        // handle clicks on carousel controls and left/right arrow keys
-        jq18('.carousel-slide-control').on('click arrowClick', function(e) {
-            // set index to the control that was clicked and load the slide with the same index
-            var index = jq18('.carousel-slide-control').index(this);
-            portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
-            // update controls
-            jq18('.carousel-slide-control').not(this).removeClass('active');
-            jq18(this).addClass('active');
-            // if this was not an autoplay event...
-            if (e.type === 'arrowClick' || !e.isTrigger) {
-                // turn off autoplay and/or (re)start pause timer
-                clearInterval(window.autoplay);
-                clearTimeout(window.pauser);
-                portalCarousel.autoPlay = false;
-                window.pauser = setTimeout(function(){
+            // handle clicks on carousel controls and left/right arrow keys
+            jq18('.carousel-slide-control').on('click arrowClick', function(e) {
+                // set index to the control that was clicked and load the slide with the same index
+                var index = jq18('.carousel-slide-control').index(this);
+                portalCarousel.loadSlide(jq18('.carousel-slide:eq('+index+')'));
+                // update controls
+                jq18('.carousel-slide-control').not(this).removeClass('active');
+                jq18(this).addClass('active');
+                // if this was not an autoplay event...
+                if (e.type === 'arrowClick' || !e.isTrigger) {
+                    // turn off autoplay and/or (re)start pause timer
+                    clearInterval(window.autoplay);
+                    clearTimeout(window.pauser);
+                    portalCarousel.autoPlay = false;
+                    window.pauser = setTimeout(function(){
                         // figure out which slide to load next when timer runs out
                         var $cur = jq18('.carousel-slide-control.active');
                         var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
@@ -131,30 +125,30 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                         }, 6500);
                     },
                     15000);
-            }
-        });
-        // handle left and right arrow keypress listeners
-        jq18(document).keyup(function(e) {
-            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-            switch (e.which) {
-                case 39:
-                    // right
-                    var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
-                    $next.trigger('arrowClick');
-                    console.log("Right key is pressed");
-                    break;
-                case 37:
-                    // left
-                    var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
-                    $prev.trigger('arrowClick');
-                    console.log("left key is pressed");
-                    break;
-            }
-        });
-        jq18('.carousel').on('click mouseenter mouseleave mousemove', function (e) {
-            clearInterval(window.autoplay);
-            clearTimeout(window.pauser);
-            window.pauser = setTimeout(function(){
+                }
+            });
+            // handle left and right arrow keypress listeners
+            jq18(document).keyup(function(e) {
+                var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                switch (e.which) {
+                    case 39:
+                        // right
+                        var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
+                        $next.trigger('arrowClick');
+                        console.log("Right key is pressed");
+                        break;
+                    case 37:
+                        // left
+                        var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
+                        $prev.trigger('arrowClick');
+                        console.log("left key is pressed");
+                        break;
+                }
+            });
+            jq18('.carousel').on('click mouseenter mouseleave mousemove', function (e) {
+                clearInterval(window.autoplay);
+                clearTimeout(window.pauser);
+                window.pauser = setTimeout(function(){
                     var $cur = jq18('.carousel-slide-control.active');
                     var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
                     $next.click();
@@ -166,6 +160,12 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                     }, 6500);
                 },
                 15000);
+            });
+            window.autoplay = setInterval(function() {
+                var $cur = jq18('.carousel-slide-control.active');
+                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                $next.click();
+            }, 6500);
         });
     });
 }
