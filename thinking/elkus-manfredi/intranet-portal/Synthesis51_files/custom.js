@@ -81,6 +81,29 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
     var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.txt' : 'slides.txt';
     // create the carousel element and put the slides in
     var carousel = jq18("<div class='carousel'>");
+    var startAutoplay = function() {
+        portalCarousel.autoPlay = true;
+        window.autoplay = setInterval(function() {
+            var $cur = jq18('.carousel-slide-control.active');
+            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+            $next.click();
+        }, 6500);
+    }
+    var stopAutoplay = function(duration) {
+        clearInterval(window.autoplay);
+        portalCarousel.autoPlay = false;
+        if(duration > 0) {
+            clearTimeout(window.pauser);
+            window.pauser = setTimeout(function(){
+                // figure out which slide to load next when timer runs out
+                var $cur = jq18('.carousel-slide-control.active');
+                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                $next.click();
+                // turn on autoplay once pause timer runs out
+                startAutoplay();
+            }, duration);
+        }
+    }
     jq18(document).ready(function() {
         // load yaml and run thru yaml-to-json parser
         // initialize carousel and attach to DOM
@@ -93,8 +116,6 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             cb = jq18('#contentBox').prepend(carousel);
             cb.css('margin-top', '0');
             jq18('.carousel-slide-control:eq(0)').addClass('active');
-            // default to autoplay on load
-            portalCarousel.autoPlay = true;
             // put the first slide on top
             jq18('.carousel-slide:eq(0)').css('z-index', 1);
             // handle clicks on carousel controls and left/right arrow keys
@@ -107,24 +128,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 jq18(this).addClass('active');
                 // if this was not an autoplay event...
                 if (e.type === 'arrowClick' || !e.isTrigger) {
+                    console.log('paused', 'click/arrow')
                     // turn off autoplay and/or (re)start pause timer
-                    // clearInterval(window.autoplay);
-                    // clearTimeout(window.pauser);
-                    portalCarousel.autoPlay = false;
-                    // window.pauser = setTimeout(function(){
-                    //     // figure out which slide to load next when timer runs out
-                    //     var $cur = jq18('.carousel-slide-control.active');
-                    //     var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                    //     $next.click();
-                    //     // turn on autoplay once pause timer runs out
-                    //     portalCarousel.autoPlay = true;
-                    //     window.autoplay = setInterval(function() {
-                    //         var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-                    //         var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                    //         $next.click();
-                    //     }, 6500);
-                    // },
-                    // 15000);
+                    stopAutoplay(15000);
+
                 }
             });
             // handle left and right arrow keypress listeners
@@ -146,19 +153,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             // pause carousel when there's mouse activity over it
             jq18('.carousel').on('click mouseenter mouseleave mousemove', function (e) {
                 console.log('paused', 'hover')
-                clearInterval(window.autoplay);
-                clearTimeout(window.pauser);
-                window.pauser = setTimeout(function(){
-                    console.log('unpaused')
-                },
-                15000);
+                stopAutoplay(15000);
             });
             // start autoplay onload
-            window.autoplay = setInterval(function() {
-                var $cur = jq18('.carousel-slide-control.active');
-                var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                $next.click();
-            }, 6500);
+            startAutoplay();
         });
     });
 }
