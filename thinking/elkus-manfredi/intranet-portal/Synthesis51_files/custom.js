@@ -152,8 +152,10 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             // pause carousel when there's mouse activity over it
             jq18('.carousel').on('click mouseenter mouseleave mousemove', function (e) {
-                console.log('paused', 'hover')
-                stopAutoplay(15000);
+                if (e.type === 'arrowClick' || !e.isTrigger) {
+                    console.log('paused', 'hover')
+                    stopAutoplay(15000);
+                }
             });
             // start autoplay onload
             startAutoplay();
