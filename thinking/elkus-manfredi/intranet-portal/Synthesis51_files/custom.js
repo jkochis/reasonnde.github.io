@@ -108,23 +108,23 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
                 // if this was not an autoplay event...
                 if (e.type === 'arrowClick' || !e.isTrigger) {
                     // turn off autoplay and/or (re)start pause timer
-                    clearInterval(window.autoplay);
-                    clearTimeout(window.pauser);
+                    // clearInterval(window.autoplay);
+                    // clearTimeout(window.pauser);
                     portalCarousel.autoPlay = false;
-                    window.pauser = setTimeout(function(){
-                        // figure out which slide to load next when timer runs out
-                        var $cur = jq18('.carousel-slide-control.active');
-                        var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                        $next.click();
-                        // turn on autoplay once pause timer runs out
-                        portalCarousel.autoPlay = true;
-                        window.autoplay = setInterval(function() {
-                            var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-                            var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                            $next.click();
-                        }, 6500);
-                    },
-                    15000);
+                    // window.pauser = setTimeout(function(){
+                    //     // figure out which slide to load next when timer runs out
+                    //     var $cur = jq18('.carousel-slide-control.active');
+                    //     var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                    //     $next.click();
+                    //     // turn on autoplay once pause timer runs out
+                    //     portalCarousel.autoPlay = true;
+                    //     window.autoplay = setInterval(function() {
+                    //         var $cur = jq18('.carousel-slide-control.active').removeClass('active');
+                    //         var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
+                    //         $next.click();
+                    //     }, 6500);
+                    // },
+                    // 15000);
                 }
             });
             // handle left and right arrow keypress listeners
@@ -145,18 +145,11 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             // pause carousel when there's mouse activity over it
             jq18('.carousel').on('click mouseenter mouseleave mousemove', function (e) {
+                console.log('paused', 'hover')
                 clearInterval(window.autoplay);
                 clearTimeout(window.pauser);
                 window.pauser = setTimeout(function(){
-                    var $cur = jq18('.carousel-slide-control.active');
-                    var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                    $next.click();
-                    portalCarousel.autoPlay = true;
-                    window.autoplay = setInterval(function() {
-                        var $cur = jq18('.carousel-slide-control.active').removeClass('active');
-                        var $next = $cur.next().length?$cur.next():jq18('.carousel-slide-control:eq(0)');
-                        $next.click();
-                    }, 6500);
+                    console.log('unpaused')
                 },
                 15000);
             });
