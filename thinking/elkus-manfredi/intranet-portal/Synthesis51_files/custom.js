@@ -77,7 +77,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
     };
     // setup the carousel
     jq18(document).ready(function() {
-        var yamlLoc = 'http://emme/Sandbox/Shared%20Documents/';
+        var yamlLoc = 'http://emme/carousel/Shared%20Documents/';
         //determine if we want the preview JSON
         var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.txt' : 'slides.txt';
         // create the carousel element and put the slides in
