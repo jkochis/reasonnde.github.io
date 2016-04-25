@@ -18,6 +18,7 @@ body {
 /* adjust padding of logo container to align with nav */
 #suiteBar {
     margin: 10px 0 0 22px;
+    padding: 0 17px 0 0px;
 }
 
 #suiteBar, #s4-ribbonrow {
