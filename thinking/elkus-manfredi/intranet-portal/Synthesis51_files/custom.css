@@ -333,7 +333,7 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     padding: 20px 20px 10px 40px;
     width: 320px;
 }
-.carousel-slide-category, .carousel-slide-category:hover {
+.carousel-slide-category, .carousel-slide-category:link, .carousel-slide-category:hover {
     letter-spacing: 1px;
     margin-bottom: 20px;
     color: #545454;
