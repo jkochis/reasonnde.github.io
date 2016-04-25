@@ -49,7 +49,7 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             var slideCategory = jq18('<a>', {
                 class : 'carousel-slide-category',
-                href : data.category-link,
+                href : data['category-link'],
                 text : data.category
             });
             var slideTitle = jq18('<div>', {
