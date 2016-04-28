@@ -273,6 +273,10 @@ li[aria-selected=true] .ms-cui-tt-a > .ms-cui-tt-span {
     width: 540px;
 }
 
+.ka_SearchResultsRight {
+    margin-left: 120px;
+}
+
 /* Link Override */
 .ms-wikicontent a, .ms-wikicontent a:link, .ms-wikicontent .ms-rte-layoutszone-inner>:not(.ms-rte-wpbox) a, .ms-wikicontent .ms-rte-layoutszone-inner>:not(.ms-rte-wpbox) a:link, .ms-wikicontent .ms-rte-layoutszone-inner>:not(.ms-rte-wpbox) a:visited, .ms-wikicontent .ms-rte-layoutszone-inner>:not(.ms-rte-wpbox) a:hover, .ms-wikicontent .ms-rte-layoutszone-inner>:not(.ms-rte-wpbox) a:active {
     font-weight: bold;
