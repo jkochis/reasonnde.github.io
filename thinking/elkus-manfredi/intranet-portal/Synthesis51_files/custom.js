@@ -136,14 +136,15 @@ if(document.location.search.indexOf("carousel") > -1 && document.forms[0].action
             });
             // handle left and right arrow keypress listeners
             jq18(document).keyup(function(e) {
-                var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                 switch (e.which) {
                     case 39:
+                        var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                         // right
                         var $next = $cur.next().length ? $cur.next() : jq18('.carousel-slide-control:eq(0)');
                         $next.trigger('arrowClick');
                         break;
                     case 37:
+                        var $cur = jq18('.carousel-slide-control.active').removeClass('active');
                         // left
                         var $prev = $cur.prev().length ? $cur.prev() : jq18('.carousel-slide-control').last();
                         $prev.trigger('arrowClick');
