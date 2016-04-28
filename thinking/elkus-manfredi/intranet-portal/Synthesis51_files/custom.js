@@ -1441,8 +1441,8 @@ var placeCarousel = function() {
     });
 }
 placeCarousel();
-jq18(document).ready(function(){
+setTimeout(function(){
     if(window.carouselLoaded === false) {
         placeCarousel();
     }
-});
+}, 100);
