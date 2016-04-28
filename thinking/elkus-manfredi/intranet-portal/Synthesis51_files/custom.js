@@ -120,6 +120,7 @@ var placeCarousel = function() {
                 jq18('.carousel-slide-control:eq(0)').addClass('active');
                 // put the first slide on top
                 jq18('.carousel-slide:eq(0)').css('z-index', 1);
+                window.carouselLoaded = true;
                 // handle clicks on carousel controls and left/right arrow keys
                 jq18('.carousel-slide-control').on('click arrowClick', function (e) {
                     // set index to the control that was clicked and load the slide with the same index
@@ -1440,3 +1441,8 @@ var placeCarousel = function() {
     });
 }
 placeCarousel();
+jq18(document).ready(function(){
+    if(window.carouselLoaded === false) {
+        placeCarousel();
+    }
+});
