@@ -1,4 +1,4 @@
-if(document.forms[0].action.indexOf("emme/Default.aspx") > -1) {
+if(jq18('#DeltaTopNavigation a.selected').text() === 'HomeCurrently selected') {
     var portalCarousel = {
         currentSlide : 0,
         autoPlay : false,
