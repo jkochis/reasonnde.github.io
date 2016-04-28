@@ -1443,8 +1443,6 @@ var placeCarousel = function() {
         });
     }
 }
-
-placeCarousel();
 setTimeout(function(){
     placeCarousel();
 }, 100);
