@@ -1,6 +1,6 @@
 window.carouselLoaded = false;
 var placeCarousel = function() {
-    if(window.carouselLoaded === false) {
+    if(document.forms[0].action.indexOf("emme/Default.aspx") > -1 && window.carouselLoaded === false) {
         if (jq18('#DeltaTopNavigation a.selected').text() === 'HomeCurrently selected') {
             var portalCarousel = {
                 currentSlide: 0,
