@@ -1,0 +1,1247 @@
+ /*
+ * 
+ * EVERWELL CSS
+ * 2015 - Dorian CAMILLERI
+ *
+*/
+/******************************
+ * ICONS
+*******************************/
+.icon-everwell {
+	height: 67px;
+	width: 239px;
+	background-image: url(/_Global-Assets/images/everwell/everwell-logo.png);
+}
+.icon-everwell-mobile {
+	height: 47px;
+	width: 170px;
+	background-image: url(/_Global-Assets/images/everwell/everwell-logo-mobile.png);
+}
+.icon-watch {
+	height: 30px;
+	width: 30px;
+	background-image: url(/_Global-Assets/images/everwell/play-video.png);
+}
+.icon-anchor-1 {
+	width: 65px;
+	height: 59px;
+	background-image: url(/_Global-Assets/images/everwell/anchor-1.png);
+}
+.icon-anchor-2 {
+	width: 40px;
+	height: 52px;
+	background-image: url(/_Global-Assets/images/everwell/anchor-2.png);
+}
+.icon-anchor-3 {
+	width: 50px;
+	height: 57px;
+	background-image: url(/_Global-Assets/images/everwell/anchor-3.png);
+}
+.icon-anchor-4 {
+	width: 42px;
+	height: 59px;
+	background-image: url(/_Global-Assets/images/everwell/anchor-4.png);
+}
+.icon-anchor-5 {
+	width: 43px;
+	height: 63px;
+	background-image: url(/_Global-Assets/images/everwell/anchor-5.png);
+}
+.icon-more-arrow {
+	height: 24px;
+	width: 24px;
+	background-image: url(/_Global-Assets/images/everwell/more-arrow.png);
+}
+.icon-more-arrow-hover {
+	height: 24px;
+	width: 24px;
+	background-image: url(/_Global-Assets/images/everwell/more-arrow-hover.png);
+}
+.icon-slider-arrow {
+    display: block;
+    width: 39px;
+    height: 62px;
+}
+.icon-slider-arrow-left {
+	background-image: url(/_Global-Assets/images/everwell/slider-left.png);
+}
+.icon-slider-arrow-right {
+	background-image: url(/_Global-Assets/images/everwell/slider-right.png);
+}
+.icon-slider-arrow-left-white {
+	background-image: url(/_Global-Assets/images/everwell/slider-left-mobile-white.png);
+}
+.icon-slider-arrow-right-white {
+	background-image: url(/_Global-Assets/images/everwell/slider-right-mobile-white.png);
+}
+.icon-round {
+	display: block;
+	/* IE8 */
+	background-size: 100% 100%;
+	background-size: contain;
+}
+.icon-round-grey {
+	background-image: url(/_Global-Assets/images/everwell/round-grey.png);
+}
+.icon-list-toggle {
+	display: block;
+	height: 21px;
+	width: 21px;
+	background-image: url(/_Global-Assets/images/everwell/list-toggle.png);
+}
+.icon-phone {
+	width: 34px;
+	height: 48px;
+	background-image: url(/_Global-Assets/images/everwell/phone.png);
+}
+.icon-more-arrow-white {
+	height: 24px;
+	width: 24px;
+	background-image: url(/_Global-Assets/images/everwell/more-arrow-white.png);
+}
+/******************************
+ * Global
+*******************************/
+.ev_grey_separator {
+	content: '';
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 15px;
+	background-color: #f1f3f4;
+}
+.ev_slider-mobile-nav {
+	display: none;
+	text-align: center;
+}
+.ev_slider-mobile-nav span {
+	display: inline-block;
+	vertical-align: middle;
+	height: 8px;
+	width: 8px;
+	margin: 0 5px;
+	background-color: #00b0b9;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	opacity: .5;
+}
+.ev_slider-mobile-nav span.current {
+	border-color: #00b0b9;
+	opacity: 1;
+}
+.ev_disabled {
+	pointer-events: none;
+	opacity: .2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+} 
+/******************************
+ * Hovers
+*******************************/
+.icon-hover-ctn {
+	position: relative;
+}
+.icon-static, .icon-hover {
+	-webkit-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);	
+}
+.icon-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ev_blue_hover, .ev_yellow_hover {
+	-webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_blue_hover:hover {
+	background-color: #33c0c7 !important;
+	color: #d0eef0 !important;
+}
+.ev_yellow_hover:hover {
+	color: #ffcd00 !important;
+}
+.ev_yellow_hover:hover .icon-hover {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.ev_yellow_hover:hover .icon-static {
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+/******************************
+ * 1 - HEAD
+*******************************/
+.ev_head {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	/*overflow: hidden;*/
+}
+.ev_head .translucent-bg {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.25);	
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3F000000', endColorstr='#3F000000');
+}
+.ev_head--bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(/_Global-Assets/images/everwell/head.jpg);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_Global-Assets/images/everwell/head.jpg', sizingMethod='scale');
+	background-size: cover; 
+}
+.ev_head--inner {
+	position: relative;
+	width: 600px;
+	left: 50%; 
+	margin-left: -580px;
+	padding-top: 80px;
+	display: block;
+}
+.ev_head--icon {
+	display: block;
+	margin-bottom: 15px;
+}
+.ev_head--icon-mobile {
+	display: none;
+}
+.ev_head--inner h2 {
+	max-width: 550px;
+	color: #fff;
+	font-size: 40px;
+	line-height: 40px;
+}
+.ev_head--inner a {
+	display: inline-block;
+	vertical-align: middle;
+	height: 60px;
+	font: normal 20px 'ProximaNovaSemibold';
+	line-height: 60px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.ev_head--inner .cta-start {
+	padding: 0 40px;
+	margin-right: 20px;
+	background-color: #00b0b9;
+}
+.ev_head--inner .cta-watch {
+	color: #fff;
+	-webkit-transition: color 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: color 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: color 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: color 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_head--inner .cta-watch:hover {
+	color: #ffcd00;
+}
+.ev_head--inner .cta-watch span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ev_head--inner .cta-watch .icon {
+	margin-right: 10px;
+}
+/******************************
+ * 2 - ACHOR NAV
+*******************************/
+.ev_anchor-nav {
+	position: relative;
+	width: 100%;
+	height: 110px;
+	-webkit-backface-visibility: hidden;
+}
+.ev_anchor-nav--container {
+	position: absolute;
+	z-index: 1005;
+	height: 110px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #00b0b9;
+	border-bottom: 2px solid #01bbc5;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ev_anchor-nav--container.full-w {
+	width: 1520px;
+}
+.ev_anchor-nav--container.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.ev_anchor-nav nav {
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+}
+.ev_anchor-nav ul {
+	padding-top: 20px;
+	overflow: hidden;
+}
+.ev_anchor-nav li {
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	opacity: .6;
+	-webkit-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_anchor-nav li:hover, .ev_anchor-nav li.active {
+	opacity: 1;
+}
+.ev_anchor-nav span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ev_anchor-nav .anchor_title {
+	margin-left: 8px;
+	color: #fff;
+	max-width: 100px;
+	font: normal 18px 'ProximaNovaSemibold';
+	line-height: 20px;
+}
+/******************************
+ * 3 - WHY EVERWELL
+*******************************/
+.ev_why-everwell {
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+}
+.ev_why-wrapper {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;	
+	text-align: center;
+}
+.ev_why-bloc {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 80px 0;
+	box-sizing: border-box;
+}
+.ev_why-bloc--first:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background-color: #f1f3f4;
+}
+.ev_why-break-title {
+	max-width: 350px;
+	margin: 0 auto 30px;
+}
+.ev_why-bloc--last {
+	padding-left: 80px;
+}
+.ev_why-bloc--wrapper {
+	max-width: 440px;
+	color: #3b3b3b;
+}
+.ev_why-bloc h3 {
+	font: normal 45px/45px 'ProximaNovaLight';
+}
+.ev_why-bloc p {
+	font: normal 17px/24px 'ProximaNovaLight';
+}
+.ev_why-bloc .why-cta {
+	display: inline-block;
+	margin: 10px auto 0;
+	color: #00b0b9;
+	text-transform: uppercase;
+	font: normal 15px 'ProximaNovaSemibold';
+	text-decoration: none;
+	cursor: pointer;
+}
+.ev_why-bloc span {
+	float: left;
+}
+.ev_why-bloc .icon {
+	margin-left: 12px;
+	margin-top: -4px;
+}
+/******************************
+ * 4 - HOW IT WORKS
+*******************************/
+.ev_how {
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.ev_how-wrapper {
+	position: relative;
+	height: 100%;
+	padding: 60px 0;
+	text-align: center;
+	box-sizing: border-box;
+}
+.ev_how h2 {
+	margin-bottom: 15px;
+	color: #3b3b3b;
+	font: normal 20px 'ProximaNovaSemibold';
+}
+.ev_how-wrapper > p {
+	margin: 0 auto;
+	max-width: 380px;
+	margin-bottom: 30px;
+	color: #3b3b3b;
+	font: normal 17px/24px 'ProximaNovaLight';
+}
+/****************
+/* Arrows *
+****************/
+.ev_how--arrow {
+	position: absolute;
+	z-index: 3;
+	top: 270px;
+	cursor: pointer;
+	-webkit-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	background-repeat: no-repeat;
+    background-position: 10px 5px;
+}
+.ev_how--arrow-right {
+	right: 50px;
+}
+.ev_how--arrow-left {
+	left: 50px;
+}
+/****************
+/* Nav *
+****************/
+.ev_how-nav {
+	position: relative;
+	margin: 0 auto 30px;
+	width: 320px;
+	height: 30px;
+}
+.ev_how .nav-line {
+	position: absolute;
+	height: 2px;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+	width: 100%;
+	background-color: #cccccc;	
+}
+.ev_how li {
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	font: normal 15px/30px 'ProximaNovaSemibold';
+	color: #fff;
+	cursor: pointer;
+}
+.ev_how li .icon {
+	position: absolute;
+	top: -1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 30px;
+	width: 30px;
+}
+.ev_how li.current .icon {
+	height: 45px;
+	width: 45px;
+	top: 50%;
+	margin: -22px 0 0 -7px;
+	background-image: url(/_Global-Assets/images/everwell/round-blue.png);
+}
+.ev_how .nb {
+	position: relative;
+	z-index: 2;
+}
+.ev_how li.middle {
+	left: 50%;		
+	margin-left: -22.5px;
+}
+.ev_how li.last {
+	right: 0;
+	left: auto;
+}
+/****************
+/* Slider *
+****************/
+.ev_how-slide-ctn {
+	position: relative;
+	overflow: hidden;
+}
+.ev_how--slide {
+	float: left;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ev_how--slide h3 {
+	max-width: 690px;
+	margin: 0 auto 25px;
+	color: #3b3b3b;
+	font: normal 50px 'ProximaNovaThin';
+}
+.ev_how--slide a {
+	display: block;
+	margin-bottom: 45px;
+	color: #00b0b9;
+	text-transform: uppercase;
+	font: normal 15px 'ProximaNovaSemibold';
+}
+.ev_how .cta-start {
+	display: inline-block;
+	height: 55px;
+	margin-bottom: 15px;
+	padding: 0 30px;
+	color: #fff;
+	background-color: #00b0b9;
+	font: normal 15px/55px 'ProximaNovaSemibold';
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.ev_how hr {
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f1f3f4;
+}
+.ev_how-details {
+	margin-top: 20px;
+}
+.ev_how-details p {
+	margin-bottom: 10px;
+	color: #3b3b3b;
+	font: normal 24px 'ProximaNovaLight';
+}
+.ev_how-details .why-cta {
+	color: #00b0b9;
+	font: normal 17px 'ProximaNovaRegular';
+	text-decoration: none;
+}
+.ev_how-details .why-cta span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ev_how-details .why-cta .icon {
+	margin-left: 5px;
+}
+/******************************
+ * 5 - NUMBERS
+*******************************/
+.ev_numbers {
+	width: 100%;
+	background-color: #fff;
+}
+.ev_numbers-wrapper {
+	padding: 70px 0 50px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.ev_numbers h3 {
+	margin-left: 25%;
+	color: #3b3b3b;
+	font: normal 20px 'ProximaNovaSemibold';
+}
+.ev_numbers ul {
+	overflow: hidden;
+}
+.ev_numbers li {
+	float: left;
+	width: 25%;
+}
+.ev_numbers .list-wrapper {
+	max-width: 265px;
+}
+.ev_numbers li h4 {
+	max-width: 200px;
+	margin-bottom: 20px;
+	color: #00b0b9;
+	font: normal 50px 'ProximaNovaLight';
+}
+.ev_numbers li p {
+	margin-bottom: 30px;
+	color: #3b3b3b;
+	font: normal 17px/24px 'ProximaNovaLight';
+}
+.ev_numbers li p.note {
+	font-size: 12px;
+	line-height: 20px;
+}
+/******************************
+ * 6 - TESTIMONIALS (OVERRIDES)
+*******************************/
+.ev_testimonials {
+	background-color: #00b0b9;
+}
+.ev_testimonials .slider {
+	background-color: #00b0b9 !important;
+	overflow: visible !important;
+}
+.ev_testimonials--wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.ev_testimonials .slider .target_copy {
+	padding-left: 3% !important;
+	width: 60% !important;
+}
+.ev_testimonials .slider .target_copy .deck {
+	padding-top: 60px;
+	vertical-align: top;
+}
+.ev_testimonials .slider .slide {
+	display: none;
+}
+.ev_testimonials .slider .target_copy .deck header h1 {
+	margin-bottom: 30px;
+}
+.ev_testimonials .slider .target_copy .deck header h1:before {
+    font-family: "ProximaNovaRegular";
+    content: open-quote !important;
+}
+.ev_testimonials .slider .target_copy .deck header h1:after {
+    font-family: "ProximaNovaRegular";
+    content: close-quote !important;
+}
+.ev_testimonials .cta-watch {
+	font: normal 20px 'ProximaNovaSemibold';
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ev_testimonials .cta-watch span{
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_testimonials .cta-watch span:hover {
+	color: #ffcd00;
+}
+.ev_testimonials .cta-watch .icon {
+	margin-right: 10px;
+}
+.ev_testimonials.with-carousel .slider .slider-pagination {
+	left: 0 !important;
+}
+.ev_testimonials.with-carousel .slider .slider-pagination li {
+	border-color: #ffcd00 !important; 
+}
+/* IE8 fix */
+.ev_testimonials .slider .slide .slide_bg, .w_testimonial .slider .slide .slide_bg {
+	background-color: #00b0b9;
+	background-size: 100% auto;
+	background-position-y: 100%; 
+	background-size: cover;
+}
+.ev_testimonials .slider .target_copy .deck header.animate-come-in .cta-watch {
+	-webkit-transition:all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition:all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition:all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition:all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-webkit-transition-delay: 750ms;
+	-moz-transition-delay: 750ms;
+	-o-transition-delay: 750ms;
+	transition-delay: 750ms;
+	-webkit-transform:rotateY(0);
+	-moz-transform:rotateY(0);
+	-ms-transform:rotateY(0);
+	-o-transform:rotateY(0);
+	transform:rotateY(0);
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.ev_testimonials-mobile-nav {
+	position: relative;
+	z-index: 1000;
+}
+.ev_testimonials-mobile-nav .arrow {
+	display: block;
+	position: absolute;
+	top: 90px;
+	margin-top: -15px;
+	background-repeat: no-repeat;
+    background-position: 14px 6px;
+}
+.ev_testimonials-mobile-nav .arrow-left {
+	left: 20px;
+}
+.ev_testimonials-mobile-nav .arrow-right {
+	right: 20px;
+}
+/******************************
+ * 7 - REAL LIFE EXAMPLES
+*******************************/
+.ev_rl-examples {
+	position: relative;
+	height: 530px;
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+.ev_rl-examples .submit-success {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	padding: 0 30px;
+	height: 60px;
+	font: normal 17px/60px 'ProximaNovaSemibold';
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ffcd00;
+	-webkit-transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_rl-examples .submit-success:hover {
+	opacity: .7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.ev_rl-examples h2 {
+	margin-bottom: 40px;
+	padding-top: 70px;
+	text-align: center;
+	color: #3b3b3b;
+	font: normal 20px 'ProximaNovaSemibold';
+} 
+.ev_rl-slider {
+	position: relative;
+	width: 980px;
+	height: 360px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ev_rl-slider--ctn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ev_rl-slider--thumb {
+	width: 255px;
+	float: left;
+	padding-right: 40px;
+	text-align: center;
+	color: #3b3b3b;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.ev_rl-slider--thumb img {
+	display: block;
+	margin: 0 auto 30px;
+}
+.ev_rl-slider--thumb p {
+	margin-bottom: 10px;
+	font: normal 17px/24px 'ProximaNovaSemibold';
+}
+.ev_rl-slider--thumb > span {
+	margin-bottom: 30px;
+	display: block;
+	font: normal 17px 'ProximaNovaLight';
+}
+.ev_rl-slider--thumb .thumb-cta {
+	color: #00b0b9;
+	font: normal 15px 'ProximaNovaSemibold';
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.ev_rl-slider--thumb .thumb-cta span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ev_rl-slider--thumb .thumb-cta .icon {
+	margin-left: 10px; 
+}
+/* When it's tablet */
+.ev_rl-slider--thumb.is-tablet {
+	width: 150px;
+	padding-right: 20px;
+}
+.ev_rl-slider--thumb.is-tablet p {
+	font-size: 14px;
+	line-height: 16px;
+	height: 50px;
+}
+.ev_rl-slider--thumb.is-tablet > span {
+	font-size: 14px;
+	margin-bottom: 20px;
+	height: 30px;
+}
+.ev_rl-slider--thumb.is-tablet .thumb-cta span {
+	font-size: 11px;
+}
+.ev_rl-slider--thumb.is-tablet .thumb-cta .icon-hover-ctn {
+	display: none;
+}
+.ev_rl-slider--thumb.is-tablet img {
+	width: 80%;
+}
+/******************************
+ * 8 - FACT OR FICTION
+*******************************/
+.ev_fof {
+	width: 100%;
+	background-color: #fff;
+}
+.ev_fof-wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 80px 0;
+	display: table;
+}
+.ev_fof-fact-ctn, .ev_fof-wrapper img {
+	display: table-cell;
+	vertical-align: top;
+}
+.ev_fof-wrapper img {
+	margin-top: 50px;
+	width: 220px;
+}
+.ev_fof-fact-ctn {
+	padding-left: 40px;	
+}
+.ev_fof-list li {
+	position: relative;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #dedede;
+	overflow: hidden;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	cursor: pointer;
+}
+.ev_fof-list li.expanded  .ev_fof-list--toggle {
+	background-position: -21px 0;
+}
+.ev_fof-list--toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.ev_fof-fact-ctn h2 {
+	margin-bottom: 45px;
+	color: #3b3b3b;
+	font: normal 50px 'ProximaNovaThin';	
+}
+.ev_fof-list--bloc {
+	color: #3b3b3b;
+	margin-bottom: 30px;
+	padding-right: 30px;
+}
+.ev_fof-list--fact {
+	margin-bottom: 15px;
+}
+.ev_fof-list--bloc span, .ev_fof-list--bloc p {
+	display: inline-block;
+	vertical-align: top;
+}
+.ev_fof-list--bloc span {
+	width: 115px;
+	font: normal 20px 'ProximaNovaLight';	
+}
+.ev_fof-list--bloc p {
+	margin: 0;
+	max-width: 80%;
+	font: normal 20px 'ProximaNovaSemibold';	
+}
+/******************************
+ * 9 - TOOLS
+*******************************/
+.ev_tools {
+	height: 580px;
+	width: 100%;
+	background-color: #00b0b9;
+}
+.ev_tools-wrapper {
+	width: 1024px;
+	padding: 80px 0;
+	margin: 0 auto;
+}
+.ev_tools h2 {
+	margin-bottom: 40px;
+	color: #fff;
+	font: normal 50px 'ProximaNovaThin';	
+}
+.ev_tools-col {
+	float: left;
+	color: #fff;
+}
+.ev_tools-col h3 {
+	margin-bottom: 30px;
+	font: normal 30px 'ProximaNovaLight';	
+}
+.ev_tools-col-1 {
+	width: 40%;
+}
+.ev_tools-col-1 li {
+	display: block;
+	margin-bottom: 8px;
+}
+.ev_tools-col-1 span {
+	display: inline-block;
+	vertical-align: middle;
+	font: normal 20px 'ProximaNovaLight';	
+}
+.ev_tools-col-1 .nb {
+	width: 30px;
+}
+.ev_tools-col-1 .cta-download {
+	display: inline-block;
+	height: 45px;
+	margin-top: 40px;
+	padding: 0 45px;
+	background-color: #fff;
+	color: #00b0b9;
+	text-transform: uppercase;
+	text-decoration: none;
+	font: normal 14px/45px 'ProximaNovaSemibold';	
+	-webkit-transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_tools-col-1 .cta-download:hover {
+	opacity: .8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.ev_tools-col-1 .cta-download.cta-download-desktop {
+	display: inline-block;
+}
+.ev_tools-col-1 .cta-download.cta-download-mobile {
+	display: none; 
+}
+.ev_tools-col-2 {
+	width: 60%;
+}
+.ev_tools-col-2 ul {
+	float: left;
+	width: 50%;
+}
+.ev_tools-col-2 li {
+	display: block;
+	margin-bottom: 25px;
+}
+.ev_tools-col-2 a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-moz-transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-o-transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ev_tools-col-2 a:hover {
+	color: #ffcd00;
+}
+.ev_tools-col-2 span {
+	display: inline-block;
+	vertical-align: middle;
+	font: normal 20px 'ProximaNovaRegular';	
+}
+.ev_tools-col-2 .icon {
+	margin-right: 15px;
+}
+/******************************
+ * 10 - Call
+*******************************/
+.ev_call {
+	height: 140px;
+	background-color: #00a7b0;
+}
+.ev_call-wrapper {
+	width: 920px;
+	height: 100%;
+	margin: 0 auto;
+}
+.ev_call ul {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.ev_call li {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding-top: 38px;
+	box-sizing: border-box;
+}
+.ev_call li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.ev_call-border {
+	padding-left: 20px;
+}
+.ev_call-border:after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 72px;
+	top: 50%;
+	right: 0;
+	margin-top: -36px;
+	background-color: #33b9c0;
+}
+.ev_call-padding {
+	padding-left: 150px;
+}
+.ev_call li p {
+	margin-bottom: 8px;
+	font: normal 20px 'ProximaNovaSemibold';
+}
+.ev_call li .ev_call-text, .ev_call li .icon-phone {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ev_call li .icon-phone {
+	margin-right: 12px;
+}
+.ev_call li span {
+	font: normal 34px 'ProximaNovaThin';
+}
+.ev_call li .cta span {
+	display: inline-block;
+	vertical-align: middle;
+}
+/******************************
+ * LIGHTBOXES OVERRIDES
+*******************************/
+/*******************
+/* Lightbox Submit *
+********************/
+.ev_lightbox-submit {
+	width: 920px;
+	height: 480px;
+	margin-top: -240px;
+	margin-left: -460px;
+}
+.ev_lightbox-submit .info-section {
+	width: 300px;
+	background: #00b0b9;
+}
+.ev_lightbox-submit-ctn {
+	padding: 50px 30px;
+	color: #fff;
+}
+/*
+.ev_lightbox-submit .close {
+	background-image: url(/_Global-Assets/images/everwell/lightbox-close-grey.png) !important;
+	background-size: 18px 17px !important;
+	background-position: 0 0 !important;
+}
+*/
+.ev_lightbox-submit-ctn h5 {
+	font: normal 30px 'ProximaNovaLight';
+	margin-bottom: 0;
+}
+.ev_lightbox-submit-ctn h4 {
+	font: normal 68px/64px 'ProximaNovaThin';
+	margin-bottom: 50px;
+}
+.ev_lightbox-submit-ctn strong {
+	font-family: 'ProximaNovaSemibold';
+}
+.ev_lightbox-submit .form-section {
+	left: 320px;
+}
+.ev_lightbox-submit .form-panel {
+	padding-right: 60px;
+}
+.ev_lightbox-submit .row {
+	margin-bottom: 15px;
+	width: 100% !important;
+}
+.ev_lightbox-submit input {
+	width: 245px !important;
+}
+.ev_lightbox-submit .textarea {
+	height: 180px !important;
+}
+.ev_lightbox-submit .submit {
+	right: 60px !important;
+	padding-top: 0 !important;
+	height: 38px !important;
+	line-height: 38px !important;
+	background-color: #00b0b9 !important;
+}
+.ev_lightbox-submit .submit:before {
+	display: none;
+}
+.ev_lightbox-submit .form-section .complete-panel .thanks .title {
+	color: #01a7e1;
+}
+/*************************
+/* Lightbox testimonials *
+**************************/
+.ev_lightbox-testimonial {
+	width: 920px;
+	margin-left: -460px;
+}
+.ev_lightbox-testimonial .info-section {
+	width: 300px;
+	background: #00b0b9;
+}
+.ev_lightbox-testimonial .form-section {
+	left: 320px;
+}
+.ev_lightbox-testimonial-head {
+	padding: 50px 40px;
+	text-align: center;
+	color: #fff;
+}
+.ev_close-desktop {
+	display: block;
+} 
+.ev_close-mobile {
+	display: none;
+}
+.ev_lightbox-testimonial .close {
+	background-image: url(/_Global-Assets/images/everwell/lightbox-close-grey.png) !important;
+	background-size: 18px 17px !important;
+	background-position: 10px !important;
+    width: 38px !important;
+    height: 37px !important;
+}
+.ev_enroll-cta {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	font: normal 15px 'ProximaNovaRegular';
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.ev_enroll-cta span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ev_enroll-cta .icon {
+	margin-left: 5px;
+}
+.ev_lightbox-testimonial-head img {
+	margin-bottom: 35px;
+}
+.ev_lightbox-testimonial-head h4 {
+	font: normal 25px 'ProximaNovaSemibold';
+	margin-bottom: 15px;
+}
+.ev_lightbox-testimonial-head h5 {
+	font: normal 22px 'ProximaNovaLight';
+	margin-bottom: 30px;	
+}
+.ev_lightbox-testimonial-head p {
+	font: normal 16px/24px 'ProximaNovaLight';
+}
+.ev_lightbox-testimonial-ctn {
+	position: absolute;
+	left: 300px;
+	padding: 70px 50px;
+	color: #3b3b3b;
+	overflow: scroll;
+}
+.ev_lightbox-testimonial-scroll-ctn {
+	overflow: hidden;
+}
+.ev_lightbox-testimonial-ctn h6 {
+	font: normal 36px/40px 'ProximaNovaLight';
+	margin-bottom: 20px;
+}
+.ev_lightbox-testimonial-ctn p {
+	font: normal 17px/24px 'ProximaNovaLight';
+}
+/******************************
+ * PLAYER
+*******************************/
+.ev_lightbox__item .w_share.lightbox .w_share__trigger {
+	background-color: #01a7e1;
+}
+.ev_video_error {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+ 
+	/* Hide it */
+	display: none;
+}
+.ev_video_error.visible {
+	display: block;
+}
+.ev_video_error p {
+	position: absolute;
+	height: 45px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	color: #01a7e1;
+	font: normal 32px/36px 'ProximaNovaLight';
+}
+.ev_share.w_share.lightbox .w_share__services li a,
+.ev_share.w_share.lightbox .w_share__services li a:after {
+	background-color: #01a7e1;
+} 
+/*TM added Why Everwell link style */
+.ev_why-everwell a {
+  color: #00B0B9;
+  text-decoration: none;
+}
+.ev_why-everwell a:hover {
+  text-decoration: underline;
+}
+/*Specific over-write for Everwell submit your story */
+.w_contact-lightbox-brokers.ev_lightbox-submit .is-white-tq.is_loading {
+    background: url('/_global-assets/images/buttons/loader-white-on-turquoise-ring.gif') no-repeat scroll center center #00B0B9 !important;
+	color: transparent !important; 
+}
+.is-tq-white.is_loading {
+    background: url('/_global-assets/images/buttons/loader-turquoise-on-white-ring.gif') no-repeat scroll center center #00B0B9 !important;
+	color: transparent !important; 
+}
+.is-white-tq.is_loading {
+    background: url('/_global-assets/images/buttons/loader-white-on-turquoise-ring.gif') no-repeat scroll center center !important;
+	background-color: #00B0B9 !important;
+	color: transparent !important; 
+}
