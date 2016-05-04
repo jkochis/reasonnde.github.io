@@ -165,6 +165,19 @@ var placeCarousel = function() {
                     startAutoplay();
                 });
         }
+        /* 15 minute page refresh */
+        var time = new Date().getTime();
+         jq18(document.body).bind("mousedown keypress", function(e) {
+             time = new Date().getTime();
+         });
+    
+         function refresh() {
+             if(new Date().getTime() - time >= 900000) 
+                 window.location.reload(true);
+             else 
+                 setTimeout(refresh, 5000);
+         }
+        setTimeout(refresh, 5000);
         /* js-yaml 3.6.0 https://github.com/nodeca/js-yaml */
         !function (e) {
             if ("object" == typeof exports && "undefined" != typeof module)module.exports = e(); else if ("function" == typeof define && define.amd)define([], e); else {
