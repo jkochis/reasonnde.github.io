@@ -81,9 +81,9 @@ var placeCarousel = function() {
                 }
             };
             // setup the carousel
-            var yamlLoc = 'http://emme/carousel/Shared%20Documents/';
+            var yamlLoc = 'http://reasonn.de/thinking/elkus-manfredi/intranet-portal/Synthesis51_files/';
             //determine if we want the preview JSON
-            var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.txt' : 'slides.txt';
+            var slideJSON = document.location.search.indexOf("preview") > -1 ? 'slides-preview.json' : 'slides.json';
             // create the carousel element and put the slides in
             var carousel = jq18("<div class='carousel'>");
             var startAutoplay = function () {
