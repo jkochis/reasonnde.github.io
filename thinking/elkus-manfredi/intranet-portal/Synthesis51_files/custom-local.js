@@ -39,6 +39,7 @@ var placeCarousel = function() {
                     }
                     ;
                     jq18(carouselContainer).append(carouselControls);
+                    jq18('<div>', {class: 'scroll', text: 'SCROLL'}).append('<span>', {class: 'scroll-down'}).appendTo(carouselContainer);
                     return carouselContainer;
                 },
                 buildSlide: function (data) {
