@@ -112,7 +112,7 @@ var placeCarousel = function() {
             // load yaml and run thru yaml-to-json parser
             // initialize carousel and attach to DOM
             jq18.get(yamlLoc + slideJSON, function (response) {
-                    html = portalCarousel.init(jsyaml.load(response));
+                    html = portalCarousel.init(response);
                     carousel.html(html);
                 })
                 .done(function () {
