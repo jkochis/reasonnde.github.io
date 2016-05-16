@@ -1,0 +1,40 @@
+* {
+  transition: all 800ms;
+  box-sizing: border-box; }
+
+html {
+  background: url("/images/bg/WallPaper1.png");
+  background-size: 25%;
+  transition: 1s; }
+
+body {
+  background-color: unset;
+  box-sizing: border-box;
+  font-family: "ProximaNovaThin","Helvetica Neue","HelveticaNeue",Helvetica,Arial,"Lucida Grande",sans-serif; }
+
+.wrapper {
+  margin: 1vw auto;
+  padding: 0 2vw;
+  background-color: rgba(255, 255, 255, 0.8); }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+      margin: 1vw auto;
+      max-width: 600px; } }
+  @media (min-width: 1024px) {
+    .wrapper {
+      max-width: 1200px; } }
+
+.split-50 {
+  display: flex; }
+
+.split-33 {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .split-33 li {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 30%; }

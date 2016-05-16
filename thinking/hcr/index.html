@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aflac HCR Tool</title>
     <link rel="stylesheet" href="_global-assets/css/master.css">
     <link rel="stylesheet" href="css/styles.min.css">
@@ -9,43 +10,59 @@
 <body>
 <div class="wrapper">
     <header>
-        <h1 id="waypointHeader">[new name of tool] Health care reform and your business</h1>
+        <h1 class="hcr-title" id="waypointHeader">Health Care Reform<br>and Your Business</h1>
     </header>
+    <nav class="hcr-menu-container">
+        <ul class="hcr-menu">
+            <div class="hcr-menu-col-1">
+                <li class="hcr-menu-item hcr-menu-item-1"><a href="http://google.com">The Cadillac Tax</a></li>
+                <li class="hcr-menu-item hcr-menu-item-2">Penalties</li>
+                <li class="hcr-menu-item hcr-menu-item-3">Benefits Requirements</li>
+            </div>
+            <div class="hcr-menu-col-2">
+                <li class="hcr-menu-item hcr-menu-item-4">Voluntary Insurance</li>
+                <li class="hcr-menu-item hcr-menu-item-5">Exchanges</li>
+            </div>
+            <div class="hcr-menu-col-3">
+                <li class="hcr-menu-item hcr-menu-item-7">New Employees</li>
+                <li class="hcr-menu-item hcr-menu-item-8">Current Employees</li>
+                <li class="hcr-menu-item hcr-menu-item-9">Exiting Employees</li>
+            </div>
+            <li class="hcr-menu-item hcr-menu-item-6">Learn More</li>
+        </ul>
+    </nav>
 
-    <h2>Which best describes your company? [User selects one or the other:]</h2>
+    <h4 class="choose-business-type">Which best describes your&nbsp;company?</h4>
     <div class="split-50">
-        <h3>A small business with fewer than 50 full-time equivalent employees</h3>
+        <div class="business-type-select business-50">
+            <img class="business-type-icon" src="images/icons/BigBusiness_ICON.svg"
+                 alt="Business with fewer than 50 employees">
+            <h6 class="business-type-title">A small business with fewer than 50 full-time equivalent employees</h6>
+        </div>
 
-        <h3>A business with 50 or more full-time equivalent employees.</h3>
+        <div class="business-type-select business-50-plus">
+            <img class="business-type-icon" src="images/icons/SmallBusiness_ICON.svg"
+                 alt="Business with more than 50 employees">
+            <h6 class="business-type-title">A business with 50 or more full-time equivalent employees.</h6>
+        </div>
+
     </div>
 
-    <h2>[Call-out/link somehow] Calculate full-time equivalent employees:</h2>
+    <h4 class="calc-ftes">Calculate full-time equivalent employees:</h4>
 
     <p>Many of health care reform’s regulations depend on business size, which is often defined by the number of
-        full-time equivalent (FTE) employees a company has. To calculate your FTEs try our calculator:
-        https://www.aflac.com/health-care-reform/decision-tool/default.aspx# or use this equation: Number of hours
+        full-time equivalent (FTE) employees a company has. To calculate your FTEs <a
+                href="https://www.aflac.com/health-care-reform/decision-tool/default.aspx">try our calculator</a> or use this equation: Number of hours
         worked by your part-time employees per-month, divided by 120, plus the number of full-time (at least 30 hour per
         week) employees you have. To get a yearly number, the FTEs for 12 calendar months are averaged.</p>
 
-    <h2>Health care reform and your business</h2>
+    <h4>Health care reform and your business</h4>
 
     <p>[The idea here is that the user can get information on any of the categories/bubbles by clicking. Note that the
         content for Benefits Requirements is different depending on whether they have selected “new employee”, “current
         employees” or “exiting employees”. The other bubbles/topics only have one version. Simple. (I’m not sure what
         these little tiny bubbles that look like germs are.) Also note that you in NO WAY have to use bubbles, it’s
         simply a tool the client is using, but she’s up for anything.]</p>
-
-    <ul class="split-33">
-        <li>Benefits Requirements</li>
-        <li>Penalties</li>
-        <li>The Cadillac Tax</li>
-        <li>Voluntary Insurance</li>
-        <li>Exchanges</li>
-        <li>New Employees</li>
-        <li>Current Employees</li>
-        <li>Exiting Employees</li>
-        <li>Learn More</li>
-    </ul>
 
     <h3 id="waypointFewer50">Businesses with fewer than 50 employees</h3>
 
@@ -129,7 +146,7 @@
 
     <p>Health care reform and your business</p>
     <p>[Same as above, but the copy is different in some areas]</p>
-    <p>Businesses with 50 or more employees</p>
+    <h3>Businesses with 50 or more employees</h3>
 
     <p id="waypointNewEmployees">New employees</p>
     <p>Health insurance benefits are one of the top ways to attract and retain employees. Because your company has 50 or
@@ -237,6 +254,7 @@
         encourage readers to discuss their HCR situations with their advisors to determine the actions they need to take
         or to visit healthcare.gov (which may also be contacted at 1-800-318-2596) for additional information.</p>
 </div>
-<script src="js/app.min.js"></script>
+<script src="/js/oridomi.js"></script>
+<script src="/js/app.min.js"></script>
 </body>
 </html>
