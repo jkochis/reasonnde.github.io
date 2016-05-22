@@ -1,0 +1,45 @@
+.hcr-menu-holder {
+  position: fixed;
+  top: 0;
+  right: calc(50% - 510px);
+  z-index: 10;
+
+  @include nav-limit {
+    right: 10px;
+  }
+}
+.hcr-menu {
+  background-color: rgb(242,243,245);
+  list-style-type: none;
+  padding: 10px 6px 6px;
+  visibility: hidden;
+  width: 200px;
+}
+.hcr-menu-item {
+  display: none;
+  padding: 6px;
+  padding-left: 6px;
+
+  & > :link {
+    color: rgb(0, 167, 225);
+    text-decoration: none;
+
+  }
+  .active {
+    color: #df7a1c;
+    transition: color 100ms;
+  }
+}
+.small-business-icon, .big-business-icon {
+  display: none;
+  margin: 10px auto;
+  width: 40%;
+}
+
+.business-50-active .small-business-icon {
+  display: block;
+}
+
+.business-50-plus-active .big-business-icon {
+  display: block;
+}

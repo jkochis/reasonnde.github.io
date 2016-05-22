@@ -24,6 +24,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     var imgExt = '.png';
     var bgs = ['WallPaper2', 'WallPaper2_tone', 'WallPaper2.5', 'WallPaper3', 'WallPaper3.5', 'WallPaper4', 'WallPaper4.5', 'WallPaper5.5', 'WallPaper5.5_tone', 'WallPaper6', 'WallPaper6.5', 'WallPaper7.5', 'WallPaper7.5_tone'];
     var bgImagesLoaded = false;
+    var categorySections = ['sm-new-employees-container', 'sm-current-employees-container', 'sm-exiting-employees-container', 'sm-cadillac-tax-container', 'sm-penalties-container', 'sm-benefits-requirements-container', 'sm-voluntary-insurance-container', 'sm-exchanges-container', 'sm-learn-more-container', 'new-employees-container', 'current-employees-container', 'exiting-employees-container', 'cadillac-tax-container', 'penalties-container', 'benefits-requirements-container', 'voluntary-insurance-container', 'exchanges-container', 'learn-more-container'];
 
     new Waypoint({
       element: document.getElementById('waypointHeader'),
@@ -34,21 +35,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     // Utility
     // setup waypoints
-    // const defineWaypoints = function () {
-    //     window.waypoints = [];
-    //     let waypointUnit = Math.floor((document.querySelector('.wrapper').clientHeight / bgs.length));
-    //     bgs.forEach(function (element, index) {
-    //         console.log(waypointUnit * (index + 1));
-    //         window.waypoints[index] = new Waypoint({
-    //             element: document.getElementById('waypointHeader'),
-    //             handler: function (direction) {
-    //                 console.log(`loading ${bgs[index]} from loop function`); //test
-    //                 direction === 'down' ? loadBg(index + 1) : loadBg(index);
-    //             },
-    //             offset: waypointUnit * (index + 1) * -1
-    //         })
-    //     })
-    // }();
+    window.waypoints = [];
+    categorySections.forEach(function (element, index) {
+      console.log("." + element);
+      window.waypoints[index] = new Waypoint({
+        element: document.querySelector("." + element),
+        handler: function handler(direction) {
+          console.log('loading...');
+          loadBg(Math.floor(Math.random() * 12));
+          //direction === 'down' ? loadBg(index + 1) : loadBg(index);
+        }
+      });
+    });
+
     // preload images
     if (bgImagesLoaded !== true) {
       bgs.forEach(function (bg) {
@@ -59,16 +58,26 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
     // load bg image
     var loadBg = function loadBg(bg) {
-      docStyle.backgroundImage = "url(" + bgPath + bgs[bg] + imgExt + ")";
-      console.log("loading " + bgPath + bgs[bg] + imgExt);
+      setTimeout(function () {
+        docStyle.backgroundImage = "url(" + bgPath + bgs[bg] + imgExt + ")";
+        console.log("loading " + bgPath + bgs[bg] + imgExt);
+      }, 100);
     };
     //////////////////////////
     // business select buttons
     //////////////////////////
-    var businessSelect = document.querySelectorAll('.business-type-select');
-    Array.prototype.slice.call(businessSelect).forEach(function (el) {
-      el.addEventListener('click', function () {
+    var businessSelect = jQuery('.business-type-select');
+    businessSelect.each(function (i, el) {
+      console.log(el);
+      $(el).on('click', function () {
         console.log(el);
+        if (el.dataset.business === 'business-50') {
+          $('a.sm').parent().show();
+        } else {
+          $('a.lg').parent().show();
+        }
+        document.body.classList = '';
+        document.body.classList.add(el.dataset.business + "-active");
         // get the active menu item and turn it off
         var currentActive = document.querySelector('.business-type-select.active');
         if (currentActive) {
@@ -95,14 +104,29 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         $(sectionToShow).fadeIn();
         sectionToShow.classList.add('visible');
         jQuery('html, body').animate({
-          scrollTop: $(sectionToShow).offset().top
-        }, 2000, function () {
+          scrollTop: jQuery(sectionToShow).offset().top
+        }, 1000, function () {
           $(sectionToShow).find('h3').addClass('animated').addClass('pulse');
         });
         loadBg(Math.floor(Math.random() * 12) + 0);
-        //defineWaypoints();
+
+        // Utility
+        // setup waypoints
+        window.waypoints = [];
+        categorySections.forEach(function (element, index) {
+          console.log("." + element);
+          window.waypoints[index] = new Waypoint({
+            element: document.querySelector("." + element),
+            handler: function handler(direction) {
+              console.log('loading...');
+              loadBg(Math.floor(Math.random() * 12));
+              //direction === 'down' ? loadBg(index + 1) : loadBg(index);
+            }
+          });
+        });
       });
     });
+
     ///////////
     // hcr menu
     ///////////
@@ -116,26 +140,46 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     foldMenu.foldUp('top');
 
     // click
-    var hcrMenuItemLink = document.querySelectorAll('.hcr-menu-item a');
-    Array.prototype.slice.call(hcrMenuItemLink).forEach(function (el) {
-      el.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        // get the active menu item and turn it off
-        var currentActive = document.querySelector('.hcr-menu-item a.active');
-        if (currentActive) {
-          currentActive.classList.remove('active');
+    var hcrMenuItemLink = jQuery('.hcr-menu-item a');
+    hcrMenuItemLink.on('click', function (e, el) {
+      e.preventDefault();
+      console.log("." + e.target.href.split('#')[1]);
+      jQuery('html, body').animate({
+        scrollTop: jQuery("." + e.target.href.split('#')[1] + "-container").offset().top - 100
+      }, 1000, function () {});
+    });
+
+    //scroll
+    var aArray = []; // create the empty aArray
+    for (var i = 0; i < hcrMenuItemLink.length; i++) {
+      var aChild = hcrMenuItemLink[i];
+      var ahref = jQuery(aChild).attr('href');
+      aArray.push(ahref);
+    }
+    var currentSection = '';
+    jQuery(window).scroll(function () {
+      var windowPos = jQuery(window).scrollTop(); // get the offset of the window from the top of page
+      var windowHeight = jQuery(window).height(); // get the height of the window
+      var docHeight = jQuery(document).height();
+
+      for (var _i = 0; _i < aArray.length; _i++) {
+        var theID = aArray[_i].replace('#', '');
+        var divPos = jQuery("." + theID + "-container").offset().top - 200; // get the offset of the div from the top of page
+        var divHeight = jQuery("." + theID + "-container").height(); // get the height of the div in question
+        if (windowPos >= divPos && windowPos < divPos + divHeight) {
+          jQuery("a[href='#" + theID + "']").addClass('active');
+        } else {
+          jQuery("a[href='#" + theID + "']").removeClass('active');
         }
-        // turn on the new menu item
-        el.classList.add('active');
-        // fold up and show link text
-        foldMenu.reveal(60, 'bottom', function (ev, ori) {
-          //ori.el.classList.add('open');
-          console.log(ev, ori);
-          ori.modifyContent(function (el) {
-            el.style.backgroundColor = '#000';
-          });
-        });
-      });
+      }
+
+      if (windowPos + windowHeight == docHeight) {
+        if (!jQuery('nav li:last-child a').hasClass('active')) {
+          var navActiveCurrent = jQuery('.nav-active').attr('href');
+          jQuery("a[href='" + navActiveCurrent + "']").removeClass('active');
+          jQuery('nav li:last-child a').addClass('active');
+        }
+      }
     });
   }, { "../node_modules/waypoints/lib/noframework.waypoints": 2 }], 2: [function (require, module, exports) {
     /*!

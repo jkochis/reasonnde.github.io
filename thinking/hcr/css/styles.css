@@ -13,13 +13,29 @@ body {
 a {
   color: #00a7e1; }
 
+div > ul {
+  font-family: "ProximaNovaRegular";
+  list-style: disc;
+  margin: 0 0 30px 1em; }
+
+[class*="-container"] li {
+  margin-bottom: 10px; }
+
+.warn {
+  color: #df7a1c; }
+
 .wrapper {
   background-color: white;
   background-size: 100% 1.2em;
-  margin: 2vh 220px 2vh auto;
+  margin: 2vh auto;
   max-width: 600px;
-  overflow: hidden;
-  padding: 4vw 4vw 2vw; }
+  padding: 40px 40px 20px;
+  position: relative; }
+  @media (max-width: 1040px) {
+    .wrapper {
+      margin-right: 220px; } }
+  .wrapper p, .wrapper li {
+    line-height: 1.75; }
 
 .hcr-title {
   font-family: 'ProximaNovaThin';
@@ -82,13 +98,20 @@ a {
       font-size: 18px; } }
 
 .business-50-container, .business-50-plus-container {
-  display: none; }
+  display: none;
+  margin-top: 180px; }
+  .business-50-container h3, .business-50-plus-container h3 {
+    margin-bottom: 40px; }
+  .business-50-container [class$="-container"], .business-50-plus-container [class$="-container"] {
+    margin-bottom: 180px; }
 
 .calc-ftes {
   font-size: 28px; }
 
 .category-icon {
-  width: 100px; }
+  height: 80px;
+  margin-bottom: -20px;
+  margin-right: 20px; }
 
 .split-50 {
   display: flex;
@@ -151,22 +174,40 @@ p {
 .pulse {
   animation-name: pulse; }
 
-.hcr-menu-container {
+.hcr-menu-holder {
   position: fixed;
   top: 0;
-  right: 10px;
+  right: calc(50% - 510px);
   z-index: 10; }
+  @media (max-width: 1040px) {
+    .hcr-menu-holder {
+      right: 10px; } }
 
 .hcr-menu {
   background-color: #f2f3f5;
   list-style-type: none;
-  padding: 20px 6px 6px;
+  padding: 10px 6px 6px;
   visibility: hidden;
   width: 200px; }
 
 .hcr-menu-item {
+  display: none;
   padding: 6px;
   padding-left: 6px; }
   .hcr-menu-item > :link {
     color: #00a7e1;
     text-decoration: none; }
+  .hcr-menu-item .active {
+    color: #df7a1c;
+    transition: color 100ms; }
+
+.small-business-icon, .big-business-icon {
+  display: none;
+  margin: 10px auto;
+  width: 40%; }
+
+.business-50-active .small-business-icon {
+  display: block; }
+
+.business-50-plus-active .big-business-icon {
+  display: block; }
