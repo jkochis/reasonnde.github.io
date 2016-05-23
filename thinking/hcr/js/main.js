@@ -54,6 +54,7 @@ businessSelect.each(function(i, el){
     console.log(el);
     $(el).on('click', function() {
         console.log(el);
+        jQuery('.hcr-menu-item').hide();
         if(el.dataset.business === 'business-50'){
             $('a.sm').parent().show();
         } else {
