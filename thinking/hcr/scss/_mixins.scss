@@ -15,6 +15,12 @@ $nav-limit-width: 1040px;
   }
 }
 
+@mixin tablet-max {
+  @media (max-width: #{$tablet-width - 1}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;

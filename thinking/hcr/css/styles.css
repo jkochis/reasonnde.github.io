@@ -13,6 +13,17 @@ body {
 a {
   color: #00a7e1; }
 
+h5 {
+  font-size: 20px;
+  overflow: hidden;
+  line-height: 1.4;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 36px;
+      margin-bottom: 50px;
+      text-align: left; } }
+
 div > ul {
   font-family: "ProximaNovaRegular";
   list-style: disc;
@@ -50,7 +61,7 @@ div > ul {
 .choose-business-type {
   color: #00a7e1;
   font-family: 'ProximaNovaSemibold';
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 2vw;
@@ -64,12 +75,16 @@ div > ul {
   background: #f2f3f5;
   border-radius: .5vw;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  margin-bottom: 10px;
+  overflow: hidden;
   padding: 3vw 1.5vw 0;
   text-align: center;
   transition: background 200ms, box-shadow 200ms; }
+  @media (min-width: 768px) {
+    .business-type-select {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; } }
   .business-type-select:first-child {
     margin-right: 1vw; }
     @media (max-width: 374px) {
@@ -105,20 +120,36 @@ div > ul {
   .business-50-container [class$="-container"], .business-50-plus-container [class$="-container"] {
     margin-bottom: 180px; }
 
+.business-type {
+  font-size: 26px; }
+  @media (min-width: 768px) {
+    .business-type {
+      font-size: 40px; } }
+
 .calc-ftes {
-  font-size: 28px; }
+  font-size: 22px;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .calc-ftes {
+      font-size: 28px; } }
 
 .category-icon {
-  height: 80px;
-  margin-bottom: -20px;
-  margin-right: 20px; }
+  display: block;
+  height: 60px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .category-icon {
+      float: left;
+      height: 80px;
+      margin-bottom: 20px;
+      margin-right: 20px; } }
 
 .split-50 {
   display: flex;
-  margin-bottom: 3vw; }
+  margin-bottom: 60px; }
   .split-50 > * {
     width: 50%; }
-  @media (max-width: 374px) {
+  @media (max-width: 767px) {
     .split-50 {
       display: block; }
       .split-50 > * {
