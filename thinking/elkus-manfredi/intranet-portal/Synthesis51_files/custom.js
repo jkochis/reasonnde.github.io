@@ -1467,6 +1467,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 //Reasonnde
 ga('create', 'UA-78419842-1', 'auto');
+ga('send', 'pageview');
 //EMA
 ga('create', 'UA-78308447-1', 'auto');
 ga('send', 'pageview');
