@@ -59,7 +59,7 @@ var placeCarousel = function() {
                     });
                     var slideTitle = jq18('<div>', {
                         class: 'carousel-slide-title',
-                        text: data.title
+                        html: data.title
                     });
                     var slideCopy = jq18('<div>', {
                         class: 'carousel-slide-copy',
