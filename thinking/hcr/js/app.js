@@ -22,7 +22,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     var docStyle = document.body.style;
     var bgPath = document.location + 'images/bg/';
     var imgExt = '.png';
-    var bgs = ['WallPaper2', 'WallPaper2_tone', 'WallPaper2.5', 'WallPaper3', 'WallPaper3.5', 'WallPaper4', 'WallPaper4.5', 'WallPaper5.5', 'WallPaper5.5_tone', 'WallPaper6', 'WallPaper6.5', 'WallPaper7.5', 'WallPaper7.5_tone'];
+    var bgs = ['Feather_TONE', 'DuckPrints_Feather_TONE' /*, 'WallPaper2.5', 'WallPaper3', 'WallPaper3.5', 'WallPaper4', 'WallPaper4.5', 'WallPaper5.5', 'WallPaper5.5_tone','WallPaper6', 'WallPaper6.5', 'WallPaper7.5', 'WallPaper7.5_tone'*/];
     var bgImagesLoaded = false;
     var categorySections = ['sm-new-employees-container', 'sm-current-employees-container', 'sm-exiting-employees-container', 'sm-cadillac-tax-container', 'sm-penalties-container', 'sm-benefits-requirements-container', 'sm-voluntary-insurance-container', 'sm-exchanges-container', 'sm-learn-more-container', 'new-employees-container', 'current-employees-container', 'exiting-employees-container', 'cadillac-tax-container', 'penalties-container', 'benefits-requirements-container', 'voluntary-insurance-container', 'exchanges-container', 'learn-more-container'];
 
@@ -42,7 +42,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         element: document.querySelector("." + element),
         handler: function handler(direction) {
           console.log('loading...');
-          loadBg(Math.floor(Math.random() * 12));
+          loadBg(Math.floor(Math.random() * 2));
           //direction === 'down' ? loadBg(index + 1) : loadBg(index);
         }
       });
@@ -109,7 +109,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }, 1000, function () {
           $(sectionToShow).find('h3').addClass('animated').addClass('pulse');
         });
-        loadBg(Math.floor(Math.random() * 12) + 0);
+        loadBg(Math.floor(Math.random() * 2) + 0);
 
         // Utility
         // setup waypoints
@@ -120,7 +120,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             element: document.querySelector("." + element),
             handler: function handler(direction) {
               console.log('loading...');
-              loadBg(Math.floor(Math.random() * 12));
+              loadBg(Math.floor(Math.random() * 2));
               //direction === 'down' ? loadBg(index + 1) : loadBg(index);
             }
           });

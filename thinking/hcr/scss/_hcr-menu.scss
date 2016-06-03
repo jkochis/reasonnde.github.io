@@ -11,7 +11,7 @@
 .hcr-menu {
   background-color: rgb(242,243,245);
   list-style-type: none;
-  padding: 10px 6px 6px;
+  padding: 0 0 6px;
   visibility: hidden;
   width: 200px;
 }
@@ -32,8 +32,7 @@
 }
 .small-business-icon, .big-business-icon {
   display: none;
-  margin: 10px auto;
-  width: 40%;
+  width: 100%;
 }
 
 .business-50-active .small-business-icon {

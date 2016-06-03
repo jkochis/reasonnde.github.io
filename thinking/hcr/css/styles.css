@@ -3,7 +3,7 @@
 
 body {
   background-attachment: fixed;
-  background: url("../images/bg/WallPaper6.png");
+  background: url("../images/bg/DuckPrints_Feather_TONE.png");
   background-blend-mode: darken;
   background-size: 20%;
   transition: background 1s;
@@ -36,17 +36,20 @@ div > ul {
   color: #df7a1c; }
 
 .wrapper {
-  background-color: white;
-  background-size: 100% 1.2em;
   margin: 2vh auto;
   max-width: 600px;
-  padding: 40px 40px 20px;
+  padding: 0 0 20px;
   position: relative; }
   @media (max-width: 1040px) {
     .wrapper {
       margin-right: 220px; } }
   .wrapper p, .wrapper li {
     line-height: 1.75; }
+
+.content-container {
+  background-color: white;
+  margin-bottom: 100px;
+  padding: 40px; }
 
 .hcr-title {
   font-family: 'ProximaNovaThin';
@@ -73,11 +76,11 @@ div > ul {
 
 .business-type-select {
   background: #f2f3f5;
-  border-radius: .5vw;
+  border-radius: 5px;
   cursor: pointer;
   margin-bottom: 10px;
   overflow: hidden;
-  padding: 3vw 1.5vw 0;
+  padding: 0;
   text-align: center;
   transition: background 200ms, box-shadow 200ms; }
   @media (min-width: 768px) {
@@ -92,33 +95,36 @@ div > ul {
         margin-bottom: 1vh;
         margin-right: 0; } }
   .business-type-select:hover {
-    background: white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+    background-color: #00a7e1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+    .business-type-select:hover .business-type-title {
+      color: white; }
   .business-type-select.active {
-    background: white;
+    background-color: #00a7e1;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
+    .business-type-select.active .business-type-title {
+      color: white; }
 
 .business-type-icon {
   align-self: center;
   margin-bottom: 1vw;
-  width: 60%; }
+  width: 100%; }
 
 .business-type-title {
+  color: #666;
   font-family: 'ProximaNovaRegular';
   font-size: 14px;
   font-weight: normal;
+  margin: 0 10px 10px;
   text-align: left; }
   @media (min-width: 768px) {
     .business-type-title {
       font-size: 18px; } }
 
 .business-50-container, .business-50-plus-container {
-  display: none;
-  margin-top: 180px; }
+  display: none; }
   .business-50-container h3, .business-50-plus-container h3 {
     margin-bottom: 40px; }
-  .business-50-container [class$="-container"], .business-50-plus-container [class$="-container"] {
-    margin-bottom: 180px; }
 
 .business-type {
   font-size: 26px; }
@@ -217,7 +223,7 @@ p {
 .hcr-menu {
   background-color: #f2f3f5;
   list-style-type: none;
-  padding: 10px 6px 6px;
+  padding: 0 0 6px;
   visibility: hidden;
   width: 200px; }
 
@@ -234,8 +240,7 @@ p {
 
 .small-business-icon, .big-business-icon {
   display: none;
-  margin: 10px auto;
-  width: 40%; }
+  width: 100%; }
 
 .business-50-active .small-business-icon {
   display: block; }
