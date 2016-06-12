@@ -3,6 +3,14 @@
   animation-fill-mode: both;
 }
 
+.category-icon {
+  visibility: hidden;
+}
+
+.shown {
+  visibility: visible !important;
+}
+
 @keyframes pulse {
   from {
     transform: scale3d(1, 1, 1);
@@ -19,4 +27,155 @@
 
 .pulse {
   animation-name: pulse;
+}
+
+// benefits requirements
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+
+// penalties
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInUp {
+  animation-name: zoomInUp;
+}
+
+// cadillac tax
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+// exchanges rotateIn
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate(-200deg);
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+  }
+}
+
+.rotateIn {
+  animation-name: rotateIn;
+}
+
+// voluntary benefits
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+// what's next
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.blur {
+  animation-name: blur;
 }
