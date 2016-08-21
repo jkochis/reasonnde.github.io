@@ -70,7 +70,6 @@
 
 
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/_global-assets/js/html5shiv.min.js"></script>
 
     <![endif]-->
     <script type="text/javascript" src="_Global-Assets/js/jquery.min.js"></script>
@@ -295,17 +294,58 @@
 
     <!--REASONNDE CSS-->
     <style>
-        .ev_fof .ev_fof-fact-ctn ul {
+        .hcr-info .hcr-info-item h2 {
+            align-items: center;
+            color: #00A7E1;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .hcr-info .hcr-info-item h2 svg {
+            margin-right: 20px;
+            max-height:120px;
+            width: 120px;
+        }
+        .hcr-info .hcr-info-item ul {
             margin-bottom: 20px;
         }
-        .ev_fof .ev_fof-fact-ctn ul li {
+        .hcr-info .hcr-info-item ul li, .hcr-info .hcr-info-item p {
             font-size: 20px;
+            line-height: 1.5;
         }
-        .ev_fof .ev_fof-fact-ctn ul li+li {
+        .hcr-info .hcr-info-item ul li+li {
             margin-top: 10px;
         }
-        .blue-bg ul {
-            color: #FFF;
+        .hcr-info .hcr-info-item ul li a, .hcr-info .hcr-info-item p a {
+            color: #00A7E1;
+            text-decoration: none;
+        }
+        .hcr-info ul li a:hover {
+            text-decoration: underline;
+        }
+        /* REFACTORING */
+        .hcr-info.white-bg {
+            background: #FFF;
+        }
+        .hcr-info-wrapper {
+            padding: 20px 0;
+        }
+        .hcr-info-wrapper {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 80px 0;
+            display: table;
+        }
+        @media (max-width: 1024px) {
+            .hcr-info-wrapper {
+                width: 90%;
+                display: block;
+                padding: 40px 0;
+            }
+        }
+        @media (min-width: 1000px) {
+            .anchor-w_tabs-menu.ml-titles.is-sticky {
+                top: 0;
+            }
         }
     </style>
     <!--/REASONNDE CSS-->
@@ -738,6 +778,16 @@
             });
         </script>
 
+        <!--REASONNDE JS-->
+        <script type="text/javascript" src="_Global-Assets/js/vendor/snap.svg-min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var hcrIcons = {};
+                hcrIcons.BR = Snap.select('#IconBenefitRequirements');
+            });
+        </script>
+        <!--/REASONNDE JS-->
+
 
         <div class="w_page_static_header w22312" data-min-height="350" data-max-height="450">
             <div class="bg"
@@ -749,15 +799,7 @@
                     </div>
                 </header>
             </div>
-        </div><!-- LIGHTBOX VIDEO -->
-        <!-- <div id="hcr-facts" class="w_lightbox__item has-video" data-aspect-ratio="16:9">
-          <div class="item_wrapper">
-            <ul class="lightbox_tools">
-              <li><a class="tool_hide hide-modal">hide</a></li>
-            </ul>
-          <div class="w_video_holder" data-src="//www.youtube.com/embed/4lDv_7dQz7s"></div>
-          </div>
-        </div>-->
+        </div>
 
         <div class="anchor-w_tabs-menu ml-titles">
             <ul style="margin-left: 0px; opacity: 1;">
@@ -765,17 +807,19 @@
                 <li><a href="#penalties">Penalties</a></li>
                 <li><a href="#required-reporting">Required reporting</a></li>
                 <li><a href="#cadillac-tax">The Cadillac tax</a></li>
-                <li><a href="#how-aflac-can-help">How Aflac can help</a></li>
                 <li><a href="#how-everwell-can-help">How Everwell can help</a></li>
+                <li><a href="#how-aflac-can-help">How Aflac can help</a></li>
                 <li><a href="#next-steps">Next steps</a></li>
             </ul>
         </div>
 
         <!-- WHITE AREA-->
-        <section class="ev_fof white-bg" id="benefits-requirements">
-            <div class="ev_fof-wrapper">
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>Benefits requirements</strong></h2>
+        <section class="hcr-info white-bg">
+            <div class="hcr-info-wrapper">
+                <div class="hcr-info-item">
+                    <h2 id="benefits-requirements">
+                        <svg id="IconBenefitRequirements" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.52 247.31"><defs><style>.cls-BEN-1{fill:#807f83;}.cls-BEN-2{fill:#fff;}.cls-BEN-3{fill:#00a5d9;}</style></defs><path class="cls-BEN-1" d="M131.33,45.09a30.79,30.79,0,0,1,1.87,12.7H59.27c0-2.66,1.12-8.24,2.54-12.7H21.27V246.46H171.52V45.09H131.33Z"/><rect class="cls-BEN-2" x="34.7" y="63.72" width="124.37" height="167.47"/><path class="cls-BEN-3" d="M110.19,38.41c-6.24,0-8.28-7.9-5.11-11.8a14.74,14.74,0,1,0-16.68.53c2.59,4,.46,11.26-5.5,11.26-11.16,0-16.43,4.45-16.3,14.78h59.89C126.62,42.87,121.35,38.41,110.19,38.41Zm-14-24.62a3.51,3.51,0,1,1,3.51-3.51A3.51,3.51,0,0,1,96.17,13.79Z"/><rect class="cls-BEN-3" x="44.85" y="77.54" width="102.33" height="2.73"/><rect class="cls-BEN-3" x="44.85" y="91.18" width="102.33" height="2.73"/><rect class="cls-BEN-3" x="44.85" y="104.82" width="102.33" height="2.73"/><rect class="cls-BEN-3" x="44.85" y="118.46" width="102.33" height="2.73"/><rect class="cls-BEN-3" x="44.85" y="130.73" width="102.33" height="2.73"/><rect class="cls-BEN-3" x="3.54" y="183.44" width="9.84" height="1.57"/><path class="cls-BEN-3" d="M2.36,163.33V126.24a1.18,1.18,0,0,1,1.18-1.18h0v57.2h9.84V122.69H3.54A3.55,3.55,0,0,0,0,126.24v37.09H2.36Z"/><rect class="cls-BEN-3" x="3.54" y="186.19" width="9.84" height="39.66"/><path class="cls-BEN-3" d="M7.87,244.46v2.25a0.59,0.59,0,0,0,1.18,0v-2.25L13.24,227H3.68Z"/><path class="cls-BEN-3" d="M8.46,117.18a4.92,4.92,0,0,0-4.88,4.33h9.76A4.92,4.92,0,0,0,8.46,117.18Z"/></svg>
+                        <strong>Benefits requirements</strong></h2>
                     <p>Though companies with fewer than 50 full-time equivalent employees aren’t required to offer them, if they offer major medical coverage it must:</p>
                     <ul>
                         <li>Cover at least 60 percent actuarial value.</li>
@@ -818,68 +862,18 @@
                     <p>*Catch-up contributions up to $1,000 can be made any time during the year in which the health savings account participant turns 55.</p>
                     <p>Learn more: <a href="https://www.aflac.com/health-care-reform/key-issues/default.aspx#oop-limits" target="_blank">Understanding out-of-pocket limits</a>, <a href="https://www.aflac.com/health-care-reform/key-issues/out-of-pocket-limits.aspx" target="_blank">out-of-pocket limits 101</a> and <a href="https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/" target="_blank">healthcare.gov</a>.</p>
                 </div>
-            </div>
-        </section>
 
-        <!-- WHITE AREA-->
-        <!--<div class="w_testimonial w_cta_icon img-bg indent" id="XXXXXXX" data-min-height="450"-->
-             <!--data-max-height="450">-->
-            <!--<section style="height: 450px;" class="slider">-->
-                <!--<section class="slides">-->
-                    <!--<div class="testimonial-arrow"></div>-->
-                    <!--<article class="slide cycle-slide-active">-->
-                        <!--<div class="slide_bg right_half animate-come-in"-->
-                             <!--style="background-image:url(http://www.aflac.com/_global-assets/images/business/small-business-hub/reporting_icon.png)">-->
-                            <!--<div class="mobile">-->
-                                <!--<img src="http://www.aflac.com/_global-assets/images/business/small-business-hub/reporting_icon.png"-->
-                                     <!--alt=""/>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="left_half">-->
-                            <!--<header data-slide-caption="" class="slide-caption">-->
-                                <!--<h1>Three benefits trends to watch in 2016</h1>-->
-                                <!--<h4>It can be hard to know what the future will bring for workplace benefits. Economic-->
-                                    <!--and political drivers shift, seasonal trends come and go, and employees’-->
-                                    <!--circumstances change. Here’s the pulse on what small-business leaders can prepare-->
-                                    <!--for in the year ahead.</h4>-->
-                                <!--<a href="/docs/employers/small-business-hub/benefits-trends-2016.pdf"-->
-                                   <!--class="blue-button" target="_blank">Learn More</a>-->
-                            <!--</header>-->
-                        <!--</div>-->
-                    <!--</article>-->
-                <!--</section>-->
-                <!--<div class="target_copy">-->
-                    <!--<div class="deck" data-slide-caption="">-->
-                        <!--<header data-target-caption="" class="target_caption animate-come-in">-->
-                            <!--<h1>Three benefits trends to watch in 2016</h1>-->
-                            <!--<h4>It can be hard to know what the future will bring for workplace benefits. Economic and-->
-                                <!--political drivers shift, seasonal trends come and go, and employees’ circumstances-->
-                                <!--change. Here’s the pulse on what small-business leaders can prepare for in the year-->
-                                <!--ahead.</h4>-->
-                            <!--<a href="/docs/employers/small-business-hub/benefits-trends-2016.pdf" class="blue-button"-->
-                               <!--target="_blank">Learn More</a>-->
-                        <!--</header>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</section>-->
-        <!--</div>-->
-
-        <!-- BLUE AREA-->
-        <section class="ev_fof blue-bg" id="penalties">
-            <div class="ev_fof-wrapper">
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>Penalties</strong></h2>
+                <div class="hcr-info-item">
+                    <h2 id="penalties">
+                        <svg id="IconPenalties"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.9 235.53"><defs><style>.cls-PEN-1{fill:#bec0c2;}.cls-PEN-2{fill:#00a5d9;}.cls-PEN-3{fill:#df7a1c;}</style></defs><path class="cls-PEN-1" d="M288,211H277.89V197.66H136.77V211H126.63c-5.41,0-9.81,5.51-9.81,12.25s4.39,12.27,9.81,12.24H288c5.43,0.08,9.92-5.41,9.86-12.2S293.48,211,288,211Z"/><path class="cls-PEN-2" d="M165.07,163.68c4.82,4.81,11.74,5.54,15.62,1.69l49.15-49.27c3.91-3.82,3.13-10.83-1.67-15.6s-11.82-5.57-15.62-1.69L163.33,148.1C159.47,151.93,160.26,158.92,165.07,163.68Z"/><path class="cls-PEN-2" d="M68.7,67.34c4.82,4.84,11.79,5.54,15.6,1.67l49.2-49.25c3.86-3.83,3.13-10.86-1.67-15.62S120-1.41,116.21,2.49L67,51.73C63.16,55.62,63.92,62.56,68.7,67.34Z"/><path class="cls-PEN-2" d="M140.52,26.77L90.89,76.49l22.76,22.7L3.52,209.3a12.49,12.49,0,0,0,4.69,20.37,12.57,12.57,0,0,0,4.31.8,12.45,12.45,0,0,0,8.38-3.28L131.14,116.72l0.16,0,24.62,24.71,49.58-49.72Z"/><path class="cls-PEN-3" d="M248.47,132.82s-10.7,35.36,34.67,22.88c0,0-31.59,17.67-13.83,31.45,0,0-21.22-11.92-27.19,11.51,0,0-4.74-27.75-44.33,7.5,0,0,32.49-34.62,7.31-33,0,0,19-9.62,14.9-20.66C220,152.49,235.87,161.18,248.47,132.82Z"/></svg>
+                        <strong>Penalties</strong>
+                        </h2>
                     <p>The shared-responsibility penalty is for large employers that do not offer health insurance to their full-time employees and their dependents under the age of 26. Under the Affordable Care Act, companies with fewer than 50 full-time equivalent employees aren’t penalized for not providing employee benefits coverage.</p>
                 </div>
-            </div>
-        </section>
 
-        <!-- WHITE AREA-->
-        <section class="ev_fof white-bg" id="required-reporting">
-            <div class="ev_fof-wrapper">
                  <!--<img src="http://www.aflac.com/_global-assets/images/everwell/heart.png" alt=""/>-->
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>Required Reporting</strong></h2>
+                <div class="hcr-info-item">
+                    <h2 id="required-reporting"><strong>Required Reporting</strong></h2>
                     <p>Your company won’t need to submit IRS reporting for employer-sponsored health care coverage. But if you offer benefits through a self-funded health plan, you’ll need to submit minimum-essential coverage reporting annually.</p>
                     <p><strong>Learn more:</strong></p>
                     <ul>
@@ -887,14 +881,12 @@
                         <li><a href="https://www.aflac.com/business/resources/aflac-business-solutions/default.aspx" target="_blank">Aflac business solutions</a></li>
                     </ul>
                 </div>
-            </div>
-        </section>
 
-        <!-- BLUE AREA-->
-        <section class="ev_fof blue-bg" id="cadillac-tax">
-            <div class="ev_fof-wrapper">
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>The Cadillac tax</strong></h2>
+                <div class="hcr-info-item">
+                    <h2 id="cadillac-tax">
+                        <svg id="IconCadillacTax" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.09 243.08"><defs><style>.cls-CAD-1{fill:#00a5d9;}.cls-CAD-2{fill:#c7e8f5;}.cls-CAD-3{fill:#fff;}</style></defs><path class="cls-CAD-1" d="M121.55,121.54L50.11,219.87A121.54,121.54,0,0,1,23.22,50.1C46.89,17.52,81.28,0,121.55,0V121.54Z"/><path class="cls-CAD-2" d="M121.55,121.54V0a121.54,121.54,0,0,1,0,243.08c-26.85,0-49.72-7.43-71.44-23.21Z"/><!--<path class="cls-CAD-2" d="M121.55,121.54L50.11,219.87A121.54,121.54,0,0,1,23.22,50.1C46.89,17.52,81.28,0,121.55,0V121.54Z"/>--><circle class="cls-CAD-3" cx="122.06" cy="121.54" r="77.22"/><rect class="cls-CAD-1" x="100.58" y="82.01" width="41.94" height="7.65" rx="3.09" ry="3.09"/><path class="cls-CAD-1" d="M137.8,93.35H105.62S83.12,127.44,83.12,143.3c0,11.61,4.53,22.85,12.77,27.49,8.4,4.73,16.86,4.73,27.49,4.73,9.81,0,19.29-.17,26.27-4.25,8.84-5.17,14-15.55,14-28C163.64,126.14,137.8,93.35,137.8,93.35Zm-12.51,61.14v6.66h-7.43v-6.24a18.73,18.73,0,0,1-8.53-2.9l-1.11-.79,2.7-7.52,1.92,1.28a14.28,14.28,0,0,0,7.74,2.31c3.24,0,5.42-1.67,5.42-4.14,0-1.68-.69-3.51-5.73-5.55a27.64,27.64,0,0,1-6.56-3.47,10.44,10.44,0,0,1-4.58-8.7,12.06,12.06,0,0,1,.18-2,10.83,10.83,0,0,1,3.37-6.17,11.8,11.8,0,0,1,1-.84,13.5,13.5,0,0,1,4.58-2.18v-6.47h7.37v6a17.33,17.33,0,0,1,7,2.25l1.31,0.77-2.81,7.4-1.83-1a12.92,12.92,0,0,0-6.75-1.83c-3.41,0-4.63,1.76-4.63,3.42s0.93,3,6.41,5.25c4.89,2,10.52,5.25,10.52,12.77C134.88,148.38,131.08,153,125.29,154.49Z"/><path class="cls-CAD-1" d="M106.45,78.6l-5.88-11.37s9.48-5.47,15.09-3,8.64,5.47,15.26,2.88a12.05,12.05,0,0,1,9.37-.12L133.66,78.6h-27.2Z"/></svg>
+                        <strong>The Cadillac tax</strong>
+                    </h2>
                     <p>The Cadillac Tax is equivalent to 40 percent of the cost of health coverage beyond a certain threshold, depending on the type of plan. Since it isn’t scheduled to take effect until 2020 and regulations may evolve before it is implemented, employers do not need to make changes to their policies in anticipation of the tax just yet. It’s important to wait for further guidance as 2020 draws near – including the tax threshold amounts and other implementation details.</p>
                     <p><strong>Learn more:</strong></p>
                     <ul>
@@ -902,26 +894,16 @@
                         <li><a href="https://www.aflac.com/health-care-reform/key-issues/cadillac-tax-fact-sheet.aspx" target="_blank">Cadillac tax frequently asked questions</a></li>
                     </ul>
                 </div>
-            </div>
-        </section>
 
-        <!-- WHITE AREA-->
-        <section class="ev_fof white-bg" id="how-everwell-can-help">
-            <div class="ev_fof-wrapper">
                 <!--<img src="http://www.aflac.com/_global-assets/images/everwell/heart.png" alt=""/>-->
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>How Everwell can help</strong></h2>
+                <div class="hcr-info-item">
+                    <h2 id="how-everwell-can-help"><strong>How Everwell can help</strong></h2>
                     <p>Benefits administration platforms, like Everwell powered by Aflac, offer multiple benefits options and a variety of voluntary products, including vision, dental, disability, accident and much more. They offer exchange-facilitated enrollment and help coordinate between multiple carriers, which can help businesses save on administrative costs. Learn more about how Everwell can enhance your benefits program today.</p>
                 </div>
-            </div>
-        </section>
 
-        <!-- BLUE AREA-->
-        <section class="ev_fof blue-bg" id="how-aflac-can-help">
-            <div class="ev_fof-wrapper">
                 <!--<img src="http://www.aflac.com/_global-assets/images/everwell/heart.png" alt=""/>-->
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>How Aflac can help</strong></h2>
+                <div class="hcr-info-item">
+                    <h2 id="how-aflac-can-help"><strong>How Aflac can help</strong></h2>
                     <p><strong>Aflac is not major medical insurance.</strong> Aflac insurance policies don’t replace comprehensive health insurance coverage. These benefits are considered HIPAA excepted benefits, which are excluded from most of the ACA’s market reforms. Because of this, having voluntary benefits options is a smart way for businesses to enhance their employee benefits packages.</p>
                     <ul>
                         <li><strong>Aflac is for specified injuries, illnesses or disabilities.</strong> For example: a broken arm, heart attack or hospital stay. Relevant policies include supplemental life, disability, critical illness, hospital, accident, cancer insurance and much more. These benefits pay cash to help cover bills and out-of-pocket costs not covered by major medical insurance.</li>
@@ -929,14 +911,12 @@
                         <li><strong>Make Aflac part of your benefits package today.</strong> Contact your agent or visit <a href="http://aflac.com">aflac.com</a>.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
 
-        <!-- WHITE AREA-->
-        <section class="ev_fof white-bg" id="next-steps">
-            <div class="ev_fof-wrapper">
-                <div class="ev_fof-fact-ctn">
-                    <h2><strong>Next steps</strong></h2>
+                <div class="hcr-info-item">
+                    <h2 id="next-steps">
+                        <svg id="IconLearnMore" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.89 244.7"><defs><style>.cls-LEA-1{fill:#00a5d9;}.cls-LEA-2{fill:#df7a1c;}.cls-LEA-3{fill:#fff;}</style></defs><path class="cls-LEA-1" d="M81.44,244.7c11.78,0,22.07-4.87,27-12h-54C59.41,239.82,69.6,244.7,81.44,244.7Z"/><path class="cls-LEA-1" d="M119.32,209.11H43.55c-3.63,0-6.73,3.36-6.73,7.53s3.1,7.48,6.73,7.48h75.77c3.68,0,6.59-3.34,6.59-7.48S123,209.11,119.32,209.11Z"/><path class="cls-LEA-1" d="M119.32,187.34H43.55c-3.63,0-6.73,3.38-6.73,7.57s3.1,7.49,6.73,7.49h75.77c3.68,0,6.59-3.32,6.59-7.49S123,187.34,119.32,187.34Z"/><path class="cls-LEA-2" d="M81.44,0A81.4,81.4,0,0,0,0,81.38c0,30.47,21.18,52.3,35.42,76.76,3.49,6,5.94,21.87,5.94,21.87h80.22s2.39-15.89,5.84-21.87c14.28-24.46,35.47-46.29,35.47-76.76A81.44,81.44,0,0,0,81.44,0Z"/><polygon class="cls-LEA-3" points="81.44 37.11 97.24 69.11 132.55 74.24 107 99.14 113.03 134.31 81.44 117.71 49.86 134.31 55.89 99.14 30.34 74.24 65.65 69.11 81.44 37.11"/></svg>
+                        <strong>Next steps</strong>
+                    </h2>
                     <p>The Cadillac Tax is equivalent to 40 percent of the cost of health coverage beyond a certain threshold, depending on the type of plan. Since it isn’t scheduled to take effect until 2020 and regulations may evolve before it is implemented, employers do not need to make changes to their policies in anticipation of the tax just yet. It’s important to wait for further guidance as 2020 draws near – including the tax threshold amounts and other implementation details.</p>
                     <p><strong>Learn more:</strong></p>
                     <ul>
