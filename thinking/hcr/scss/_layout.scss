@@ -8,10 +8,9 @@ html {
 }
 
 body {
-  background-attachment: fixed;
-  background: url('../images/bg/DuckPrints_Orange.png');
+  background: url("../images/bg/DuckPrints_Feather_TONE.png") fixed;
   background-blend-mode: darken;
-  background-size: 20%;
+  //background-size: 45%;
   transition: background 1s;
   box-sizing: border-box;
   color: #666;
@@ -71,6 +70,7 @@ div > ul {
 
 .content-container {
   background-color: white;
+  box-shadow: 25px 35px 65px rgba(0, 0, 0, .3);
   margin-bottom: 100px;
   padding: 40px;
 }
