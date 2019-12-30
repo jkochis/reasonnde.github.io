@@ -1,0 +1,880 @@
+/*
+ * 
+ * EVERWELL CSS
+ * 2015 - Dorian CAMILLERI
+ *
+*/
+/******************************
+ * MEDIA QUERIES : Small Height Devices
+*******************************/
+@media all and (max-height: 800px) {
+	.ev_lightbox-testimonial-head img {
+		width: 70%;
+	}
+	.ev_lightbox-testimonial-head h4 {
+		font-size: 22px; 
+	}
+	.ev_lightbox-testimonial-head h5 {
+		font-size: 18px; 
+	}
+	.ev_lightbox-testimonial-head p {
+		font-size: 14px; 
+		line-height: 20px;
+	}
+}
+/******************************
+ * MEDIA QUERIES : TABLETS
+*******************************/
+@media all and (max-width: 1024px) {
+	/******************************
+	 * 1 - HEAD
+	*******************************/
+  .ev_head--inner {
+  	margin-left: -275px;
+  } 
+  /******************************
+   * 2 - ACHOR NAV
+  *******************************/
+  .ev_anchor-nav nav {
+  	width: 90%;
+  }
+  
+	.ev_anchor-nav .anchor_title {
+		font-size: 0.8em;
+		max-width: 60px;
+	}
+	/******************************
+	 * 3 - WHY EVERWELL
+	*******************************/
+	.ev_why-wrapper {
+		width: 90%;
+	}
+	.ev_why-bloc {
+		padding: 50px 0;
+	}
+	.ev_why-bloc p {
+		padding-right: 20px;
+	}
+	.ev_why-bloc h3 {
+		font-size: 35px;
+	}
+	.ev_why-bloc--last {
+		padding-left: 5%;
+	}
+	/******************************
+	 * 4 - HOW IT WORKS
+	*******************************/
+	.ev_how--slide h3 {
+		max-width: 60%;
+		font-size: 32px;
+	}
+	/****************
+	/* Nav *
+	****************/
+	.ev_how-nav {
+		margin: 10px auto 40px;
+		width: 60%;
+	}
+	.ev_how .nav-line {
+		display: none;
+	}
+	.ev_how li {
+		display: none;
+	}
+	.ev_how li:nth-child(1) {
+		display: block;
+		left: 50%;		
+		margin-left: -22.5px;
+	}
+	/****************
+	/* Arrows *
+	****************/
+	.ev_how--arrow {
+		margin-top: -20px;
+	}
+	/******************************
+	 * 5 - NUMBERS
+	*******************************/
+	.ev_numbers-wrapper {
+		width: 90%;
+		max-width: none;
+	}
+	.ev_numbers h3 {
+		margin-left: 0;
+	}
+	.ev_numbers li:nth-child(1) {
+		display: none;
+	}
+	.ev_numbers li {
+		width: 33%;
+	}
+	.ev_numbers li h4 {
+		font-size: 2em;
+	}
+	.ev_numbers li p {
+		font-size: 1em;
+		line-height: 20px;
+		padding-right: 40px;
+	}
+	/******************************
+	 * 6 - TESTIMONIALS (OVERRIDES)
+	*******************************/
+	.ev_testimonials--wrapper {
+		width: 100%;
+		max-width: none;
+	}
+	.ev_testimonials .slider .target_copy {
+		padding: 3% 84px 3% 4% !important;
+	}
+	.ev_testimonials.with-carousel .slider .slider-pagination {
+		left: 4%;
+	}
+	/******************************
+	 * 7 - REAL LIFE EXAMPLES
+	*******************************/
+	.ev_rl-slider--thumb img {
+		width: 80%;
+	}
+	/******************************
+	 * 8 - FACT OR FICTION
+	*******************************/
+	.ev_fof-wrapper {
+		width: 90%;
+		display: block;
+		padding: 40px 0;
+	}
+	.ev_fof-wrapper img {
+		margin: 0 auto 20px;
+		width: 110px;
+	}
+	.ev_fof-fact-ctn {
+		padding-left: 0;
+	}
+	.ev_fof-fact-ctn h2 {
+		margin-bottom: 30px;
+		text-align: center;
+		font-size: 2.25em;
+	}
+	.ev_fof-list--bloc span {
+		width: 100%;
+		margin-bottom: 8px;
+		font-size: 1em;
+	}
+	.ev_fof-list--bloc p {
+		font-size: 1em;
+		max-width: 100%;
+	}
+	/******************************
+	 * 9 - TOOLS
+	*******************************/
+	.ev_tools {
+		height: 540px;
+	}
+	.ev_tools-wrapper {
+		width: 90%;
+	}
+	.ev_tools h2 {
+		font-size: 2.3em; 
+	}
+	.ev_tools-col h3 {
+		font-size: 1.5em;
+	}
+	.ev_tools-col-1 span {
+		font-size: 0.9em;
+	}
+	.ev_tools-col-2 span {
+		font-size: 0.8em;
+	}
+	.ev_tools-col-2 .icon {
+		margin-right: 8px;
+	}
+	/******************************
+	 * 10 - Call
+	*******************************/
+	.ev_call {
+		height: auto;
+	}
+	.ev_call-wrapper {
+		width: 100%;
+	}
+	.ev_call li {
+		float: none;
+		width: 100%;
+		padding: 30px 0;
+		text-align: center;
+	}
+	.ev_call-border {
+		padding-left: 0;
+	}
+	.ev_call-border:after {
+		width: 90%;
+		height: 2px;
+		top: 100%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.ev_call li .icon-phone {
+		display: block;
+		margin: 0 auto 15px;
+	}
+	.ev_call li p {
+		margin-bottom: 5px;
+		font-size: 1em;
+	}
+	.ev_call .ev_call-padding p {
+		margin-bottom: 0;
+	}
+	.ev_call li span {
+		font-size: 1.35em;
+	}
+	.ev_call li .phone {
+		font-size: 2.5em;
+	}
+	/******************************
+	 * LIGHTBOXES OVERRIDES
+	*******************************/
+	/*******************
+	/* Lightbox Submit *
+	********************/
+	.ev_lightbox-submit {
+		width: 600px;
+		margin-left: -300px;
+	}
+	.ev_lightbox-submit .info-section {
+		width: 200px;
+	}
+	.ev_lightbox-submit-ctn h5 {
+		font: normal 20px 'ProximaNovaLight';
+		margin-bottom: 0;
+	}
+	.ev_lightbox-submit-ctn h4 {
+		font: normal 35px/38px 'ProximaNovaThin';
+		margin-bottom: 30px;
+	}
+	.ev_lightbox-submit .form-section {
+		left: 200px;
+	}
+	.ev_lightbox-submit .form-panel {
+		padding-right: 30px;
+	}
+	.ev_lightbox-submit input {
+		width: 160px !important;
+	}
+	/*************************
+	/* Lightbox testimonials *
+	**************************/
+	.ev_lightbox-testimonial {
+		width: 600px;
+		margin-left: -300px;
+	}
+	.ev_lightbox-testimonial .info-section {
+		width: 200px;
+	}
+	.ev_lightbox-testimonial .form-section {
+		left: 200px;
+	}
+	.ev_lightbox-testimonial-head {
+		padding: 50px 20px;
+	}
+	.ev_lightbox-testimonial-head img {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+	.ev_enroll-cta {
+		font-size: 12px;
+	}
+	.ev_lightbox-testimonial-head h4 {
+		font-size: 22px; 
+	}
+	.ev_lightbox-testimonial-head h5 {
+		font-size: 18px; 
+	}
+	.ev_lightbox-testimonial-head p {
+		font-size: 12px; 
+		line-height: 16px;
+	}
+	.ev_lightbox-testimonial-ctn {
+		left: 200px;
+		padding: 50px;
+	}
+	.ev_lightbox-testimonial-ctn h6 {
+		font-size: 20px;
+		line-height: 22px;
+	}
+	.ev_lightbox-testimonial-ctn p {
+		font-size: 13px;
+		line-height: 16px;
+		margin-bottom: 15px;
+	}
+}
+/******************************
+ * MEDIA QUERIES : PHONES
+*******************************/
+@media all and (max-width: 640px) {
+	.icon-watch {
+		height: 24px;
+		width: 23px;
+		background-image: url(/_Global-Assets/images/everwell/play-video-mobile.png);
+	}
+	/******************************
+	 * Global
+	*******************************/
+	.ev_slider-mobile-nav {
+		margin-top: 10px;
+		display: block;
+	}
+	.ev_testimonials-mobile-nav .arrow {
+    width: 38px;
+    height: 42px;
+	}
+	.ev_grey_separator {
+		height: 20px;
+	}
+	/******************************
+	 * 1 - HEAD
+	*******************************/
+	.ev_head {
+		height: auto;
+	}
+	.ev_head .translucent-bg {
+		background-color: #fff !important;
+	}
+	.ev_head--bg {
+		position: relative;
+		height: 200px;
+		background-image: url(/_Global-Assets/images/everwell/head-mobile.jpg);
+		background-position: 100% 0;
+	}
+	.ev_head--inner {
+		width: 100%;
+		padding: 0;
+		left: 0;
+		margin: 0;
+	}
+	.ev_head--inner .ev_head--icon {
+		display: none;
+	}
+	.ev_head--icon-mobile {
+		position: absolute;
+		bottom: 20px;
+		left: 5%;
+		display: block;
+	}
+	.ev_head--inner h2 {
+		margin-bottom: 15px;
+		font-size: 2em;
+		line-height: 32px;
+		font-family: 'ProximaNovaLight';
+		color: #333333;
+	}
+	.ev_head--inner a {
+		font-size: 0.938em;
+		color: #333333 !important;
+	}
+	.ev_head--inner .cta-start {
+		display: none;
+	}
+	.ev_head--inner .cta-watch {
+		line-height: 40px;
+		height: 40px;
+	}
+	/******************************
+	 * 2 - ACHOR NAV
+	*******************************/
+	.ev_anchor-nav {
+		display: none !important;
+	}
+	/******************************
+	 * 3 - WHY EVERWELL
+	*******************************/
+	.ev_why-everwell {
+		height: auto;
+	}
+	.ev_why-bloc {
+		width: 100%;
+		padding-top: 50px;
+	}
+	.ev_why-break-title {
+		padding-right: 0;
+		padding-top: 0;
+	}
+	.ev_why-bloc--last {
+		padding-left: 0;
+		padding-bottom: 50px;
+	}
+	.ev_why-bloc--last {
+		padding-top: 30px;
+	}
+	.ev_why-bloc--first:after {
+		display: block;
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 38px;
+		width: 80%;
+		height: 4px;
+		margin: auto;
+	}
+	.ev_why-wrapper {
+		width: 100%;
+	}
+	.ev_why-bloc h3 {
+		font-size: 2em;
+		line-height: 35px;
+		margin-bottom: 15px;
+	}
+	.ev_why-bloc--wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	/******************************
+	 * 4 - HOW IT WORKS
+	*******************************/
+	.ev_how {
+		height: auto;
+	}
+	.ev_how-wrapper {
+		padding: 60px 0 40px;
+	}
+	.ev_how h2 {
+		color: #00b0b9;
+		font-size: 1.5em;
+		line-height: 24px;
+		margin-bottom: 5px;
+	}
+	/****************
+	/* Arrows *
+	****************/
+	.ev_how--arrow {
+		top: 50%;
+		margin-top: -35px;
+		width: 40px;
+		height: 45px;
+	}
+	.ev_how--arrow-right {
+		right: 20px;
+		background-image: url(/_Global-Assets/images/everwell/slider-right-mobile.png);
+	}
+	.ev_how--arrow-left {
+		left: 20px;
+		background-image: url(/_Global-Assets/images/everwell/slider-left-mobile.png);
+	}
+	.ev_how-wrapper > p {
+		width: 80%;
+	}
+	.ev_how--slide h3 {
+		font-size: 1.3em;
+	}
+	.ev_how .cta-start {
+		width: 60%;
+	}
+	.ev_how-details p {
+		margin-bottom: 5px;
+	}
+	/****************
+	/* Slider *
+	****************/
+	.ev_how--slide p {
+		margin-bottom: 30px;
+	}
+	/******************************
+	 * 5 - NUMBERS
+	*******************************/
+	.ev_numbers {
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.ev_numbers-wrapper {
+		width: 80%;
+		padding: 50px 0 0;
+		text-align: center;
+	}
+	.ev_numbers h3 {
+		text-align: center;
+		margin-left: 0;
+	}
+	.ev_numbers img {
+		display: block;
+		width: 180px;
+		margin: 0 auto 10px;
+	}
+	.ev_numbers li h4 {
+		max-width: none;
+		font-size: 2em;
+	}
+	.ev_numbers li {
+		margin-bottom: 20px;
+	}
+	.ev_numbers li:last-child {
+		margin-bottom: 0;
+	}
+	.ev_numbers li p {
+		width: 95%;
+		margin: 0 auto 20px;
+		font-size: 1em;
+		line-height: 20px;
+	}
+	.ev_numbers li:nth-child(1) {
+		display: block;
+	}
+	.ev_numbers .list-wrapper {
+		max-width: none;
+	}
+	.ev_numbers li {
+		width: 100%;
+	}
+	/******************************
+	 * 6 - TESTIMONIALS (OVERRIDES)
+	*******************************/
+	.ev_testimonials-mobile-nav {
+		display: block;
+	}
+	.ev_testimonials .slider .target_copy .deck {
+		padding: 20px 0 35px;
+	}
+	.ev_testimonials .slider .target_copy .deck,
+	.ev_testimonials .slider .target_copy .deck:after {
+		background-color: #fff;
+	}
+	.ev_testimonials .slider .target_copy .deck header {
+		overflow: hidden;
+	}
+	.ev_testimonials .slider .target_copy .deck header h1 {
+		margin-bottom: 10px;
+	}
+	.ev_testimonials .slider .target_copy .deck header h1,
+	.ev_testimonials .slider .target_copy .deck header h6 {
+		color: #3b3b3b;
+	}
+	.ev_testimonials .slider .target_copy {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	.ev_testimonials .cta-watch {
+		color: #00b0b9;
+		padding-left: 30px;
+		opacity: 1;
+		font-size: 1em;
+	}
+	/******************************
+	 * 7 - REAL LIFE EXAMPLES
+	*******************************/
+	.ev_rl-examples {
+		height: auto;
+		padding-bottom: 35px;
+	}
+	.ev_rl-examples h2 {
+		margin-bottom: 30px;
+		padding-top: 60px;
+	}
+	.ev_rl-examples .submit-success {
+		position: relative;
+		width: 80%;
+		padding: 0;
+		height: 40px;
+		margin: 40px auto 0;
+		text-align: center;
+		line-height: 40px;
+		font-size: 13px;
+	}
+	.ev_rl-slider {
+		height: 330px;
+	}
+	.ev_rl-slider--thumb img {
+		width: 70%;
+	}
+	/******************************
+	 * 9 - TOOLS
+	*******************************/
+	.ev_tools {
+		height: auto;
+	}
+	.ev_tools-wrapper {
+		width: 80%;
+		padding: 40px 0;
+	}
+	.ev_tools h2 {
+		font-size: 1.5em;
+		margin-bottom: 25px;
+	}
+	.ev_tools-col {
+		float: none;
+		width: 100%;
+	}
+	.ev_tools-col h3 {
+		margin-bottom: 15px;
+		font-size: 1.5em;
+	}
+	.ev_tools-col-1 {
+		margin-bottom: 40px;
+	}
+	.ev_tools-col-1 span {
+		font-size: 1em;
+	}
+	.ev_tools-col-1 .cta-download {
+		width: 100%;
+		padding: 0;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.ev_tools-col-1 .cta-download.cta-download-desktop {
+		display: none; 
+	}
+	.ev_tools-col-1 .cta-download.cta-download-mobile {
+		display: inline-block;
+	}
+	.ev_tools-col-2 ul {
+		float: none;
+		width: 100%;
+	}
+	.ev_tools-col-2 li {
+		margin-bottom: 15px;
+	}
+	.ev_tools-col-2 span {
+		font-size: 1em;
+	}
+	/******************************
+	 * LIGHTBOXES OVERRIDES
+	*******************************/
+	/*******************
+	/* Lightbox Submit *
+	********************/
+	.ev_lightbox-submit {
+		width: 100%;
+		height: 500px;
+		left: 0;
+		top: 0;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.ev_lightbox-submit .close {
+		top: -100px;
+		background-image: url(/_Global-Assets/images/everwell/lightbox-close-white.png) !important;
+		background-position: 0px 0px !important;
+		height: 20px !important;
+		width: 20px !important;
+		background-size: cover !important;
+	}
+	.ev_lightbox-submit .info-section {
+		position: relative;
+		width: 100%;
+		height: 120px;
+	}
+	.ev_lightbox-submit-ctn {
+		padding-top: 20px;
+	}
+	.ev_lightbox-submit-ctn h5 {
+		font-size: 16px;
+	}
+	.ev_lightbox-submit-ctn h4 {
+		margin-bottom: 10px;
+		font-size: 22px;
+		line-height: 25px;
+	}
+	.ev_lightbox-submit-ctn p {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.ev_lightbox-submit-ctn strong {
+		display: block;
+	}
+	.ev_lightbox-submit .form-section {
+		position: relative;
+		height: auto;
+		left: 0;
+	}
+	.ev_lightbox-submit .form-panel {
+		padding: 20px 30px 80px 30px !important;
+	}
+	.ev_lightbox-submit .row {
+		margin-top: 0 !important;
+		margin-bottom: 0;
+	}
+	.ev_lightbox-submit .input-text {
+		width: 100%;
+		float: none;
+		display: block;
+		margin-left: 0 !important;
+	}
+	.ev_lightbox-submit input, .ev_lightbox-submit textarea  {
+		font-size: 13px;
+	}
+	.ev_lightbox-submit input {
+		margin-bottom: 10px;
+		height: 35px !important;
+		width: 100% !important;
+	}
+	.ev_lightbox-submit .textarea  {
+		height: 100px !important;
+	}
+	.ev_lightbox-submit .progress-nav {
+		position: relative !important;
+	}
+	.ev_lightbox-submit .submit {
+		left: 0 !important;
+		right: auto !important;
+		width: 100% !important;
+		margin-top: 15px;
+		font-size: 13px !important;
+	}
+	/*************************
+	/* Lightbox testimonials *
+	**************************/
+	.ev_lightbox-testimonial {
+		width: 100%;
+		height: auto !important;
+		left: 0;
+		top: 0;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.ev_close-desktop {
+		display: none;
+	} 
+	.ev_close-mobile {
+		display: block;
+		top: 15px !important;
+	}
+	.ev_lightbox-testimonial .close {
+		background-image: url(/_Global-Assets/images/everwell/lightbox-close-white.png) !important;
+	}
+	.ev_lightbox-testimonial .info-section {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	.ev_lightbox-testimonial-head {
+		padding: 10px 30px 0;
+		text-align: left;
+	}
+	.ev_name-bloc, .ev_lightbox-testimonial-head img {
+		display: inline-block;
+		vertical-align: middle;		
+	}
+	.ev_name-bloc {
+		padding-top: 10px;
+	}
+	.ev_lightbox-testimonial-head img {
+		width: 60px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.ev_lightbox-testimonial-head h5, .ev_lightbox-testimonial-head h4 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.ev_lightbox-testimonial-head p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.ev_enroll-cta {
+		position: relative;
+		display: inline-block;
+		margin-top: 20px;
+		font-size: 13px;
+	}
+	.ev_lightbox-testimonial-ctn {
+		position: relative;
+		left: 0;
+		top: 0;
+		padding: 30px;
+	}
+	.ev_lightbox-testimonial-ctn h6 {
+		display: none;
+	}
+	.ev_lightbox-testimonial-ctn p {
+		font-size: 14px;
+	}
+	/******************************
+	 * PLAYER
+	*******************************/
+	.ev_video_error p {
+		font-size: 16px;
+	}
+}
+/******************************
+ * MEDIA QUERIES : RETINA
+*******************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx) {
+	.icon-everwell {
+		background-image: url(/_Global-Assets/images/everwell/everwell-logo-2x.png);
+		background-size: 239px 67px;
+	}
+	.icon-everwell-mobile {
+		background-image: url(/_Global-Assets/images/everwell/everwell-logo-mobile-2x.png);
+		background-size: 170px 47px;
+	}
+	.icon-anchor-1 {
+		background-image: url(/_Global-Assets/images/everwell/anchor-1-2x.png);
+		background-size: 65px 59px;
+	}
+	.icon-anchor-2 {
+		background-image: url(/_Global-Assets/images/everwell/anchor-2-2x.png);
+		background-size: 40px 52px;
+	}
+	.icon-anchor-3 {
+		background-image: url(/_Global-Assets/images/everwell/anchor-3-2x.png);
+		background-size: 50px 57px;
+	}
+	.icon-anchor-4 {
+		background-image: url(/_Global-Assets/images/everwell/anchor-4-2x.png);
+		background-size: 42px 59px;
+	}
+	.icon-anchor-5 {
+		background-image: url(/_Global-Assets/images/everwell/anchor-5-2x.png);
+		background-size: 43px 63px;
+	}
+	.icon-list-toggle {
+		background-image: url(/_Global-Assets/images/everwell/list-toggle-2x.png);
+		background-size: 42px 21px;
+	}
+	.icon-more-arrow-white {
+		background-image: url(/_Global-Assets/images/everwell/more-arrow-white-2x.png);
+		background-size: 24px 24px;
+	}
+	.icon-more-arrow {
+		background-image: url(/_Global-Assets/images/everwell/more-arrow-2x.png);
+		background-size: 24px 24px;
+	}
+	.icon-phone {
+		background-image: url(/_Global-Assets/images/everwell/phone-2x.png);
+		background-size: 34px 48px;
+	}
+	.icon-watch {
+		background-image: url(/_Global-Assets/images/everwell/play-video-2x.png);
+		background-size: 30px 30px;
+	}
+	.icon-round-grey {
+		background-image: url(/_Global-Assets/images/everwell/round-grey-2x.png);
+	}
+	.icon-slider-arrow-left-white {
+		background-image: url(/_Global-Assets/images/everwell/slider-left-mobile-white-2x.png);
+		background-size: 18px 31px;
+	}
+	.icon-slider-arrow-right-white {
+		background-image: url(/_Global-Assets/images/everwell/slider-right-mobile-white-2x.png);
+		background-size: 18px 31px;
+	}
+	.ev_how li.current .icon {
+		background-image: url(/_Global-Assets/images/everwell/round-blue-2x.png);
+		background-size: 45px 45px;
+	}
+}
+@media all and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5), all and (min-resolution: 2dppx) and (max-width: 640px) {
+	.ev_how--arrow-right {
+		background-image: url(/_Global-Assets/images/everwell/slider-right-mobile-2x.png) !important;
+		background-size: 20px 35px;
+	}
+	.ev_how--arrow-left {
+		background-image: url(/_Global-Assets/images/everwell/slider-left-mobile-2x.png) !important;
+		background-size: 20px 35px;
+	}
+	.icon-watch {
+		height: 24px;
+		width: 23px;
+		background-image: url(/_Global-Assets/images/everwell/play-video-mobile-2x.png);
+		background-size: 23px 24px;
+	}
+}

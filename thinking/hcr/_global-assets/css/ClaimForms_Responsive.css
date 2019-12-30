@@ -1,0 +1,672 @@
+/* -- CP Changes -- */*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#pagebgwide{
+font-family:ProximaNovaRegular, arial;
+font-size: 15px;
+font-style:normal;
+font-weight:normal;
+}
+#pagebgwide h2 {
+font-family:proximanovabold;
+letter-spacing:-.06em;
+/*TM color:#01A7E1; */
+font-size: 60px;
+/*TM padding-top: 55px;  */
+padding-top: 85px;
+margin: 0;
+line-height: 110%;
+}
+#pagebgwide h4 {
+/*font-family: proximanovalight;
+font-size:33px;
+letter-spacing: -.04em;
+color:#01A7E1; 
+margin:0;
+line-height: 140%;*/
+}   
+.list_wrapper li {
+height: auto;
+float: left;
+}
+.leftclaiminfo {
+position: relative;
+}
+.rightclaiminfo {
+float: right;
+position: relative;
+font-style: italic;
+}
+.list_wrapper li a {
+background: url('/_global-assets/images/apps/icon_pdf.png') no-repeat scroll 18px 8px #FCFCFC;
+border: 1px solid #CCCCCC;
+color: #049CDB !important;
+display: block;
+font-weight: normal;
+margin: 0;
+padding: 11px 10px 10px 44px;
+text-indent: 0 !important;
+text-decoration: none;
+/*TM addition */
+font-family: ProximaNovaRegular;
+}
+.list_wrapper li a:hover {
+background-color:#E5F5FB;
+}
+.claim_form {
+padding: 0 1% 1% 1%;
+width: 48%;
+min-width: 441px;
+}
+#contact_area {
+margin: 25px 0;
+}
+#pagebgwide{background-color:#FFF;}
+/*HCR Landing Page CSS */
+/*Page Layout and General Formatiing*/
+#pagebgwide h3{font-weight:normal;letter-spacing:-.04em;}
+#pagebgwide h4{font-weight:normal;}
+#form-container {
+/*TM background-color: #00A7E1; */
+background-color: #9FA8AD;
+/*TM height: 242px; */
+height:250px;
+}
+.disclaimerText p {text-align: center;margin: auto;padding-bottom: 3%;/* display: none; */}
+/*Primary Navigation Bucket CSS*/
+/*TM .headerContainer{ background:url(/_global-assets/images/claimforms/fileaclaim_bg.jpg) no-repeat; height: 450px; background-position: 63% 0;} */
+/*.headerContainer{ background:url(/_global-assets/images/page_static_header/1520x450/20141007-large-right-duck-wing-pointing-left-2-1520x450.jpg) no-repeat; height: 450px; background-position: 63% 0 #00A7E1;} */
+.headerContainer{ background:url('/_global-assets/images/mockup-images-do-not-use-for-final/new-final-images/header-slides/individuals-and-family-slides/2015-05-18-emp-odp-1520x450.jpg') no-repeat; height: 450px; background-position: 63% 0 #00A7E1;}
+/* use to have different banners for individuals and employers claim forms
+.headerContainer.business{ background:url('/_global-assets/images/mockup-images-do-not-use-for-final/man-and-woman-filing-a-claim-online.jpg') no-repeat; height: 450px; background-position: 63% 0 #00A7E1;}*/
+	.claimDetails {
+		width: 78%;
+		margin: 40px auto 0 auto;
+		text-align: center;
+	}
+	.claimDetails p {
+		margin: 20px 0 0 0;
+		font-size: 20px;
+		line-height:150%
+	}
+	.claimDetails span {
+		font-family: proximanovabold;
+	}
+@media (max-width: 620px) {
+	.claimDetails {
+		margin: 20px;
+		text-align:left;
+	}
+}
+#primaryBucket1{border-right:1px dashed #ccc;background-image:url(/_global-assets/images/claimforms/icon_call.png);background-repeat:no-repeat;background-position: 56% 0;}
+#primaryBucket2{border-right:1px dashed #ccc;background-image:url(/_global-assets/images/claimforms/icon_fax.png);background-repeat:no-repeat;background-position: 56% 0;}
+#primaryBucket3{background-image:url(/_global-assets/images/claimforms/icon_mail.png);background-repeat:no-repeat;background-position: 56% 0;}
+.contentContainer{width: 77.7%;margin:0 auto;min-width: 882px; position: relative; /*TM z-index: 2; */}
+.primaryBuckets{float:left;margin: 5% 0;text-align:center;padding: 0 1%;font-weight:normal;width: 33.33%;height: 260px;}
+.primaryBuckets h3{color:#01A7E1;font-size:22px;letter-spacing:-.04em;line-height: 140%;text-align:center;width: 100%;margin: 160px 0 0; font-family:proximanovabold;}
+.primaryBuckets p{color:#363636;margin:0;line-height: 140%;}
+.primaryBuckets .disclaimer {
+font-style: italic;
+margin: 0 auto;
+width: 250px;
+font-size: 10px;
+line-height: 12px;
+width: 160px;
+}
+#state_selection
+{
+margin-top: -30px;
+}
+#stateImage{    
+height: 285px;
+position: relative;
+/*TM Top: 15px; */
+top:0px;
+float: left;
+width: 49%;
+background-position: -80px 0;
+}
+.form{
+float: left;
+  /*TM margin-top: 50px; */
+margin-top:33px;
+width: 49%;
+}
+.form .introText {
+width: 100%;
+}
+.inline_item{margin-left:10px;}
+.separator{ 
+border-bottom: 1px dashed #ccc; 
+clear: both; 
+height:1px; 
+padding-bottom: 5%;
+width: 100%;
+} 
+.exampleBox {
+background-color: #FCFCFC;
+border: 1px solid #CCCCCC;
+color: #3B3B3B;
+cursor: pointer;
+float: left;
+width: 40%;
+height: 170px;
+margin: 0 5%;
+padding: 8px;
+display: block;
+text-decoration: none;
+/*TM Addition */
+font-family: ProximaNovaRegular;
+}
+.exampleBox:hover {
+background-color:#E5F5FB;
+}
+.exampleBox p {
+margin: -11px 35px 0;
+}
+.exampleHeader {
+background: url('/_global-assets/images/apps/icon_pdf.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: block;
+/*TM font-weight: bold; */
+font-weight:normal;
+margin: 10px;
+padding: 3px 0 7px 26px;
+}
+.phoneNumber{font-size:17px; font-family: proximanovasemibold;}
+/*TM Remove  .bucketArea{ background-color:#EDEDED;} */
+.form h4, .form p{color: #fff !important;margin-bottom: 5%;}
+.exampleContent{ 
+/* display: none; remove if you want to display the examples -- JP */
+margin: 4% 0;  
+}
+.exampleContent .introText {
+margin-left: 3%;
+}
+.ResultsList{}
+.introText{ font-family:proximanovalight; font-size:20px; /*TM width: 65%;*/ width:50%; line-height: 140%; margin:  0 0 1% 0; }
+.FieldsRequiredMessage {font-family:proximanovalight; font-size:16px !important; margin-top: -50px; color: #FF0000 !important;}
+.imgAL{background: url(/_global-assets/images/claimforms/state_al.png) no-repeat; }
+.imgAK{background: url(/_global-assets/images/claimforms/state_ak.png) no-repeat; }
+.imgAR{background: url(/_global-assets/images/claimforms/state_ar.png) no-repeat; }
+.imgAZ{background: url(/_global-assets/images/claimforms/state_az.png) no-repeat; }
+.imgCA{background: url(/_global-assets/images/claimforms/state_ca.png) no-repeat; }
+.imgCO{background: url(/_global-assets/images/claimforms/state_co.png) no-repeat; }
+.imgCT{background: url(/_global-assets/images/claimforms/state_ct.png) no-repeat; }
+.imgDE{background: url(/_global-assets/images/claimforms/state_de.png) no-repeat; }
+.imgDC{background: url(/_global-assets/images/claimforms/state_dc.png) no-repeat; }
+.imgFL{background: url(/_global-assets/images/claimforms/state_fl.png) no-repeat; }
+.imgGA{background: url(/_global-assets/images/claimforms/state_ga.png) no-repeat; }
+.imgGU{background: url(/_global-assets/images/claimforms/state_gu.png) no-repeat; }
+.imgHI{background: url(/_global-assets/images/claimforms/state_hi.png) no-repeat; }
+.imgID{background: url(/_global-assets/images/claimforms/state_id.png) no-repeat; }
+.imgIL{background: url(/_global-assets/images/claimforms/state_il.png) no-repeat; }
+.imgIN{background: url(/_global-assets/images/claimforms/state_in.png) no-repeat; }
+.imgIA{background: url(/_global-assets/images/claimforms/state_ia.png) no-repeat; }
+.imgKS{background: url(/_global-assets/images/claimforms/state_ks.png) no-repeat; }
+.imgKY{background: url(/_global-assets/images/claimforms/state_ky.png) no-repeat; }
+.imgLA{background: url(/_global-assets/images/claimforms/state_la.png) no-repeat; }
+.imgME{background: url(/_global-assets/images/claimforms/state_me.png) no-repeat; }
+.imgMD{background: url(/_global-assets/images/claimforms/state_md.png) no-repeat; }
+.imgMA{background: url(/_global-assets/images/claimforms/state_ma.png) no-repeat; }
+.imgMI{background: url(/_global-assets/images/claimforms/state_mi.png) no-repeat; }
+.imgMN{background: url(/_global-assets/images/claimforms/state_mn.png) no-repeat; }
+.imgMS{background: url(/_global-assets/images/claimforms/state_ms.png) no-repeat; }
+.imgMO{background: url(/_global-assets/images/claimforms/state_mo.png) no-repeat; }
+.imgMT{background: url(/_global-assets/images/claimforms/state_mt.png) no-repeat; }
+.imgNE{background: url(/_global-assets/images/claimforms/state_ne.png) no-repeat; }
+.imgNV{background: url(/_global-assets/images/claimforms/state_nv.png) no-repeat; }
+.imgNH{background: url(/_global-assets/images/claimforms/state_nh.png) no-repeat; }
+.imgNJ{background: url(/_global-assets/images/claimforms/state_nj.png) no-repeat; }
+.imgNM{background: url(/_global-assets/images/claimforms/state_nm.png) no-repeat; }
+.imgNY{background: url(/_global-assets/images/claimforms/state_ny.png) no-repeat; }
+.imgNC{background: url(/_global-assets/images/claimforms/state_nc.png) no-repeat; }
+.imgND{background: url(/_global-assets/images/claimforms/state_nd.png) no-repeat; }
+.imgOH{background: url(/_global-assets/images/claimforms/state_oh.png) no-repeat; }
+.imgOK{background: url(/_global-assets/images/claimforms/state_ok.png) no-repeat; }
+.imgOR{background: url(/_global-assets/images/claimforms/state_or.png) no-repeat; }
+.imgPA{background: url(/_global-assets/images/claimforms/state_pa.png) no-repeat; }
+.imgPR{background: url(/_global-assets/images/claimforms/state_pr.png) no-repeat; }
+.imgRI{background: url(/_global-assets/images/claimforms/state_ri.png) no-repeat; }
+.imgSC{background: url(/_global-assets/images/claimforms/state_sc.png) no-repeat; }
+.imgSD{background: url(/_global-assets/images/claimforms/state_sd.png) no-repeat; }
+.imgTN {background: url(/_global-assets/images/claimforms/state_tn.png) no-repeat;width: 49%;}
+.imgTX{background: url(/_global-assets/images/claimforms/state_tx.png) no-repeat; }
+.imgUT{background: url(/_global-assets/images/claimforms/state_ut.png) no-repeat; }
+.imgVT{background: url(/_global-assets/images/claimforms/state_vt.png) no-repeat; }
+.imgVI{background: url(/_global-assets/images/claimforms/state_vi.png) no-repeat; }
+.imgVA{background: url(/_global-assets/images/claimforms/state_va.png) no-repeat; }
+.imgWA{background: url(/_global-assets/images/claimforms/state_wa.png) no-repeat; }
+.imgWV{background: url(/_global-assets/images/claimforms/state_wv.png) no-repeat; }
+.imgWI{background: url(/_global-assets/images/claimforms/state_wi.png) no-repeat; }
+.imgWY{background: url(/_global-assets/images/claimforms/state_wy.png) no-repeat; }
+.disclaimerLeft{float:left;}
+.disclaimerRight{float:right;}
+/********* General Links and Buttons ************/
+.arrow {
+border-top:4px solid transparent;
+border-bottom:4px solid transparent;
+border-left:4px solid #edf7fa;
+position:relative;
+top:6px;
+}
+.afl-btn,
+.afl-btn-large,
+.afl-btn-no-caret,
+.afl-btn-2,
+.afl-btn-2-large,
+.afl-btn-3 {
+display: inline-block;
+*display: inline;
+/* IE7 inline-block hack */
+*zoom: 1;
+border:0;
+font-family: "ProximaNova", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+line-height:1em;
+text-decoration:none!important;
+overflow:visible;
+vertical-align:middle;
+cursor:pointer;
+margin:0; 
+padding:0;
+}
+.afl-btn span,
+.afl-btn-large span,
+.afl-btn-no-caret span,
+.afl-btn-2 span,
+.afl-btn-2-large span,
+.afl-btn-3 span{
+display:block;
+position:relative;
+text-align:center;
+text-decoration:none!important;
+height:1em;
+line-height:1em;
+white-space: nowrap;
+}
+.afl-btn,
+.afl-btn span,
+.afl-btn-no-caret,
+.afl-btn-no-caret span {
+background:url(/_global-assets/images/business/healthcare_reform/btn_1.png) no-repeat 0 0;
+line-height:30px;
+height:32px;
+color:#fff;
+font-weight:normal;
+font-size:14px;
+font-family: "ProximaNovaBold", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.afl-btn-no-caret,
+.afl-btn-no-caret span {
+background:url(/_global-assets/images/buttons/btn_1_no_caret.png) no-repeat 0 0;
+}
+.afl-btn,
+.afl-btn-no-caret {
+padding-left:13px!important;
+}
+.afl-btn span,
+.afl-btn-no-caret span {
+padding-right:30px;
+background-position:right -42px;
+text-align:left;
+text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+.afl-btn-no-caret span {
+padding-right: 15px;
+}
+.afl-btn:hover,
+.afl-btn-no-caret:hover {
+background-position:0 -99px;
+}
+.afl-btn:hover span,
+.afl-btn-no-caret:hover span {
+background-position:right -141px;
+}
+.afl-btn:active,
+.afl-btn-no-caret:active {
+background-position:0 -198px;
+}
+.afl-btn:active span,
+.afl-btn-no-caret:active span {
+color:#964e00;
+background-position:right -240px;
+text-shadow: none;
+}
+.afl-btn-large,.afl-btn-large span {
+background:url(/_global-assets/images/buttons/btn_2.png) no-repeat 0 0;
+line-height:40px;
+height:42px;
+color:#fff;
+font-weight:normal;
+font-size:16px!important;
+font-family: "ProximaNovaBold", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+letter-spacing:-.04em !important;
+}
+.afl-btn-large:hover span {
+background-position:right -156px;
+}
+.afl-btn-large:active span {
+color:#964e00;
+background-position:right -261px;
+padding-top: 1px;
+text-shadow: none;
+}
+.afl-btn-large,.afl-btn-2-large {
+padding-left:17px!important;
+}
+.afl-btn-large span {
+padding-right:40px;
+background-position:right -51px;
+text-align:left;
+text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+.afl-btn-large:hover,.afl-btn-2-large:hover {
+background-position:0 -105px;
+}
+.afl-btn-large:active,.afl-btn-2-large:active {
+background-position:0 -210px;
+}
+.afl-btn-2,.afl-btn-2 span {
+background:url(/_global-assets/images/buttons/btn_3.png) no-repeat 0 0;
+line-height:28px;
+height:32px;
+color:#f89728;
+font-weight:normal;
+font-size:14px!important;
+font-family: "ProximaNovaBold", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+letter-spacing:-.04em !important;
+}
+.afl-btn-2 {
+padding-left:13px!important;
+}
+.afl-btn-2 span {
+background-position:right -42px;
+text-align:left;
+padding-right:30px;
+}
+.afl-btn-2:hover {
+background-position:0 -86px;
+}
+.afl-btn-2:hover span {
+color:#999999;
+background-position:right -128px;
+}
+.afl-btn-2:active {
+background-position:0 -173px;
+}
+.afl-btn-2:active span {
+color:#595959;
+background-position:right -215px;
+padding-top: 1px;
+}
+.afl-btn-2-large,.afl-btn-2-large span {
+background:url(/_global-assets/images/buttons/btn_4.png) no-repeat 0 0;
+line-height:40px;
+height:42px;
+color:#f89728;
+font-weight:normal;
+font-size:16px;
+font-family: "ProximaNovaExtraBold", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.afl-btn-2-large span {
+padding-right:40px;
+background-position:right -51px;
+text-align:left;
+}
+.afl-btn-2-large:hover span {
+color:#999999;
+background-position:right -156px;
+}
+.afl-btn-2-large:active span {
+color:#595959;
+background-position:right -262px;
+padding-top: 1px;
+}
+.afl-btn-3,.afl-btn-3 span {
+background:url() no-repeat 0 0;
+line-height:20px;
+height:23px;
+color:#fff;
+font-weight:normal;
+font-size:12px;
+font-family: "ProximaNovaLight", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.afl-btn-3 {
+padding-left:9px!important;
+}
+.afl-btn-3 span {
+padding-right:15px;
+background-position:right -30px;
+text-align:left;
+padding-left:3px;
+text-shadow:0 1px 1px rgba(0,0,0,0.3);
+}
+.afl-btn-3:hover {
+background-position:0 -70px;
+}
+.afl-btn-3:hover span {
+background-position:right -100px;
+}
+.afl-btn-3:active {
+background-position:0 -140px;
+}
+.afl-btn-3:active span {
+background-position:right -170px;
+}
+.btn-arrow {
+background-image:url(/_global-assets/images/buttons/arrow_buttons_small.png);
+border:0;
+display:block;
+height:28px;
+width:28px;
+text-indent:-9600px;
+background-repeat:no-repeat;
+}
+.primaryBuckets:hover .btn-arrow.subtle,.btn-arrow.subtle:active {
+background-position:-28px -28px;
+}
+.btn-arrow.subtle {
+background-position:0 -28px;
+}
+@media (max-width: 896px) {
+	.introText {
+	width: 90%;
+	margin: 0 0 15px 0;
+	}
+	#form-container {
+	height: auto;
+	}
+	.form {
+	float: none;
+	width: 90%;
+	margin: 0 auto;
+	padding: 7% 0;
+	}
+	.form p {
+	  margin: 5% 0;
+	  width: 100%;
+	}
+	#stateImage {
+	display:none;
+	}
+	.headerContainer{
+  /*TM background-image:none;
+  width: 90%; */
+  width:100%;
+	height: auto;
+  /*TM padding: 0 0 30px 0; */
+  padding: 0 0 30px 45px;
+	margin: 0 auto;
+	}
+	.list_wrapper li {
+	float: none;
+	margin: auto;
+	min-width: 0;
+	width: 92%;
+	}
+	.exampleBox {
+	margin: 2% auto;
+	float: none;
+	width:90%;
+	height: auto;
+	}
+	.primaryBuckets {
+	float: none;
+	margin: 25px 0;
+	padding: 1px 1%;
+	width: 100%
+	}
+	#primaryBucket1 {
+	background-position: 50% -30%;
+	border-right:none;
+	}
+	#primaryBucket2 {
+	background-position: 50% -30%;
+	border-right:none;
+	border-top: 1px dashed #ccc;
+	}
+	#primaryBucket3 {
+	background-position: 50% -30%;
+	border-right:none;
+	border-top: 1px dashed #ccc;
+	}
+	.bucketArea{
+	padding:3% 0;
+	}
+	.contentContainer {
+	width: 77.7%;
+	min-width: 100%;
+	}
+}
+<!--[if IE 7]>
+<style type="text/css">
+.btn-base{position:static !important;}
+.afl-btn-2 span{position:static !important;}
+</style>
+<![endif]-->
+/*TM Additions */
+.exampleHeader { 
+  font-weight:normal !important;
+}
+.dropdown-box, .dropdown-container { 
+  width:200px;
+}
+.DivSelectyze { 
+  display:none !important; 
+}
+.dropdown-box .dropdown-title p { 
+  color: #727D82 !important; 
+}	
+.hide-modal.textbutton.is-orange {
+    padding: 13px 30px;
+}
+.inline_item { 
+  position: relative; 
+  top: -39px; 
+  right:25px;  
+}
+.textbutton.is-orange { 
+  padding: 13px 52px;
+}
+#submit .textbutton.is-orange {
+	margin-top: -4px;
+	margin-left: 240px;
+}
+#lblState.introText { 
+  font-size:30px;
+  font-weight:bold;
+}
+#lblState.introText, .exampleContent .introText {
+  color:#000;
+}
+#topContainer .contentContainer .hide-modal.textbutton.is-orange:hover, #submit .textbutton.is-orange:hover { 
+filter: none;
+opacity: 1;
+background-color:#F6A951;
+}
+@media screen and (min-width: 621px) {
+	#Content {
+	  background-color: #F1F3F4;
+	  padding-bottom: 50px;
+	}
+	#pagebgwide h4 {
+	font-family: proximanovalight;
+	font-size:33px;
+	letter-spacing: -.04em;
+	margin:0;
+	line-height: 140%;
+	}  
+}
+#topContainer .contentContainer h2 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    line-height: 95%;
+    letter-spacing: -0.025em;
+    font-family: "ProximaNovaThin";
+    font-weight: normal;
+}
+@media screen and (max-width: 619px) {
+	.headerContainer  { 
+	  padding: 0px 0px 50px 10px;
+	}
+	.headerContainer .contentContainer h2 {
+	  padding-top: 10px !important;
+	}
+	#submit .textbutton.is-orange {
+		margin: 50px 0 0 25px;
+	  padding: 13px 75px;
+	} 
+	#topContainer.headerContainer {
+	  padding: 15px 0px 30px 25px;
+	  background-position: 5% 0%;
+	  height: 370px;
+	}
+	#topContainer .contentContainer h2 {
+		font-size: 50px;
+	}
+}
+/*.cta {
+  position: relative;
+  display: inline-block;
+  font-family: "ProximaNovaRegular";
+  font-size: 15px;
+  text-decoration: none;
+}*/
+/*TM .icon-holder {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 30px;
+  height: 16px;
+  overflow: hidden;
+  display: inline-block;
+  transform: translateZ(0px);
+}
+.icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 90px;
+  height: 16px;
+  display: inline-block;
+  background: url("/_global-assets/images/sprites/icons-s133efd3706.png") no-repeat scroll -29px -485px transparent;
+}
+*/
+a.cta:hover span span.icon{
+left: -30px !important;
+} 
+.contentContainer, .contentContainer a.cta {
+  color: #FFFFFF;
+}
+.contentContainer a.cta:after {
+  content: "";
+  width: 21px;
+  height: 20px;
+  position: relative;
+  background: url("/_global-assets/images/sprites/icons-s133efd3706.png") no-repeat scroll -30px -442px transparent !important;
+  display: inline-block;
+  top: 4px;
+  left: -2px;
+}

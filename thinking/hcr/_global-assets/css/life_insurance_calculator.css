@@ -1,0 +1,1575 @@
+ @charset "UTF-8";
+/*@mixin mq_x_small {
+  @media (min-width: $min_page_width + 1) and (max-width: $breakpoint_x_small_screen) {
+    @content;
+  }
+}*/
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:    Mark Simonson Studio
+ * License URL: http://www.fontspring.com/fflicense/mark-simonson-studio
+ *
+ *
+ */
+ 
+ /*TM Fonts are already included in the master.css 
+ 
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("../fonts/proximanova/Proxima_Nova_Reg-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Reg-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Reg-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Reg-webfont.svg#webfontstEnRm6v") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url("../fonts/proximanova/Proxima_Nova_Thin-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Thin-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Thin-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Thin-webfont.svg#webfontspfqNHeH") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("../fonts/proximanova/Proxima_Nova_Light-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Light-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Light-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Light-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url("../fonts/proximanova/Proxima_Nova_Sbold-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Sbold-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Sbold-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Sbold-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("../fonts/proximanova/Proxima_Nova_Bold-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Bold-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Bold-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Bold-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaThinItalic';
+  src: url("../fonts/proximanova/Proxima_Nova_Thin_It-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Thin_It-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Thin_It-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Thin_It-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaLightItalic';
+  src: url("../fonts/proximanova/Proxima_Nova_Light_It-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Light_It-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Light_It-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Light_It-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaRegularItalic';
+  src: url("../fonts/proximanova/Proxima_Nova_Reg_It-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Reg_It-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Reg_It-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Reg_It-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBoldItalic';
+  src: url("../fonts/proximanova/Proxima_Nova_Bold_It-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Bold_It-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Bold_It-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Bold_It-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaExtraBold';
+  src: url("../fonts/proximanova/Proxima_Nova_Xbold-webfont.eot");
+  src: local("?"), url("../fonts/proximanova/Proxima_Nova_Xbold-webfont.woff") format("woff"), url("../fonts/proximanova/Proxima_Nova_Xbold-webfont.ttf") format("truetype"), url("../fonts/proximanova/Proxima_Nova_Xbold-webfont.svg#webfontnDjJn3bg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+End TM*/
+/* sprite map reference */
+/* line 1, ../../../../src/scss/tools/life_insurance_calculator/_buttons.scss */
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 8, ../../../../src/scss/tools/life_insurance_calculator/_buttons.scss */
+.bt-action {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: #f89728;
+  text-align: center;
+  height: 65px;
+  font: normal 15px/65px "ProximaNovaBold";
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 117, ../../../../src/scss/tools/life_insurance_calculator/_mixins.scss */
+.bt-action:active {
+  opacity: 0.8;
+  -webkit-transform: scale(0.96);
+  -moz-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  transform: scale(0.96);
+}
+/* line 23, ../../../../src/scss/tools/life_insurance_calculator/_buttons.scss */
+.bt-action:hover {
+  background-color: #00a7ff;
+}
+/* line 27, ../../../../src/scss/tools/life_insurance_calculator/_buttons.scss */
+.bt-action[disabled=disabled], .bt-action:disabled, .bt-action:disabled:active {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: #e5e7e8;
+}
+/* line 34, ../../../../src/scss/tools/life_insurance_calculator/_buttons.scss */
+.bt-action.bt-action--orange {
+  background-color: #f89728;
+}
+@media only screen and (min-width: 768px) {
+  /* line 8, ../../../../src/scss/tools/life_insurance_calculator/_buttons.scss */
+  .bt-action {
+  width: 211px;
+  margin: 0 auto;
+  margin-top: 80px;
+  }
+}
+/* line 12, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire {
+  position: relative;
+  padding-top: 10px;
+  background-color: #e5e7e8;
+  counter-reset: question-num;
+}
+/* line 21, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-cnt {
+  position: relative;
+  width: 100%;
+}
+/* line 25, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-cnt ul {
+  margin-top: 10px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  position: relative;
+}
+/* line 33, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question {
+  padding: 26px 20px 30px;
+  border-bottom: solid 1px #fff;
+}
+/* line 38, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question:first-child {
+  margin-top: 0;
+}
+/* line 42, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 33, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .question {
+  width: 552px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 52px;
+  padding-top: calc(52px - 1vw);
+  padding-bottom: 52px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 33, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .question {
+  width: 920px;
+  padding-top: 52px;
+  padding-top: calc(52px - 1vw);
+  padding-bottom: 52px;
+  }
+  /* line 21, ../../../../src/scss/tools/life_insurance_calculator/_mixins.scss */
+  .question:after {
+  content: " ";
+  display: table;
+  width: 100%;
+  clear: both;
+  }
+  /* line 65, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .question h2 {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding: 1vw;
+  margin-bottom: 0;
+  min-height: 132px;
+  box-sizing: border-box;
+  }
+}
+/* line 78, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question-title-index {
+  width: 20px;
+  display: block;
+  float: left;
+}
+@media only screen and (min-width: 768px) {
+  /* line 78, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .question-title-index {
+  width: 30px;
+  }
+}
+/* line 88, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question-title-label {
+  display: block;
+  float: left;
+  width: 90%;
+}
+/* line 96, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-label {
+  color: #a0aaae;
+  font: normal 18px "ProximaNovaExtraBold";
+  margin-bottom: 16px;
+  padding-left: 20px;
+  position: relative;
+}
+/* line 103, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-label:before {
+  counter-increment: question-num;
+  content: counter(question-num) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 112, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-subLabel {
+  margin-top: -9px;
+  margin-left: 20px;
+}
+/* line 120, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-value {
+  text-align: center;
+  font: normal 32px/32px "ProximaNovaExtraBold";
+  position: relative;
+}
+/* line 125, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-value sup {
+  position: absolute;
+  display: none;
+  margin-top: -6px;
+  margin-left: 1px;
+  font-size: 20px;
+}
+/* line 133, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-value sup.active {
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  /* line 120, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .questionnaire-value {
+  font-size: 45px;
+  }
+}
+/* line 143, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question-value-pre {
+  font-size: 15px;
+  position: relative;
+  top: -5px;
+  margin-right: 3px;
+  margin-left: -13px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 143, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .question-value-pre {
+  font-size: 27px;
+  }
+}
+/* line 155, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question-value-pre--age {
+  text-transform: capitalize;
+  margin-left: 0;
+}
+/* line 160, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question-value-post {
+  display: none;
+  color: #727d82;
+  font-size: 12px;
+  position: absolute;
+  bottom: -8px;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 10px;
+}
+/* line 172, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.question-value-post.show {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  /* line 160, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .question-value-post {
+  font-size: 14px;
+  bottom: -18px;
+  }
+}
+/* line 183, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-footer {
+  background-color: #e5e7e8;
+  padding: 36px 20px 30px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 183, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+  .questionnaire-footer {
+  padding-top: 0;
+  padding-bottom: 75px;
+  }
+}
+/* line 194, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-footer-divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #dbdcdc;
+  margin: -10px 0 30px;
+}
+/* line 201, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.questionnaire-footer-divider:before {
+  content: "or";
+  color: #727d82;
+  font: normal 16px/19px "ProximaNovaLight";
+  width: 50px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -10px;
+  background-color: #fff;
+}
+/* line 216, ../../../../src/scss/tools/life_insurance_calculator/_form.scss */
+.link-legals {
+  position: relative;
+  font: normal 10px "ProximaNovaRegular";
+  color: #00a7ff;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 25px 0;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 3, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1020;
+}
+/* line 15, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer.show {
+  display: block;
+}
+/* line 24, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-modal {
+  padding: 0 20px;
+  max-width: 280px;
+  margin: 0 auto;
+  top: 146px;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  /* line 24, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+  .disclaimerContainer-modal {
+  position: absolute;
+  top: 10%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+}
+/* line 37, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.lrg .disclaimerContainer-modal {
+  width: 90%;
+  max-width: 640px;
+  margin-bottom: 146px;
+  top: 10%;
+  height: 80%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  /* line 37, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+  .lrg .disclaimerContainer-modal {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  overflow: hidden;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  transform: none;
+  }
+}
+/* line 69, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  background-image: url('/_global-assets/images/life_insurance_calculator/sprites/sprites-se23d0cf248.png');
+  background-repeat: no-repeat;
+  background-position: 0 -454px;
+  height: 23px;
+  width: 23px;
+  background-size: 104px auto;
+  -webkit-transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+/* line 79, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-close:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+@media only screen and (max-width: 767px) {
+  /* line 69, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+  .disclaimerContainer-close {
+  right: 15px;
+  }
+}
+/* line 88, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-title {
+  color: #fff;
+  background-color: #00a7ff;
+  font: normal 30px/30px "ProximaNovaExtraBold";
+  padding: 44px 40px 42px;
+  border-bottom: solid 1px #dbdbdb;
+}
+/* line 96, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-copy {
+  position: relative;
+  font: normal 15px/19px "ProximaNovaLight";
+  padding: 35px 40px 35px;
+  color: #484848;
+  background-color: #fff;
+}
+/* line 104, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.lrg .disclaimerContainer-copy {
+  height: 300px;
+  height: calc(80% - 117px);
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 767px) {
+  /* line 96, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+  .disclaimerContainer-copy {
+  height: 60%;
+  overflow: hidden;
+  overflow-y: auto;
+  }
+}
+/* line 117, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-copy ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+/* line 120, ../../../../src/scss/tools/life_insurance_calculator/_disclaimer.scss */
+.disclaimerContainer-copy ol li {
+  display: list-item;
+  padding-bottom: 15px;
+}
+/* line 13, ../../../../src/scss/tools/life_insurance_calculator/_shared.scss */
+.aal-overlayBg {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Display & Box Model */
+  width: 100%;
+  height: 100%;
+  /* Color */
+  background-color: black;
+  /* Appearance */
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+/* line 8, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic {
+  background: #FFF;
+}
+/* line 12, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic h1 {
+  color: #00a7ff;
+  font-size: 60px;
+  line-height: 54px;
+}
+/* line 19, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-home {
+  display: none;
+}
+/* line 22, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-home.active {
+  display: block;
+}
+/* line 31, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.aflac-title {
+  text-align: center;
+  padding: 51px 20px 60px;
+}
+/* line 36, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.aflac-title p {
+  margin: 16px 20px 0;
+  color: #3b3b3b;
+  font: normal 16px "ProximaNovaLight";
+  line-height: 21px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 36, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .aflac-title p {
+  font: normal 24px "ProximaNovaLight";
+  line-height: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 31, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .aflac-title {
+  padding: 72px 20px 72px;
+  }
+}
+/* line 58, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-header {
+  position: relative;
+  background: #FFF;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 62, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-header h1 {
+  font-size: 80px;
+  line-height: 72px;
+  }
+}
+/* line 69, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-header img {
+  margin-bottom: 35px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 58, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-header {
+  width: 410px;
+  margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 58, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-header {
+  width: 640px;
+  }
+}
+/* line 83, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-header-arrow {
+  position: absolute;
+  left: 50%;
+  display: block;
+  top: 0;
+  margin-left: -12px;
+  background-image: url('/_global-assets/images/life_insurance_calculator/sprites/sprites-se23d0cf248.png');
+  background-repeat: no-repeat;
+  background-position: 0 -193px;
+  height: 13px;
+  width: 24px;
+  background-size: 104px auto;
+}
+/* line 93, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+p.lic-header-required {
+  color: #00a7ff;
+  font: normal 14px "ProximaNovaBold";
+  text-transform: uppercase;
+  margin: 12px 0 2px;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 93, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  p.lic-header-required {
+  margin-top: 30px;
+  font: normal 19px "ProximaNovaBold";
+  }
+}
+/* line 109, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-questionnaire h2 {
+  font: normal 18px "ProximaNovaExtraBold";
+  color: #00a7ff;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  /* line 116, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-questionnaire ul {
+  margin: 10px 0 -7px;
+  border: 0;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  }
+  /* line 128, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-questionnaire h2 {
+  font-size: 24px;
+  line-height: 27px;
+  }
+  /* line 133, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-questionnaire h3 {
+  font-size: 18px;
+  }
+  /* line 137, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-questionnaire li {
+  margin: 2px 0;
+  }
+}
+/* line 143, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-question-legal {
+  margin: 32px 0 14px;
+  color: #727d82;
+  font: normal 15px "ProximaNovaLight";
+  display: inline-block;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 143, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-question-legal {
+  width: 397px;
+  float: right;
+  margin-bottom: 0;
+  }
+}
+/* line 156, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-question-legal-icon {
+  font-size: 14px;
+  color: #a0aaae;
+  cursor: pointer;
+}
+/* line 163, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-question-legal-icon:hover {
+  color: #f89728;
+}
+/* line 167, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-question-legal-icon:before {
+  content: "";
+  background-image: url('/_global-assets/images/life_insurance_calculator/sprites/sprites-se23d0cf248.png');
+  background-repeat: no-repeat;
+  background-position: 0 -283px;
+  height: 17px;
+  width: 17px;
+  background-size: 104px auto;
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  margin: 0 6px 0 3px;
+}
+/* line 177, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-container {
+  margin: 21px 20px 0;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  /* line 177, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-range-container {
+  margin: 33px 0 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 177, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-range-container {
+  display: inline-block;
+  width: 397px;
+  float: right;
+  margin-top: 19px;
+  }
+}
+/* line 194, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-hitfield {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  bottom: -15px;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+/* line 206, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-slider {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 27px;
+}
+/* line 216, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-slider::selection {
+  background-color: none;
+}
+@media only screen and (min-width: 768px) {
+  /* line 206, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-range-slider {
+  height: 20px;
+  margin-top: 43px;
+  }
+  /* line 225, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-range-slider:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  }
+}
+/* line 233, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-average {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  background-color: #00a7ff;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 245, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-value {
+  width: 0;
+  position: absolute;
+  height: 13px;
+  background-color: #00a7ff;
+  border-radius: 12px 0 0 12px;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 258, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.lic-range-value:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 22px;
+  top: -7px;
+  height: 22px;
+  background-color: #00a7ff;
+  border-radius: 13px;
+  border: solid 2px #fff;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  /* line 245, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-range-value {
+  height: 20px;
+  border-radius: 15px 0 0 15px;
+  }
+  /* line 284, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .lic-range-value:after {
+  top: -10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  }
+}
+/* line 294, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal {
+  position: relative;
+  background-color: #e5e7e8;
+  font: normal 16px "ProximaNovaRegular";
+  color: #00a7ff;
+  text-align: right;
+}
+/* line 303, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .toggle {
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  /* line 303, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .legal .toggle {
+  text-align: center;
+  }
+}
+/* line 310, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .toggle .toggle--home {
+  display: block;
+  text-transform: uppercase;
+}
+/* line 315, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .toggle .toggle--results {
+  display: none;
+}
+/* line 320, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .toggle.results .toggle--home {
+  display: none;
+}
+/* line 324, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .toggle.results .toggle--results {
+  display: block;
+}
+/* line 330, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .content {
+  display: none;
+}
+/* line 334, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal .content-results {
+  display: none;
+}
+/* line 339, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal-wrapper {
+  position: relative;
+  padding: 25px;
+  padding-top: 30px;
+  margin: 0 auto;
+  border-top: 7px solid #d5d7d8;
+}
+@media only screen and (min-width: 768px) {
+  /* line 339, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .legal-wrapper {
+  width: 90%;
+  padding: 30px 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 339, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .legal-wrapper {
+  width: 920px;
+  padding: 30px 0;
+  }
+}
+/* line 361, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.legal-ref {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  /* line 361, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+  .legal-ref {
+  left: 0;
+  top: 30px;
+  }
+}
+/* line 374, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.bt-action {
+  height: 45px;
+  font: normal 15px/45px "ProximaNovaBold";
+}
+/* line 378, ../../../../src/scss/tools/life_insurance_calculator/_main.scss */
+.bt-action:hover {
+  background-color: #00a7ff;
+}
+/* line 7, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.lic-results {
+  display: none;
+}
+/* line 11, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.lic-results.active {
+  display: block;
+}
+/* line 15, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.lic-results p {
+  color: #3b3b3b;
+  font: normal 15px "ProximaNovaLight";
+  -webkit-font-smoothing: antialiased;
+}
+/* line 22, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.lic .licResults-title {
+  width: 280px;
+  margin: 0 auto -2px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 22, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .lic .licResults-title {
+  width: 480px;
+  margin: 0 auto;
+  font-size: 60px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 22, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .lic .licResults-title {
+  width: 640px;
+  font-size: 80px;
+  line-height: 72px;
+  letter-spacing: -0.019em;
+  }
+}
+/* line 41, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-results {
+  background-color: #eceeee;
+  text-align: center;
+  font: normal 36px "ProximaNovaExtraBold";
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  /* line 41, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-results {
+  margin-top: 15px;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+  /* line 21, ../../../../src/scss/tools/life_insurance_calculator/_mixins.scss */
+  .licResults-results:after {
+  content: " ";
+  display: table;
+  width: 100%;
+  clear: both;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 41, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-results {
+  width: 1084px;
+  margin: 0 auto;
+  margin-top: 15px;
+  }
+}
+/* line 68, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-results h2 {
+  font-size: 36px;
+  margin: 0;
+  padding: 31px 0 38px;
+  font: normal 36px "ProximaNovaExtraBold";
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  /* line 68, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-results h2 {
+  display: inline-block;
+  width: 50%;
+  min-height: 268px;
+  padding-top: 94px;
+  float: right;
+  font-size: 53px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 68, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-results h2 {
+  display: inline-block;
+  width: 50%;
+  min-height: 268px;
+  padding-top: 94px;
+  float: right;
+  }
+}
+/* line 97, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-results h2 sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+/* line 106, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-copy {
+  position: relative;
+  background-color: #8cc5d8;
+  color: #fff;
+  font: normal 15px "ProximaNovaLight";
+  padding: 17px 50px;
+}
+/* line 112, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-copy:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  background-image: url('/_global-assets/images/life_insurance_calculator/sprites/sprites-se23d0cf248.png');
+  background-repeat: no-repeat;
+  background-position: 0 -175px;
+  height: 13px;
+  width: 24px;
+  background-size: 104px auto;
+  -webkit-transform: translateY(-100%) translateX(-50%);
+  -moz-transform: translateY(-100%) translateX(-50%);
+  -ms-transform: translateY(-100%) translateX(-50%);
+  transform: translateY(-100%) translateX(-50%);
+}
+/* line 120, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.lt-ie9 .licResults-copy:before {
+  display: none;
+}
+/* line 125, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-copy p {
+  font: normal 18px "ProximaNovaLight";
+  -webkit-font-smoothing: antialiased;
+  color: inherit;
+  margin: 30px 0;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  /* line 106, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-copy {
+  display: inline-block;
+  width: 50%;
+  min-height: 268px;
+  padding: 53px;
+  box-sizing: border-box;
+  float: left;
+  }
+  /* line 142, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-copy p {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 20px;
+  font-size: 28px;
+  line-height: 34px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  }
+  /* line 159, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-copy:before {
+  top: 50%;
+  left: 99%;
+  left: calc(100% - 6px);
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 106, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-copy {
+  display: inline-block;
+  width: 50%;
+  min-height: 268px;
+  box-sizing: border-box;
+  float: left;
+  }
+  /* line 176, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-copy p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 28px;
+  line-height: 34px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  /* line 188, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-copy:before {
+  top: 50%;
+  left: 99%;
+  left: calc(100% - 6px);
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+  }
+}
+/* line 197, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-amount-pre {
+  font-size: 18px;
+  position: relative;
+  top: -4px;
+  margin-right: 4px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 197, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-amount-pre {
+  font-size: 24px;
+  top: -4px;
+  margin-right: 4px;
+  }
+}
+/* line 210, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-amount {
+  font: inherit;
+}
+/* line 214, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-content {
+  position: relative;
+  text-align: center;
+  padding: 42px 0 45px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 214, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-content {
+  padding: 45px 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 214, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-content {
+  padding: 70px 20px 75px;
+  }
+}
+/* line 228, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-content h3 {
+  font: normal 36px "ProximaNovaThin";
+  padding: 0 40px;
+  color: #00a7ff;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 228, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-content h3 {
+  margin-bottom: 18px;
+  font-size: 60px;
+  }
+}
+/* line 242, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-content p {
+  padding: 0 20px;
+  margin: 0;
+  margin-top: 9px;
+  font: normal 18px/21px "ProximaNovaLight";
+  -webkit-font-smoothing: antialiased;
+}
+@media only screen and (min-width: 768px) {
+  /* line 242, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-content p {
+  width: 480px;
+  margin: 15px auto 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 242, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-content p {
+  width: 640px;
+  padding: 0;
+  margin: 0 auto;
+  font: normal 24px/30px "ProximaNovaLight";
+  }
+}
+/* line 265, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .policyDetail-video-container {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 180px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 265, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-policy-detail .policyDetail-video-container {
+  width: 100%;
+  height: 400px;
+  }
+}
+/* line 278, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .policyDetail-desc {
+  background-color: #fff;
+  padding-bottom: 0px;
+}
+/* line 281, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .policyDetail-desc h3 {
+  color: #00a7ff;
+}
+/* line 284, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .policyDetail-desc ul {
+  color: #3b3b3b;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dbdcdc;
+}
+@media only screen and (min-width: 768px) {
+  /* line 284, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-policy-detail .policyDetail-desc ul {
+  border-bottom: none;
+  padding-bottom: 52px;
+  }
+}
+/* line 294, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .policyDetail-desc li {
+  font-size: 18px;
+  font-family: "ProximaNovaLight";
+}
+/* line 298, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .policyDetail-desc li:before {
+  background-color: #3b3b3b;
+}
+/* line 303, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-policy-detail .licResults-advantage {
+  padding: 30px 20px 0;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  /* line 303, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-policy-detail .licResults-advantage {
+  margin: 0 auto 30px;
+  padding: 75px 0 0;
+  text-align: center;
+  max-width: 480px;
+  font: normal 18px/21px "ProximaNovaLight";
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 303, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-policy-detail .licResults-advantage {
+  max-width: 640px;
+  font: normal 24px/30px "ProximaNovaLight";
+  }
+}
+/* line 325, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-legals {
+  padding: 25px 40px;
+  display: block;
+  background-color: #e5e7e8;
+  text-align: center;
+  color: #a0aaae;
+  font: normal 13px "ProximaNovaLight";
+}
+/* line 333, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-legals p {
+  max-width: 920px;
+  margin: 0 auto;
+}
+/* line 340, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-footer {
+  padding: 30px 20px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 340, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+  .licResults-footer {
+  padding-top: 0;
+  padding-bottom: 75px;
+  }
+}
+/* line 348, ../../../../src/scss/tools/life_insurance_calculator/_results.scss */
+.licResults-footer .bt-action {
+  margin-top: 0;
+  cursor: pointer;
+}
+/*TM Styles for the LIC widget, added by Troy */
+.w_lic .w_lic_action:after,.w_right-plan a:hover .circle-arrow>span{
+  width:10px;
+  height:16px;
+  background:url('/_global-assets/images/life_insurance_calculator/sprites-s16b308f31f.png') 0 -369px no-repeat
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2){
+  .w_lic .w_lic_action:after,.w_right-plan a:hover .circle-arrow>span{
+    background-image:url('/_global-assets/images/life_insurance_calculator/sprites/common/retina-s2c1fe4a138.png');
+    background-size:64px 442.5px;
+    background-position:0 -350px
+  }
+}
+.w_lic .w_lic_action:hover:after,.w_lic .w_lic_action:focus:after{
+  width:10px;
+  height:16px;
+  background:url('/_global-assets/images/life_insurance_calculator/sprites-s16b308f31f.png') 0 -299px no-repeat
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2){
+  .w_lic .w_lic_action:hover:after,.w_lic .w_lic_action:focus:after{
+    background-image:url('/_global-assets/images/life_insurance_calculator/sprites/common/retina-s2c1fe4a138.png');
+    background-size:64px 442.5px;
+    background-position:0 -266px
+  }
+}
+.w_lic .w_lic_action:after,.w_right-plan a:hover .circle-arrow>span{
+  width:10px;
+  height:16px;
+  background:url('/_global-assets/images/life_insurance_calculator/sprites-s16b308f31f.png') 0 -369px no-repeat
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2){
+  .w_lic .w_lic_action:after,.w_right-plan a:hover .circle-arrow>span{
+    background-image:url('/_global-assets/images/life_insurance_calculator/sprites/common/retina-s2c1fe4a138.png');
+    background-size:64px 442.5px;
+    background-position:0 -350px
+  }
+}
+.w_lic .w_lic_action:hover:after,.w_lic .w_lic_action:focus:after{
+  width:10px;
+  height:16px;
+  background:url('/_global-assets/images/life_insurance_calculator/sprites-s16b308f31f.png') 0 -299px no-repeat
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2){
+  .w_lic .w_lic_action:hover:after,.w_lic .w_lic_action:focus:after{
+    background-image:url('/_global-assets/images/life_insurance_calculator/sprites/common/retina-s2c1fe4a138.png');
+    background-size:64px 442.5px;
+    background-position:0 -266px
+  }
+}
+.w_lic{
+  direction:rtl;
+  color:#3b3b3b;
+  background:#fff
+}
+.w_lic .w_lic_inner{
+  display:table;
+  width:100%
+}
+.w_lic .w_lic_image,.w_lic .w_lic_body{
+  display:table-cell;
+  direction:ltr;
+  height:100%;
+  width:50%
+}
+.w_lic .w_lic_body{
+  box-sizing:border-box;
+  padding-top:80px;
+  padding-right:80px;
+  padding-bottom:77px;
+  padding-left:80px
+}
+.w_lic .w_lic_image{
+  position:relative;
+  background-image:url("/_global-assets/images/life_insurance/asset_desktop.jpg");
+  background-size:100%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center
+}
+.w_lic .w_lic_image:after{
+  content:' ';
+  position:absolute;
+  top:50%;
+  left:0;
+  width:0;
+  height:0;
+  margin-top:-13.5px;
+  border-style:solid;
+  border-width:13.5px 0 13.5px 14px;
+  border-color:transparent transparent transparent #fff
+}
+.w_lic .w_lic_title{
+  margin-top:0;
+  margin-bottom:29px;
+  margin-bottom:2.001vw;
+  line-height:0.86;
+  letter-spacing:-0.03em;
+  font-size:43px;
+  font-size:3vw;
+  color:#00a7e1
+}
+.w_lic .w_lic_content{
+  margin-top:0;
+  margin-bottom:23px;
+  margin-bottom:1.62vw;
+  line-height:1.3;
+  font-size:19px;
+  font-size:1.32vw
+}
+.w_lic .w_lic_action{
+  margin-left:-16px;
+  padding:16px;
+  font-size:16px;
+  font-family:'ProximaNovaBold', Arial, Helvetica, sans-serif;
+  color:#00a7e1;
+  text-transform:uppercase;
+  text-decoration:none;
+  white-space:nowrap
+}
+.w_lic .w_lic_action:after{
+  display:inline-block;
+  margin-left:10px;
+  vertical-align:text-bottom;
+  content:' '
+}
+.w_lic .w_lic_action:hover,.w_lic .w_lic_action:focus{
+  color:#f89728
+}
+@media screen and (min-width: 1520px){
+  .w_lic .w_lic_title{
+    font-size:54px;
+    margin-bottom:36px
+  }
+  .w_lic .w_lic_content{
+    font-size:24px;
+    margin-bottom:29px
+  }
+}
+@media (min-width: 620px) and (max-width: 919px){
+  .w_lic .w_lic_body{
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    padding-left:40px
+  }
+  .w_lic .w_lic_title{
+    font-size:36px;
+    margin-bottom:24px
+  }
+  .w_lic .w_lic_content{
+    font-size:16px;
+    margin-bottom:20px
+  }
+  .w_lic .w_lic_action{
+    font-size:12px
+  }
+  .w_lic .w_lic_action:after{
+    margin-left:7.5px;
+    transform:scale(0.75)
+  }
+}
+@media (max-width: 619px){
+  .w_lic{
+    display:block;
+    height:auto;
+    direction:ltr;
+    text-align:center
+  }
+  .w_lic .w_lic_image,.w_lic .w_lic_body{
+    display:block;
+    width:auto
+  }
+  .w_lic .w_lic_body{
+    width:auto;
+    min-height:239px;
+    padding-top:50px;
+    padding-right:20px;
+    padding-bottom:40px;
+    padding-left:20px
+  }
+  .w_lic .w_lic_image{
+    background-image:url("/_global-assets/images/life_insurance/asset_mobile.jpg");
+    height:239px;
+    width:100%
+  }
+  .w_lic .w_lic_image:after{
+    top:auto;
+    bottom:0;
+    left:50%;
+    width:0;
+    height:0;
+    margin-top:0;
+    margin-left:-13.5px;
+    border-style:solid;
+    border-width:0 13.5px 14px 13.5px;
+    border-color:transparent transparent #fff transparent
+  }
+  .w_lic .w_lic_title{
+    margin-bottom:15px;
+    padding-right:20px;
+    padding-left:20px;
+    font-size:32px
+  }
+  .w_lic .w_lic_content{
+    margin-bottom:15px;
+    line-height:1.26;
+    font-size:15px
+  }
+  .w_lic .w_lic_action{
+    font-size:12px
+  }
+  .w_lic .w_lic_action:after{
+    margin-left:7.5px;
+    transform:scale(0.75);
+    position: relative; 
+    top: 2px;
+  }
+}
+/*TM added the traditional lightbox close button, needed a minor adjustment*/
+.disclaimerContainer-modal {
+  padding: 0px 60px;
+}
+.disclaimerContainer-modal .lightbox_tools {
+  right: 0px;
+}
+/*TM IE8 FIX*/
+.lt-ie9 .lic-header-arrow {
+  background-position: -12px -401px;
+}
+.lt-ie9 .licResults-title {
+  width: 40%;
+}
+.lt-ie9 .licResults-results {
+  width: 1084px;
+  height: 300px;
+  margin: 0 auto 0px;
+  width: 90%;
+  margin: 0px auto;
+  box-sizing: border-box;
+  background-color: #ECEEEE;
+  text-align: center;
+  font: 36px "ProximaNovaExtraBold";
+}
+.lt-ie9 .licResults-results h2 {
+  display: inline-block;
+  position: relative;
+  top: 43%;
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+  font: 36px "ProximaNovaExtraBold";
+  box-sizing: border-box;
+}
+.lt-ie9 .licResults-copy {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  background-color: #8CC5D8;
+  color: #FFF;
+  font: 15px "ProximaNovaLight";
+  padding: 0 50px;
+}
+.lt-ie9 .licResults-copy p {
+  font-size: 28px;
+  line-height: 34px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 20px;
+  font: 18px "ProximaNovaLight";
+  color: inherit;
+  box-sizing: border-box;
+  position: relative;
+  top: 43%;
+}
+.lt-ie9 .licResults-policy-detail .policyDetail-video-container {
+  height: 400px;
+}
+.lt-ie9 .licResults-footer, .lt-ie9 .questionnaire-footer {
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+}
+.lt-ie9 .licResults-footer .bt-action, .lt-ie9 .questionnaire-footer .bt-action {
+  width: 100%;
+}
+.lt-ie9 .disclaimerContainer {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='BF000000', endColorstr='#BF000000');
+  background-color: #3b3b3b;
+}
